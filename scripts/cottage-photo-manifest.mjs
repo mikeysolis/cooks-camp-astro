@@ -1,0 +1,16 @@
+export const cottagePhotoManifest = [
+  { slug: "marconi", title: "Marconi", sourceDir: "docs/current_photos/Marconi" },
+  { slug: "big-guilda", title: "Big Guilda", sourceDir: "docs/current_photos/Big Guilda" },
+  { slug: "pretty-home", title: "Pretty Home", sourceDir: "docs/current_photos/Pretty Home" },
+  { slug: "cones", title: "Cones", sourceDir: "docs/current_photos/Cones" },
+  { slug: "oversea", title: "Oversea", sourceDir: "docs/current_photos/Oversea" },
+  { slug: "sandy-scot", title: "Sandy Scot", sourceDir: "docs/current_photos/Sandy Scot" },
+  { slug: "summer-salt", title: "Summer Salt", sourceDir: "docs/current_photos/Summer Salt" },
+  { slug: "dunes", title: "Dunes", sourceDir: "docs/current_photos/Dunes" },
+  { slug: "pines", title: "Pines", sourceDir: "docs/current_photos/Pines" },
+  { slug: "sands", title: "Sands", sourceDir: "docs/current_photos/Sands" },
+  { slug: "new-cabin", title: "New Cabin", sourceDir: "docs/current_photos/New Cabin" },
+  { slug: "little-guilda", title: "Little Guilda", sourceDir: "docs/current_photos/Little Guilda" },
+  { slug: "camera", title: "Camera", sourceDir: "docs/current_photos/Camera" },
+  { slug: "the-captain", title: "The Captain", sourceDir: "docs/current_photos/The Captain" },
+];

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import CottageCard from "../components/CottageCard.astro";
+import { getCottagePhotoSet } from "../data/cottage-photos";
 import Layout from "../layouts/Layout.astro";
 
 const cottages = (await getCollection("cottages")).sort((a, b) => {
@@ -79,7 +80,7 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
             bedrooms={cottage.data.bedrooms}
             bathrooms={cottage.data.bathrooms}
             category={cottage.data.category}
-            hero={cottage.data.hero}
+            hero={getCottagePhotoSet(cottage.id).hero}
           />
         ))
       }

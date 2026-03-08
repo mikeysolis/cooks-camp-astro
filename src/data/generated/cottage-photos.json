@@ -1,0 +1,162 @@
+{
+  "marconi": {
+    "title": "Marconi",
+    "hero": "/images/cottages/marconi/hero.jpg",
+    "photos": [
+      "/images/cottages/marconi/gallery-01.jpg",
+      "/images/cottages/marconi/gallery-02.jpg",
+      "/images/cottages/marconi/gallery-03.jpg",
+      "/images/cottages/marconi/gallery-04.jpg",
+      "/images/cottages/marconi/gallery-05.jpg",
+      "/images/cottages/marconi/gallery-06.jpg",
+      "/images/cottages/marconi/gallery-07.jpg",
+      "/images/cottages/marconi/gallery-08.jpg",
+      "/images/cottages/marconi/gallery-09.jpg",
+      "/images/cottages/marconi/gallery-10.jpg",
+      "/images/cottages/marconi/gallery-11.jpg",
+      "/images/cottages/marconi/gallery-12.jpg"
+    ],
+    "totalPhotos": 13
+  },
+  "big-guilda": {
+    "title": "Big Guilda",
+    "hero": "/images/cottages/big-guilda/hero.jpg",
+    "photos": [
+      "/images/cottages/big-guilda/gallery-01.jpg",
+      "/images/cottages/big-guilda/gallery-02.jpg",
+      "/images/cottages/big-guilda/gallery-03.jpg",
+      "/images/cottages/big-guilda/gallery-04.jpg",
+      "/images/cottages/big-guilda/gallery-05.jpg",
+      "/images/cottages/big-guilda/gallery-06.jpg",
+      "/images/cottages/big-guilda/gallery-07.jpg"
+    ],
+    "totalPhotos": 8
+  },
+  "pretty-home": {
+    "title": "Pretty Home",
+    "hero": "/images/cottages/pretty-home/hero.jpg",
+    "photos": [
+      "/images/cottages/pretty-home/gallery-01.jpg",
+      "/images/cottages/pretty-home/gallery-02.jpg",
+      "/images/cottages/pretty-home/gallery-03.jpg",
+      "/images/cottages/pretty-home/gallery-04.jpg",
+      "/images/cottages/pretty-home/gallery-05.jpg",
+      "/images/cottages/pretty-home/gallery-06.jpg",
+      "/images/cottages/pretty-home/gallery-07.jpg",
+      "/images/cottages/pretty-home/gallery-08.jpg",
+      "/images/cottages/pretty-home/gallery-09.jpg"
+    ],
+    "totalPhotos": 10
+  },
+  "cones": {
+    "title": "Cones",
+    "hero": "/images/cottages/cones/hero.jpg",
+    "photos": [
+      "/images/cottages/cones/gallery-01.jpg",
+      "/images/cottages/cones/gallery-02.jpg",
+      "/images/cottages/cones/gallery-03.jpg",
+      "/images/cottages/cones/gallery-04.jpg",
+      "/images/cottages/cones/gallery-05.jpg"
+    ],
+    "totalPhotos": 6
+  },
+  "oversea": {
+    "title": "Oversea",
+    "hero": "/images/cottages/oversea/hero.jpg",
+    "photos": [
+      "/images/cottages/oversea/gallery-01.jpg",
+      "/images/cottages/oversea/gallery-02.jpg"
+    ],
+    "totalPhotos": 3
+  },
+  "sandy-scot": {
+    "title": "Sandy Scot",
+    "hero": "/images/cottages/sandy-scot/hero.jpg",
+    "photos": [
+      "/images/cottages/sandy-scot/gallery-01.jpg",
+      "/images/cottages/sandy-scot/gallery-02.jpg",
+      "/images/cottages/sandy-scot/gallery-03.jpg",
+      "/images/cottages/sandy-scot/gallery-04.jpg"
+    ],
+    "totalPhotos": 5
+  },
+  "summer-salt": {
+    "title": "Summer Salt",
+    "hero": "/images/cottages/summer-salt/hero.jpg",
+    "photos": [
+      "/images/cottages/summer-salt/gallery-01.jpg",
+      "/images/cottages/summer-salt/gallery-02.jpg"
+    ],
+    "totalPhotos": 3
+  },
+  "dunes": {
+    "title": "Dunes",
+    "hero": "/images/cottages/dunes/hero.jpg",
+    "photos": [
+      "/images/cottages/dunes/gallery-01.jpg",
+      "/images/cottages/dunes/gallery-02.jpg",
+      "/images/cottages/dunes/gallery-03.jpg",
+      "/images/cottages/dunes/gallery-04.jpg"
+    ],
+    "totalPhotos": 5
+  },
+  "pines": {
+    "title": "Pines",
+    "hero": "/images/cottages/pines/hero.jpg",
+    "photos": [
+      "/images/cottages/pines/gallery-01.jpg",
+      "/images/cottages/pines/gallery-02.jpg",
+      "/images/cottages/pines/gallery-03.jpg",
+      "/images/cottages/pines/gallery-04.jpg"
+    ],
+    "totalPhotos": 5
+  },
+  "sands": {
+    "title": "Sands",
+    "hero": "/images/cottages/sands/hero.jpg",
+    "photos": [
+      "/images/cottages/sands/gallery-01.jpg",
+      "/images/cottages/sands/gallery-02.jpg"
+    ],
+    "totalPhotos": 3
+  },
+  "new-cabin": {
+    "title": "New Cabin",
+    "hero": "/images/cottages/new-cabin/hero.jpg",
+    "photos": [
+      "/images/cottages/new-cabin/gallery-01.jpg",
+      "/images/cottages/new-cabin/gallery-02.jpg"
+    ],
+    "totalPhotos": 3
+  },
+  "little-guilda": {
+    "title": "Little Guilda",
+    "hero": "/images/cottages/little-guilda/hero.jpg",
+    "photos": [
+      "/images/cottages/little-guilda/gallery-01.jpg",
+      "/images/cottages/little-guilda/gallery-02.jpg",
+      "/images/cottages/little-guilda/gallery-03.jpg",
+      "/images/cottages/little-guilda/gallery-04.jpg"
+    ],
+    "totalPhotos": 5
+  },
+  "camera": {
+    "title": "Camera",
+    "hero": "/images/cottages/camera/hero.jpg",
+    "photos": [
+      "/images/cottages/camera/gallery-01.jpg",
+      "/images/cottages/camera/gallery-02.jpg"
+    ],
+    "totalPhotos": 3
+  },
+  "the-captain": {
+    "title": "The Captain",
+    "hero": "/images/cottages/the-captain/hero.jpg",
+    "photos": [
+      "/images/cottages/the-captain/gallery-01.jpg",
+      "/images/cottages/the-captain/gallery-02.jpg",
+      "/images/cottages/the-captain/gallery-03.jpg"
+    ],
+    "totalPhotos": 4
+  }
+}

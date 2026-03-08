@@ -25,3 +25,15 @@ All notable changes to this project will be documented in this file.
 ### Updated
 
 - Page content now follows the current-site facts / historic-site tone rule
+
+## 0.0.3
+
+### Features
+
+- Added a repeatable cottage photo export pipeline using the raw files in `docs/current_photos`
+- Exported optimized hero and gallery images for all 14 cottages into `public/images/cottages`
+- Wired real cottage photography into the home page, cottages index, cottage detail pages, and photos page
+
+### Updated
+
+- Modern photos are now rendered from a generated manifest instead of placeholder image paths

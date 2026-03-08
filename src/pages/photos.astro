@@ -1,7 +1,7 @@
 ---
-import { getCollection } from "astro:content";
-import { getEntry, render } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import { cottageCategories } from "../data/cottage-categories";
+import { getCottagePhotoSet } from "../data/cottage-photos";
 import Layout from "../layouts/Layout.astro";
 
 const entry = await getEntry("pages", "photos");
@@ -11,11 +11,17 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
-const cottages = await getCollection("cottages");
-const countsByCategory = cottages.reduce<Record<string, number>>((counts, cottage) => {
+const cottages = (await getCollection("cottages")).sort((a, b) => {
+  const left = a.data.order ?? 999;
+  const right = b.data.order ?? 999;
+  return left - right;
+});
+
+const cottagesByCategory = cottages.reduce<Record<string, typeof cottages>>((groups, cottage) => {
   const key = cottage.data.category;
-  counts[key] = (counts[key] ?? 0) + 1;
-  return counts;
+  const current = groups[key] ?? [];
+  groups[key] = [...current, cottage];
+  return groups;
 }, {});
 ---
 
@@ -29,21 +35,51 @@ const countsByCategory = cottages.reduce<Record<string, number>>((counts, cottag
       </div>
     </div>
 
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {
-        cottageCategories.map((category) => (
-          <article class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/80 p-5">
-            <div class="aspect-[4/3] rounded-[1.25rem] bg-[linear-gradient(145deg,rgba(84,114,136,0.15),rgba(232,225,209,0.9))]" />
-            <h2 class="mt-4 font-display text-2xl text-[var(--color-ink)]">
-              {category.title}
-            </h2>
-            <p class="mt-2 text-[var(--color-muted)]">
-              {countsByCategory[category.key] ?? 0} cottages will feed
-              this group once the modern web-ready photo sets are exported.
-            </p>
-          </article>
-        ))
-      }
-    </div>
+    {
+      cottageCategories.map((category) => {
+        const entries = cottagesByCategory[category.key] ?? [];
+
+        return (
+          <section class="space-y-5">
+            <div class="space-y-3">
+              <p class="eyebrow">{category.key}</p>
+              <h2 class="section-title">{category.title}</h2>
+              <p class="max-w-3xl text-[var(--color-muted)]">{category.blurb}</p>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+              {entries.map((cottage) => {
+                const photoSet = getCottagePhotoSet(cottage.id);
+
+                return (
+                  <a
+                    href={`/cottages/${cottage.id}`}
+                    class="group overflow-hidden rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(34,52,67,0.12)]"
+                  >
+                    <img
+                      src={photoSet.hero}
+                      alt={`Current view inside ${cottage.data.title}`}
+                      class="aspect-[4/3] h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                      loading="lazy"
+                    />
+                    <div class="space-y-3 p-5">
+                      <div class="flex items-start justify-between gap-3">
+                        <h3 class="font-display text-3xl text-[var(--color-ink)]">
+                          {cottage.data.title}
+                        </h3>
+                        <span class="rounded-full border border-[rgba(34,52,67,0.14)] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[var(--color-sea)]">
+                          {photoSet.totalPhotos} photos
+                        </span>
+                      </div>
+                      <p class="text-[var(--color-muted)]">{cottage.data.description}</p>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })
+    }
   </section>
 </Layout>
