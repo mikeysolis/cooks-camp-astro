@@ -65,11 +65,16 @@ const galleryClass =
   }
 </div>
 
-<script define:vars={{ galleryId }}>
-  const galleryElement = document.getElementById(galleryId);
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
 
-  if (galleryElement) {
-    const { default: PhotoSwipeLightbox } = await import("photoswipe/lightbox");
+  const galleryElements = document.querySelectorAll(".pswp-gallery");
+
+  galleryElements.forEach((galleryElement) => {
+    if (!(galleryElement instanceof HTMLElement) || !galleryElement.id) {
+      return;
+    }
+
     const lightbox = new PhotoSwipeLightbox({
       gallery: `#${galleryElement.id}`,
       children: "a",
@@ -79,31 +84,6 @@ const galleryClass =
       paddingFn: () => ({ top: 36, bottom: 88, left: 24, right: 24 }),
     });
 
-    lightbox.on("uiRegister", () => {
-      lightbox.pswp.ui.registerElement({
-        name: "cookscamps-caption",
-        order: 9,
-        isButton: false,
-        appendTo: "root",
-        html: "",
-        onInit: (el, pswp) => {
-          const updateCaption = () => {
-            const caption =
-              pswp.currSlide.data.element?.dataset.pswpCaption ||
-              pswp.currSlide.data.alt ||
-              "";
-
-            el.innerHTML = caption
-              ? `<div class="pswp__cookscamps-caption-inner">${caption}</div>`
-              : "";
-          };
-
-          pswp.on("change", updateCaption);
-          updateCaption();
-        },
-      });
-    });
-
     lightbox.init();
-  }
+  });
 </script>
