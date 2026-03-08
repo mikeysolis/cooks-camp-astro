@@ -57,7 +57,7 @@ const cottagesByCategory = cottages.reduce<
                   bedrooms={cottage.data.bedrooms}
                   bathrooms={cottage.data.bathrooms}
                   category={cottage.data.category}
-                  hero={getCottagePhotoSet(cottage.id).hero}
+                  hero={getCottagePhotoSet(cottage.id).hero.src}
                 />
               ))}
             </div>

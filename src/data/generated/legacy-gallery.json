@@ -10,114 +10,190 @@
           {
             "full": "/images/legacy/beach/full-01.jpg",
             "thumb": "/images/legacy/beach/thumb-01.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 1"
           },
           {
             "full": "/images/legacy/beach/full-02.jpg",
             "thumb": "/images/legacy/beach/thumb-02.jpg",
+            "fullWidth": 930,
+            "fullHeight": 1400,
+            "thumbWidth": 478,
+            "thumbHeight": 720,
             "caption": "Ladder to the beach by Mike Davis",
             "alt": "Ladder to the beach by Mike Davis"
           },
           {
             "full": "/images/legacy/beach/full-03.jpg",
             "thumb": "/images/legacy/beach/thumb-03.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 900,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The Beach archive photo 3"
           },
           {
             "full": "/images/legacy/beach/full-04.jpg",
             "thumb": "/images/legacy/beach/thumb-04.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
             "caption": "",
             "alt": "The Beach archive photo 4"
           },
           {
             "full": "/images/legacy/beach/full-05.jpg",
             "thumb": "/images/legacy/beach/thumb-05.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 5"
           },
           {
             "full": "/images/legacy/beach/full-06.jpg",
             "thumb": "/images/legacy/beach/thumb-06.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 6"
           },
           {
             "full": "/images/legacy/beach/full-07.jpg",
             "thumb": "/images/legacy/beach/thumb-07.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 934,
+            "thumbWidth": 720,
+            "thumbHeight": 480,
             "caption": "",
             "alt": "The Beach archive photo 7"
           },
           {
             "full": "/images/legacy/beach/full-08.jpg",
             "thumb": "/images/legacy/beach/thumb-08.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "The ladder up the dune",
             "alt": "The ladder up the dune"
           },
           {
             "full": "/images/legacy/beach/full-09.jpg",
             "thumb": "/images/legacy/beach/thumb-09.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 929,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "Ladder up the dune by Mike Davis",
             "alt": "Ladder up the dune by Mike Davis"
           },
           {
             "full": "/images/legacy/beach/full-10.jpg",
             "thumb": "/images/legacy/beach/thumb-10.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 10"
           },
           {
             "full": "/images/legacy/beach/full-11.jpg",
             "thumb": "/images/legacy/beach/thumb-11.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 11"
           },
           {
             "full": "/images/legacy/beach/full-12.jpg",
             "thumb": "/images/legacy/beach/thumb-12.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 12"
           },
           {
             "full": "/images/legacy/beach/full-13.jpg",
             "thumb": "/images/legacy/beach/thumb-13.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "Clam bake on the beach",
             "alt": "Clam bake on the beach"
           },
           {
             "full": "/images/legacy/beach/full-14.jpg",
             "thumb": "/images/legacy/beach/thumb-14.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 14"
           },
           {
             "full": "/images/legacy/beach/full-15.jpg",
             "thumb": "/images/legacy/beach/thumb-15.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 15"
           },
           {
             "full": "/images/legacy/beach/full-16.jpg",
             "thumb": "/images/legacy/beach/thumb-16.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 16"
           },
           {
             "full": "/images/legacy/beach/full-17.jpg",
             "thumb": "/images/legacy/beach/thumb-17.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 17"
           },
           {
             "full": "/images/legacy/beach/full-18.jpg",
             "thumb": "/images/legacy/beach/thumb-18.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 930,
+            "thumbWidth": 720,
+            "thumbHeight": 478,
             "caption": "",
             "alt": "The Beach archive photo 18"
           },
           {
             "full": "/images/legacy/beach/full-19.jpg",
             "thumb": "/images/legacy/beach/thumb-19.jpg",
+            "fullWidth": 600,
+            "fullHeight": 822,
+            "thumbWidth": 526,
+            "thumbHeight": 720,
             "caption": "",
             "alt": "The Beach archive photo 19"
           }
@@ -136,60 +212,100 @@
           {
             "full": "/images/legacy/camps/full-01.jpg",
             "thumb": "/images/legacy/camps/thumb-01.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 1162,
+            "thumbWidth": 720,
+            "thumbHeight": 523,
             "caption": "Marconi is no stranger to the spotlight",
             "alt": "Marconi is no stranger to the spotlight"
           },
           {
             "full": "/images/legacy/camps/full-02.jpg",
             "thumb": "/images/legacy/camps/thumb-02.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "Sunrise as seen from the surf cam",
             "alt": "Sunrise as seen from the surf cam"
           },
           {
             "full": "/images/legacy/camps/full-03.jpg",
             "thumb": "/images/legacy/camps/thumb-03.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 1050,
+            "thumbWidth": 720,
+            "thumbHeight": 540,
             "caption": "Sun sets on another day",
             "alt": "Sun sets on another day"
           },
           {
             "full": "/images/legacy/camps/full-04.jpg",
             "thumb": "/images/legacy/camps/thumb-04.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 1200,
+            "thumbWidth": 720,
+            "thumbHeight": 540,
             "caption": "",
             "alt": "The camps archive photo 4"
           },
           {
             "full": "/images/legacy/camps/full-05.jpg",
             "thumb": "/images/legacy/camps/thumb-05.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 561,
+            "thumbWidth": 720,
+            "thumbHeight": 289,
             "caption": "",
             "alt": "The camps archive photo 5"
           },
           {
             "full": "/images/legacy/camps/full-06.jpg",
             "thumb": "/images/legacy/camps/thumb-06.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 1200,
+            "thumbWidth": 720,
+            "thumbHeight": 540,
             "caption": "",
             "alt": "The camps archive photo 6"
           },
           {
             "full": "/images/legacy/camps/full-07.jpg",
             "thumb": "/images/legacy/camps/thumb-07.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 1200,
+            "thumbWidth": 720,
+            "thumbHeight": 540,
             "caption": "",
             "alt": "The camps archive photo 7"
           },
           {
             "full": "/images/legacy/camps/full-08.jpg",
             "thumb": "/images/legacy/camps/thumb-08.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 933,
+            "thumbWidth": 720,
+            "thumbHeight": 480,
             "caption": "",
             "alt": "The camps archive photo 8"
           },
           {
             "full": "/images/legacy/camps/full-09.jpg",
             "thumb": "/images/legacy/camps/thumb-09.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 933,
+            "thumbWidth": 720,
+            "thumbHeight": 480,
             "caption": "",
             "alt": "The camps archive photo 9"
           },
           {
             "full": "/images/legacy/camps/full-10.jpg",
             "thumb": "/images/legacy/camps/thumb-10.jpg",
+            "fullWidth": 1600,
+            "fullHeight": 1200,
+            "thumbWidth": 720,
+            "thumbHeight": 540,
             "caption": "",
             "alt": "The camps archive photo 10"
           }
@@ -208,60 +324,100 @@
           {
             "full": "/images/legacy/sky-wildlife/full-01.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-01.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 1"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-02.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-02.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 2"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-03.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-03.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 3"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-04.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-04.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 4"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-05.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-05.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 5"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-06.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-06.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 6"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-07.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-07.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 7"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-08.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-08.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 8"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-09.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-09.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 9"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-10.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-10.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 787,
+            "thumbWidth": 720,
+            "thumbHeight": 405,
             "caption": "",
             "alt": "The camps from above archive photo 10"
           }
@@ -274,54 +430,90 @@
           {
             "full": "/images/legacy/sky-wildlife/full-11.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-11.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 737,
+            "thumbWidth": 720,
+            "thumbHeight": 379,
             "caption": "Two tuna cutting through a school of pogies",
             "alt": "Two tuna cutting through a school of pogies"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-12.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-12.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 737,
+            "thumbWidth": 720,
+            "thumbHeight": 379,
             "caption": "Humpback about to dive",
             "alt": "Humpback about to dive"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-13.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-13.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 737,
+            "thumbWidth": 720,
+            "thumbHeight": 379,
             "caption": "Humpback and tuna going after pogies",
             "alt": "Humpback and tuna going after pogies"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-14.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-14.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 738,
+            "thumbWidth": 720,
+            "thumbHeight": 380,
             "caption": "Humpback diving",
             "alt": "Humpback diving"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-15.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-15.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 737,
+            "thumbWidth": 720,
+            "thumbHeight": 379,
             "caption": "Humpback cutting through pogies",
             "alt": "Humpback cutting through pogies"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-16.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-16.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 738,
+            "thumbWidth": 720,
+            "thumbHeight": 380,
             "caption": "Leather back turtle (spotted by Cape ME)",
             "alt": "Leather back turtle (spotted by Cape ME)"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-17.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-17.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 738,
+            "thumbWidth": 720,
+            "thumbHeight": 380,
             "caption": "Sunfish",
             "alt": "Sunfish"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-18.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-18.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 738,
+            "thumbWidth": 720,
+            "thumbHeight": 380,
             "caption": "Pair of humpbacks",
             "alt": "Pair of humpbacks"
           },
           {
             "full": "/images/legacy/sky-wildlife/full-19.jpg",
             "thumb": "/images/legacy/sky-wildlife/thumb-19.jpg",
+            "fullWidth": 1400,
+            "fullHeight": 738,
+            "thumbWidth": 720,
+            "thumbHeight": 380,
             "caption": "Pair of humpbacks",
             "alt": "Pair of humpbacks"
           }
@@ -340,144 +532,240 @@
           {
             "full": "/images/legacy/historic/full-01.jpg",
             "thumb": "/images/legacy/historic/thumb-01.jpg",
+            "fullWidth": 750,
+            "fullHeight": 474,
+            "thumbWidth": 720,
+            "thumbHeight": 455,
             "caption": "Old US Coastguard Lifesaving Station at Cahoon Hollow. Now the Wellfleet Beachcomber.",
             "alt": "Old US Coastguard Lifesaving Station at Cahoon Hollow. Now the Wellfleet Beachcomber."
           },
           {
             "full": "/images/legacy/historic/full-02.jpg",
             "thumb": "/images/legacy/historic/thumb-02.jpg",
+            "fullWidth": 999,
+            "fullHeight": 816,
+            "thumbWidth": 720,
+            "thumbHeight": 588,
             "caption": "",
             "alt": "Historical Photos archive photo 2"
           },
           {
             "full": "/images/legacy/historic/full-03.jpg",
             "thumb": "/images/legacy/historic/thumb-03.jpg",
+            "fullWidth": 615,
+            "fullHeight": 510,
+            "thumbWidth": 615,
+            "thumbHeight": 510,
             "caption": "",
             "alt": "Historical Photos archive photo 3"
           },
           {
             "full": "/images/legacy/historic/full-04.jpg",
             "thumb": "/images/legacy/historic/thumb-04.jpg",
+            "fullWidth": 774,
+            "fullHeight": 536,
+            "thumbWidth": 720,
+            "thumbHeight": 499,
             "caption": "",
             "alt": "Historical Photos archive photo 4"
           },
           {
             "full": "/images/legacy/historic/full-05.jpg",
             "thumb": "/images/legacy/historic/thumb-05.jpg",
+            "fullWidth": 650,
+            "fullHeight": 522,
+            "thumbWidth": 650,
+            "thumbHeight": 522,
             "caption": "",
             "alt": "Historical Photos archive photo 5"
           },
           {
             "full": "/images/legacy/historic/full-06.jpg",
             "thumb": "/images/legacy/historic/thumb-06.jpg",
+            "fullWidth": 1000,
+            "fullHeight": 734,
+            "thumbWidth": 720,
+            "thumbHeight": 528,
             "caption": "",
             "alt": "Historical Photos archive photo 6"
           },
           {
             "full": "/images/legacy/historic/full-07.jpg",
             "thumb": "/images/legacy/historic/thumb-07.jpg",
+            "fullWidth": 650,
+            "fullHeight": 919,
+            "thumbWidth": 509,
+            "thumbHeight": 720,
             "caption": "",
             "alt": "Historical Photos archive photo 7"
           },
           {
             "full": "/images/legacy/historic/full-08.jpg",
             "thumb": "/images/legacy/historic/thumb-08.jpg",
+            "fullWidth": 1000,
+            "fullHeight": 667,
+            "thumbWidth": 720,
+            "thumbHeight": 480,
             "caption": "",
             "alt": "Historical Photos archive photo 8"
           },
           {
             "full": "/images/legacy/historic/full-09.jpg",
             "thumb": "/images/legacy/historic/thumb-09.jpg",
+            "fullWidth": 999,
+            "fullHeight": 790,
+            "thumbWidth": 720,
+            "thumbHeight": 569,
             "caption": "",
             "alt": "Historical Photos archive photo 9"
           },
           {
             "full": "/images/legacy/historic/full-10.jpg",
             "thumb": "/images/legacy/historic/thumb-10.jpg",
+            "fullWidth": 927,
+            "fullHeight": 710,
+            "thumbWidth": 720,
+            "thumbHeight": 551,
             "caption": "",
             "alt": "Historical Photos archive photo 10"
           },
           {
             "full": "/images/legacy/historic/full-11.jpg",
             "thumb": "/images/legacy/historic/thumb-11.jpg",
+            "fullWidth": 999,
+            "fullHeight": 725,
+            "thumbWidth": 720,
+            "thumbHeight": 523,
             "caption": "",
             "alt": "Historical Photos archive photo 11"
           },
           {
             "full": "/images/legacy/historic/full-12.jpg",
             "thumb": "/images/legacy/historic/thumb-12.jpg",
+            "fullWidth": 999,
+            "fullHeight": 641,
+            "thumbWidth": 720,
+            "thumbHeight": 462,
             "caption": "",
             "alt": "Historical Photos archive photo 12"
           },
           {
             "full": "/images/legacy/historic/full-13.jpg",
             "thumb": "/images/legacy/historic/thumb-13.jpg",
+            "fullWidth": 999,
+            "fullHeight": 806,
+            "thumbWidth": 720,
+            "thumbHeight": 581,
             "caption": "",
             "alt": "Historical Photos archive photo 13"
           },
           {
             "full": "/images/legacy/historic/full-14.jpg",
             "thumb": "/images/legacy/historic/thumb-14.jpg",
+            "fullWidth": 992,
+            "fullHeight": 583,
+            "thumbWidth": 720,
+            "thumbHeight": 423,
             "caption": "",
             "alt": "Historical Photos archive photo 14"
           },
           {
             "full": "/images/legacy/historic/full-15.jpg",
             "thumb": "/images/legacy/historic/thumb-15.jpg",
+            "fullWidth": 647,
+            "fullHeight": 570,
+            "thumbWidth": 647,
+            "thumbHeight": 570,
             "caption": "",
             "alt": "Historical Photos archive photo 15"
           },
           {
             "full": "/images/legacy/historic/full-16.jpg",
             "thumb": "/images/legacy/historic/thumb-16.jpg",
+            "fullWidth": 650,
+            "fullHeight": 506,
+            "thumbWidth": 650,
+            "thumbHeight": 506,
             "caption": "",
             "alt": "Historical Photos archive photo 16"
           },
           {
             "full": "/images/legacy/historic/full-17.jpg",
             "thumb": "/images/legacy/historic/thumb-17.jpg",
+            "fullWidth": 750,
+            "fullHeight": 600,
+            "thumbWidth": 720,
+            "thumbHeight": 576,
             "caption": "",
             "alt": "Historical Photos archive photo 17"
           },
           {
             "full": "/images/legacy/historic/full-18.jpg",
             "thumb": "/images/legacy/historic/thumb-18.jpg",
+            "fullWidth": 994,
+            "fullHeight": 724,
+            "thumbWidth": 720,
+            "thumbHeight": 524,
             "caption": "",
             "alt": "Historical Photos archive photo 18"
           },
           {
             "full": "/images/legacy/historic/full-19.jpg",
             "thumb": "/images/legacy/historic/thumb-19.jpg",
+            "fullWidth": 650,
+            "fullHeight": 884,
+            "thumbWidth": 529,
+            "thumbHeight": 720,
             "caption": "",
             "alt": "Historical Photos archive photo 19"
           },
           {
             "full": "/images/legacy/historic/full-20.jpg",
             "thumb": "/images/legacy/historic/thumb-20.jpg",
+            "fullWidth": 650,
+            "fullHeight": 1020,
+            "thumbWidth": 459,
+            "thumbHeight": 720,
             "caption": "",
             "alt": "Historical Photos archive photo 20"
           },
           {
             "full": "/images/legacy/historic/full-21.jpg",
             "thumb": "/images/legacy/historic/thumb-21.jpg",
+            "fullWidth": 996,
+            "fullHeight": 677,
+            "thumbWidth": 720,
+            "thumbHeight": 489,
             "caption": "",
             "alt": "Historical Photos archive photo 21"
           },
           {
             "full": "/images/legacy/historic/full-22.jpg",
             "thumb": "/images/legacy/historic/thumb-22.jpg",
+            "fullWidth": 1000,
+            "fullHeight": 643,
+            "thumbWidth": 720,
+            "thumbHeight": 463,
             "caption": "",
             "alt": "Historical Photos archive photo 22"
           },
           {
             "full": "/images/legacy/historic/full-23.jpg",
             "thumb": "/images/legacy/historic/thumb-23.jpg",
+            "fullWidth": 1000,
+            "fullHeight": 834,
+            "thumbWidth": 720,
+            "thumbHeight": 600,
             "caption": "",
             "alt": "Historical Photos archive photo 23"
           },
           {
             "full": "/images/legacy/historic/full-24.jpg",
             "thumb": "/images/legacy/historic/thumb-24.jpg",
+            "fullWidth": 741,
+            "fullHeight": 479,
+            "thumbWidth": 720,
+            "thumbHeight": 465,
             "caption": "",
             "alt": "Historical Photos archive photo 24"
           }

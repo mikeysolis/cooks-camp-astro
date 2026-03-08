@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import PhotoSwipeGallery from "../../components/PhotoSwipeGallery.astro";
 import { getCottagePhotoSet } from "../../data/cottage-photos";
 import Layout from "../../layouts/Layout.astro";
 
@@ -23,8 +24,8 @@ const photoSet = getCottagePhotoSet(entry.id);
       <div class="grid gap-0 lg:grid-cols-[1.35fr_0.95fr]">
         <div class="min-h-[18rem] bg-[var(--color-mist)]">
           <img
-            src={photoSet.hero}
-            alt={`Exterior or interior view of ${entry.data.title}`}
+            src={photoSet.hero.src}
+            alt={photoSet.hero.alt}
             class="h-full w-full object-cover"
           />
         </div>
@@ -107,23 +108,19 @@ const photoSet = getCottagePhotoSet(entry.id);
 
       {
         photoSet.photos.length > 0 ? (
-          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {photoSet.photos.map((photo, index) => (
-              <a
-                href={photo}
-                target="_blank"
-                rel="noreferrer"
-                class="group overflow-hidden rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)]"
-              >
-                <img
-                  src={photo}
-                  alt={`${entry.data.title} photo ${index + 1}`}
-                  class="aspect-[4/3] h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                  loading="lazy"
-                />
-              </a>
-            ))}
-          </div>
+          <PhotoSwipeGallery
+            galleryId={`cottage-gallery-${entry.id}`}
+            items={photoSet.photos.map((photo) => ({
+              full: photo.src,
+              fullWidth: photo.width,
+              fullHeight: photo.height,
+              thumb: photo.src,
+              thumbWidth: photo.width,
+              thumbHeight: photo.height,
+              alt: photo.alt,
+              caption: photo.caption,
+            }))}
+          />
         ) : (
           <section class="rounded-[1.5rem] border border-dashed border-[rgba(34,52,67,0.18)] bg-[rgba(244,239,229,0.65)] p-6">
             <p class="text-[var(--color-muted)]">

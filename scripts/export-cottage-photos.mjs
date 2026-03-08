@@ -28,7 +28,7 @@ function listSourceFiles(sourceDir) {
 }
 
 async function exportJpeg(inputPath, outputPath, maxDimension) {
-  await sharp(inputPath)
+  return sharp(inputPath)
     .rotate()
     .resize({
       width: maxDimension,
@@ -60,20 +60,31 @@ for (const cottage of cottagePhotoManifest) {
   mkdirSync(cottageOutputDir, { recursive: true });
 
   const heroOutputPath = path.join(cottageOutputDir, "hero.jpg");
-  await exportJpeg(sourceFiles[0], heroOutputPath, heroWidth);
+  const heroInfo = await exportJpeg(sourceFiles[0], heroOutputPath, heroWidth);
 
   const galleryPaths = [];
 
   for (const [index, inputPath] of sourceFiles.slice(1).entries()) {
     const fileName = `gallery-${String(index + 1).padStart(2, "0")}.jpg`;
     const outputPath = path.join(cottageOutputDir, fileName);
-    await exportJpeg(inputPath, outputPath, galleryWidth);
-    galleryPaths.push(`/images/cottages/${cottage.slug}/${fileName}`);
+    const info = await exportJpeg(inputPath, outputPath, galleryWidth);
+    galleryPaths.push({
+      src: `/images/cottages/${cottage.slug}/${fileName}`,
+      width: info.width,
+      height: info.height,
+      alt: `${cottage.title} photo ${index + 1}`,
+      caption: `${cottage.title} photo ${index + 1}`,
+    });
   }
 
   generatedManifest[cottage.slug] = {
     title: cottage.title,
-    hero: `/images/cottages/${cottage.slug}/hero.jpg`,
+    hero: {
+      src: `/images/cottages/${cottage.slug}/hero.jpg`,
+      width: heroInfo.width,
+      height: heroInfo.height,
+      alt: `Exterior or interior view of ${cottage.title}`,
+    },
     photos: galleryPaths,
     totalPhotos: sourceFiles.length,
   };

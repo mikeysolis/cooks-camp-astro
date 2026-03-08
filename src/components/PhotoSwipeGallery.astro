@@ -1,0 +1,109 @@
+---
+interface GalleryItem {
+  full: string;
+  fullWidth: number;
+  fullHeight: number;
+  thumb: string;
+  thumbWidth: number;
+  thumbHeight: number;
+  alt: string;
+  caption?: string;
+}
+
+interface Props {
+  galleryId: string;
+  items: GalleryItem[];
+  variant?: "modern" | "archive";
+  showCaptions?: boolean;
+}
+
+const { galleryId, items, variant = "modern", showCaptions = false } = Astro.props;
+const galleryClass =
+  variant === "archive"
+    ? "pswp-gallery grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
+    : "pswp-gallery grid gap-4 sm:grid-cols-2 xl:grid-cols-3";
+---
+
+<div id={galleryId} class={galleryClass}>
+  {
+    items.map((item) => (
+      <figure
+        class:list={[
+          variant === "archive"
+            ? "overflow-hidden rounded-[1.5rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]"
+            : "overflow-hidden rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)]",
+        ]}
+      >
+        <a
+          href={item.full}
+          data-pswp-width={item.fullWidth}
+          data-pswp-height={item.fullHeight}
+          data-pswp-caption={item.caption ?? item.alt}
+          class:list={[
+            "block overflow-hidden",
+            variant === "archive"
+              ? "rounded-[1.1rem] border border-[rgba(112,95,70,0.14)] bg-white/85"
+              : "",
+          ]}
+        >
+          <img
+            src={item.thumb}
+            width={item.thumbWidth}
+            height={item.thumbHeight}
+            alt={item.alt}
+            class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]"
+            loading="lazy"
+          />
+        </a>
+        {showCaptions && item.caption && (
+          <figcaption class="px-1 pb-1 pt-4 text-sm leading-6 text-[var(--color-muted)]">
+            {item.caption}
+          </figcaption>
+        )}
+      </figure>
+    ))
+  }
+</div>
+
+<script define:vars={{ galleryId }}>
+  const galleryElement = document.getElementById(galleryId);
+
+  if (galleryElement) {
+    const { default: PhotoSwipeLightbox } = await import("photoswipe/lightbox");
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: `#${galleryElement.id}`,
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+      showHideAnimationType: "zoom",
+      bgOpacity: 0.92,
+      paddingFn: () => ({ top: 36, bottom: 88, left: 24, right: 24 }),
+    });
+
+    lightbox.on("uiRegister", () => {
+      lightbox.pswp.ui.registerElement({
+        name: "cookscamps-caption",
+        order: 9,
+        isButton: false,
+        appendTo: "root",
+        html: "",
+        onInit: (el, pswp) => {
+          const updateCaption = () => {
+            const caption =
+              pswp.currSlide.data.element?.dataset.pswpCaption ||
+              pswp.currSlide.data.alt ||
+              "";
+
+            el.innerHTML = caption
+              ? `<div class="pswp__cookscamps-caption-inner">${caption}</div>`
+              : "";
+          };
+
+          pswp.on("change", updateCaption);
+          updateCaption();
+        },
+      });
+    });
+
+    lightbox.init();
+  }
+</script>

@@ -95,7 +95,7 @@ function parseGalleryPage(sourcePage) {
 }
 
 async function exportJpeg(inputPath, outputPath, width) {
-  await sharp(inputPath, { animated: true })
+  return sharp(inputPath, { animated: true })
     .rotate()
     .resize({
       width,
@@ -133,12 +133,16 @@ for (const categorySource of gallerySources) {
       const thumbOutput = path.join(categoryDir, `thumb-${basename}.jpg`);
       const fullInput = path.join(legacyRoot, item.fullSource);
 
-      await exportJpeg(fullInput, fullOutput, fullWidth);
-      await exportJpeg(fullInput, thumbOutput, thumbWidth);
+      const fullInfo = await exportJpeg(fullInput, fullOutput, fullWidth);
+      const thumbInfo = await exportJpeg(fullInput, thumbOutput, thumbWidth);
 
       items.push({
         full: `/images/legacy/${categorySource.category}/full-${basename}.jpg`,
         thumb: `/images/legacy/${categorySource.category}/thumb-${basename}.jpg`,
+        fullWidth: fullInfo.width,
+        fullHeight: fullInfo.height,
+        thumbWidth: thumbInfo.width,
+        thumbHeight: thumbInfo.height,
         caption: item.caption,
         alt: item.caption || `${parsed.title} archive photo ${items.length + 1}`,
       });

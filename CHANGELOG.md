@@ -60,3 +60,11 @@ All notable changes to this project will be documented in this file.
 - Added a repeatable legacy archive export pipeline based on the archived gallery pages in the legacy site copy
 - Exported and categorized archive images for beach, camps, sky-wildlife, and historic galleries
 - Replaced archive placeholders with rendered legacy gallery index and category pages
+
+## 0.0.7
+
+### Features
+
+- Added PhotoSwipe-based lightbox galleries for cottage photos and legacy archive pages
+- Added in-gallery previous/next navigation and caption rendering for archive images
+- Upgraded generated image manifests to include dimensions required by PhotoSwipe

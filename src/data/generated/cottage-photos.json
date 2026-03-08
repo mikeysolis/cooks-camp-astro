@@ -1,161 +1,603 @@
 {
   "marconi": {
     "title": "Marconi",
-    "hero": "/images/cottages/marconi/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/marconi/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Marconi"
+    },
     "photos": [
-      "/images/cottages/marconi/gallery-01.jpg",
-      "/images/cottages/marconi/gallery-02.jpg",
-      "/images/cottages/marconi/gallery-03.jpg",
-      "/images/cottages/marconi/gallery-04.jpg",
-      "/images/cottages/marconi/gallery-05.jpg",
-      "/images/cottages/marconi/gallery-06.jpg",
-      "/images/cottages/marconi/gallery-07.jpg",
-      "/images/cottages/marconi/gallery-08.jpg",
-      "/images/cottages/marconi/gallery-09.jpg",
-      "/images/cottages/marconi/gallery-10.jpg",
-      "/images/cottages/marconi/gallery-11.jpg",
-      "/images/cottages/marconi/gallery-12.jpg"
+      {
+        "src": "/images/cottages/marconi/gallery-01.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Marconi photo 1",
+        "caption": "Marconi photo 1"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 2",
+        "caption": "Marconi photo 2"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 3",
+        "caption": "Marconi photo 3"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 4",
+        "caption": "Marconi photo 4"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-05.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 5",
+        "caption": "Marconi photo 5"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-06.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 6",
+        "caption": "Marconi photo 6"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-07.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Marconi photo 7",
+        "caption": "Marconi photo 7"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-08.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 8",
+        "caption": "Marconi photo 8"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-09.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 9",
+        "caption": "Marconi photo 9"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-10.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 10",
+        "caption": "Marconi photo 10"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-11.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 11",
+        "caption": "Marconi photo 11"
+      },
+      {
+        "src": "/images/cottages/marconi/gallery-12.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Marconi photo 12",
+        "caption": "Marconi photo 12"
+      }
     ],
     "totalPhotos": 13
   },
   "big-guilda": {
     "title": "Big Guilda",
-    "hero": "/images/cottages/big-guilda/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/big-guilda/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Big Guilda"
+    },
     "photos": [
-      "/images/cottages/big-guilda/gallery-01.jpg",
-      "/images/cottages/big-guilda/gallery-02.jpg",
-      "/images/cottages/big-guilda/gallery-03.jpg",
-      "/images/cottages/big-guilda/gallery-04.jpg",
-      "/images/cottages/big-guilda/gallery-05.jpg",
-      "/images/cottages/big-guilda/gallery-06.jpg",
-      "/images/cottages/big-guilda/gallery-07.jpg"
+      {
+        "src": "/images/cottages/big-guilda/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 1",
+        "caption": "Big Guilda photo 1"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-02.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Big Guilda photo 2",
+        "caption": "Big Guilda photo 2"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 3",
+        "caption": "Big Guilda photo 3"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 4",
+        "caption": "Big Guilda photo 4"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-05.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 5",
+        "caption": "Big Guilda photo 5"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-06.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 6",
+        "caption": "Big Guilda photo 6"
+      },
+      {
+        "src": "/images/cottages/big-guilda/gallery-07.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Big Guilda photo 7",
+        "caption": "Big Guilda photo 7"
+      }
     ],
     "totalPhotos": 8
   },
   "pretty-home": {
     "title": "Pretty Home",
-    "hero": "/images/cottages/pretty-home/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/pretty-home/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Pretty Home"
+    },
     "photos": [
-      "/images/cottages/pretty-home/gallery-01.jpg",
-      "/images/cottages/pretty-home/gallery-02.jpg",
-      "/images/cottages/pretty-home/gallery-03.jpg",
-      "/images/cottages/pretty-home/gallery-04.jpg",
-      "/images/cottages/pretty-home/gallery-05.jpg",
-      "/images/cottages/pretty-home/gallery-06.jpg",
-      "/images/cottages/pretty-home/gallery-07.jpg",
-      "/images/cottages/pretty-home/gallery-08.jpg",
-      "/images/cottages/pretty-home/gallery-09.jpg"
+      {
+        "src": "/images/cottages/pretty-home/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 1",
+        "caption": "Pretty Home photo 1"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-02.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Pretty Home photo 2",
+        "caption": "Pretty Home photo 2"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 3",
+        "caption": "Pretty Home photo 3"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-04.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Pretty Home photo 4",
+        "caption": "Pretty Home photo 4"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-05.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 5",
+        "caption": "Pretty Home photo 5"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-06.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 6",
+        "caption": "Pretty Home photo 6"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-07.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 7",
+        "caption": "Pretty Home photo 7"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-08.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Pretty Home photo 8",
+        "caption": "Pretty Home photo 8"
+      },
+      {
+        "src": "/images/cottages/pretty-home/gallery-09.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pretty Home photo 9",
+        "caption": "Pretty Home photo 9"
+      }
     ],
     "totalPhotos": 10
   },
   "cones": {
     "title": "Cones",
-    "hero": "/images/cottages/cones/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/cones/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Cones"
+    },
     "photos": [
-      "/images/cottages/cones/gallery-01.jpg",
-      "/images/cottages/cones/gallery-02.jpg",
-      "/images/cottages/cones/gallery-03.jpg",
-      "/images/cottages/cones/gallery-04.jpg",
-      "/images/cottages/cones/gallery-05.jpg"
+      {
+        "src": "/images/cottages/cones/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Cones photo 1",
+        "caption": "Cones photo 1"
+      },
+      {
+        "src": "/images/cottages/cones/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Cones photo 2",
+        "caption": "Cones photo 2"
+      },
+      {
+        "src": "/images/cottages/cones/gallery-03.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Cones photo 3",
+        "caption": "Cones photo 3"
+      },
+      {
+        "src": "/images/cottages/cones/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Cones photo 4",
+        "caption": "Cones photo 4"
+      },
+      {
+        "src": "/images/cottages/cones/gallery-05.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Cones photo 5",
+        "caption": "Cones photo 5"
+      }
     ],
     "totalPhotos": 6
   },
   "oversea": {
     "title": "Oversea",
-    "hero": "/images/cottages/oversea/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/oversea/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Oversea"
+    },
     "photos": [
-      "/images/cottages/oversea/gallery-01.jpg",
-      "/images/cottages/oversea/gallery-02.jpg"
+      {
+        "src": "/images/cottages/oversea/gallery-01.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Oversea photo 1",
+        "caption": "Oversea photo 1"
+      },
+      {
+        "src": "/images/cottages/oversea/gallery-02.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Oversea photo 2",
+        "caption": "Oversea photo 2"
+      }
     ],
     "totalPhotos": 3
   },
   "sandy-scot": {
     "title": "Sandy Scot",
-    "hero": "/images/cottages/sandy-scot/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/sandy-scot/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Sandy Scot"
+    },
     "photos": [
-      "/images/cottages/sandy-scot/gallery-01.jpg",
-      "/images/cottages/sandy-scot/gallery-02.jpg",
-      "/images/cottages/sandy-scot/gallery-03.jpg",
-      "/images/cottages/sandy-scot/gallery-04.jpg"
+      {
+        "src": "/images/cottages/sandy-scot/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Sandy Scot photo 1",
+        "caption": "Sandy Scot photo 1"
+      },
+      {
+        "src": "/images/cottages/sandy-scot/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Sandy Scot photo 2",
+        "caption": "Sandy Scot photo 2"
+      },
+      {
+        "src": "/images/cottages/sandy-scot/gallery-03.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Sandy Scot photo 3",
+        "caption": "Sandy Scot photo 3"
+      },
+      {
+        "src": "/images/cottages/sandy-scot/gallery-04.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Sandy Scot photo 4",
+        "caption": "Sandy Scot photo 4"
+      }
     ],
     "totalPhotos": 5
   },
   "summer-salt": {
     "title": "Summer Salt",
-    "hero": "/images/cottages/summer-salt/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/summer-salt/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Summer Salt"
+    },
     "photos": [
-      "/images/cottages/summer-salt/gallery-01.jpg",
-      "/images/cottages/summer-salt/gallery-02.jpg"
+      {
+        "src": "/images/cottages/summer-salt/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Summer Salt photo 1",
+        "caption": "Summer Salt photo 1"
+      },
+      {
+        "src": "/images/cottages/summer-salt/gallery-02.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Summer Salt photo 2",
+        "caption": "Summer Salt photo 2"
+      }
     ],
     "totalPhotos": 3
   },
   "dunes": {
     "title": "Dunes",
-    "hero": "/images/cottages/dunes/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/dunes/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Dunes"
+    },
     "photos": [
-      "/images/cottages/dunes/gallery-01.jpg",
-      "/images/cottages/dunes/gallery-02.jpg",
-      "/images/cottages/dunes/gallery-03.jpg",
-      "/images/cottages/dunes/gallery-04.jpg"
+      {
+        "src": "/images/cottages/dunes/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Dunes photo 1",
+        "caption": "Dunes photo 1"
+      },
+      {
+        "src": "/images/cottages/dunes/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Dunes photo 2",
+        "caption": "Dunes photo 2"
+      },
+      {
+        "src": "/images/cottages/dunes/gallery-03.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "Dunes photo 3",
+        "caption": "Dunes photo 3"
+      },
+      {
+        "src": "/images/cottages/dunes/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Dunes photo 4",
+        "caption": "Dunes photo 4"
+      }
     ],
     "totalPhotos": 5
   },
   "pines": {
     "title": "Pines",
-    "hero": "/images/cottages/pines/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/pines/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Pines"
+    },
     "photos": [
-      "/images/cottages/pines/gallery-01.jpg",
-      "/images/cottages/pines/gallery-02.jpg",
-      "/images/cottages/pines/gallery-03.jpg",
-      "/images/cottages/pines/gallery-04.jpg"
+      {
+        "src": "/images/cottages/pines/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pines photo 1",
+        "caption": "Pines photo 1"
+      },
+      {
+        "src": "/images/cottages/pines/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pines photo 2",
+        "caption": "Pines photo 2"
+      },
+      {
+        "src": "/images/cottages/pines/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pines photo 3",
+        "caption": "Pines photo 3"
+      },
+      {
+        "src": "/images/cottages/pines/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Pines photo 4",
+        "caption": "Pines photo 4"
+      }
     ],
     "totalPhotos": 5
   },
   "sands": {
     "title": "Sands",
-    "hero": "/images/cottages/sands/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/sands/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Sands"
+    },
     "photos": [
-      "/images/cottages/sands/gallery-01.jpg",
-      "/images/cottages/sands/gallery-02.jpg"
+      {
+        "src": "/images/cottages/sands/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Sands photo 1",
+        "caption": "Sands photo 1"
+      },
+      {
+        "src": "/images/cottages/sands/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Sands photo 2",
+        "caption": "Sands photo 2"
+      }
     ],
     "totalPhotos": 3
   },
   "new-cabin": {
     "title": "New Cabin",
-    "hero": "/images/cottages/new-cabin/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/new-cabin/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of New Cabin"
+    },
     "photos": [
-      "/images/cottages/new-cabin/gallery-01.jpg",
-      "/images/cottages/new-cabin/gallery-02.jpg"
+      {
+        "src": "/images/cottages/new-cabin/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "New Cabin photo 1",
+        "caption": "New Cabin photo 1"
+      },
+      {
+        "src": "/images/cottages/new-cabin/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "New Cabin photo 2",
+        "caption": "New Cabin photo 2"
+      }
     ],
     "totalPhotos": 3
   },
   "little-guilda": {
     "title": "Little Guilda",
-    "hero": "/images/cottages/little-guilda/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/little-guilda/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Little Guilda"
+    },
     "photos": [
-      "/images/cottages/little-guilda/gallery-01.jpg",
-      "/images/cottages/little-guilda/gallery-02.jpg",
-      "/images/cottages/little-guilda/gallery-03.jpg",
-      "/images/cottages/little-guilda/gallery-04.jpg"
+      {
+        "src": "/images/cottages/little-guilda/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Little Guilda photo 1",
+        "caption": "Little Guilda photo 1"
+      },
+      {
+        "src": "/images/cottages/little-guilda/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Little Guilda photo 2",
+        "caption": "Little Guilda photo 2"
+      },
+      {
+        "src": "/images/cottages/little-guilda/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Little Guilda photo 3",
+        "caption": "Little Guilda photo 3"
+      },
+      {
+        "src": "/images/cottages/little-guilda/gallery-04.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Little Guilda photo 4",
+        "caption": "Little Guilda photo 4"
+      }
     ],
     "totalPhotos": 5
   },
   "camera": {
     "title": "Camera",
-    "hero": "/images/cottages/camera/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/camera/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of Camera"
+    },
     "photos": [
-      "/images/cottages/camera/gallery-01.jpg",
-      "/images/cottages/camera/gallery-02.jpg"
+      {
+        "src": "/images/cottages/camera/gallery-01.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Camera photo 1",
+        "caption": "Camera photo 1"
+      },
+      {
+        "src": "/images/cottages/camera/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "Camera photo 2",
+        "caption": "Camera photo 2"
+      }
     ],
     "totalPhotos": 3
   },
   "the-captain": {
     "title": "The Captain",
-    "hero": "/images/cottages/the-captain/hero.jpg",
+    "hero": {
+      "src": "/images/cottages/the-captain/hero.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Exterior or interior view of The Captain"
+    },
     "photos": [
-      "/images/cottages/the-captain/gallery-01.jpg",
-      "/images/cottages/the-captain/gallery-02.jpg",
-      "/images/cottages/the-captain/gallery-03.jpg"
+      {
+        "src": "/images/cottages/the-captain/gallery-01.jpg",
+        "width": 900,
+        "height": 1200,
+        "alt": "The Captain photo 1",
+        "caption": "The Captain photo 1"
+      },
+      {
+        "src": "/images/cottages/the-captain/gallery-02.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "The Captain photo 2",
+        "caption": "The Captain photo 2"
+      },
+      {
+        "src": "/images/cottages/the-captain/gallery-03.jpg",
+        "width": 1200,
+        "height": 900,
+        "alt": "The Captain photo 3",
+        "caption": "The Captain photo 3"
+      }
     ],
     "totalPhotos": 4
   }

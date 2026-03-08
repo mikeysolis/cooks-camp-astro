@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
+@import "photoswipe/style.css";
 
 @theme {
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -221,4 +222,25 @@ a {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.pswp__cookscamps-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1rem 1rem;
+  pointer-events: none;
+}
+
+.pswp__cookscamps-caption-inner {
+  max-width: 52rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: rgba(24, 31, 38, 0.78);
+  color: #f5efe4;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
