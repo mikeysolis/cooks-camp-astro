@@ -37,3 +37,10 @@ All notable changes to this project will be documented in this file.
 ### Updated
 
 - Modern photos are now rendered from a generated manifest instead of placeholder image paths
+
+## 0.0.4
+
+### Fixed
+
+- Replaced the `sips` photo export path with `sharp` after discovering `sips` was producing black images from the current photo set
+- Regenerated all cottage images with the corrected exporter

@@ -1,7 +1,7 @@
-import { execFileSync } from "node:child_process";
 import { mkdirSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
 import { cottagePhotoManifest } from "./cottage-photo-manifest.mjs";
 
 const heroWidth = 1600;
@@ -27,24 +27,20 @@ function listSourceFiles(sourceDir) {
     );
 }
 
-function exportJpeg(inputPath, outputPath, maxDimension) {
-  execFileSync(
-    "sips",
-    [
-      "-s",
-      "format",
-      "jpeg",
-      "-s",
-      "formatOptions",
-      String(jpegQuality),
-      "-Z",
-      String(maxDimension),
-      inputPath,
-      "--out",
-      outputPath,
-    ],
-    { stdio: "pipe" },
-  );
+async function exportJpeg(inputPath, outputPath, maxDimension) {
+  await sharp(inputPath)
+    .rotate()
+    .resize({
+      width: maxDimension,
+      height: maxDimension,
+      fit: "inside",
+      withoutEnlargement: true,
+    })
+    .jpeg({
+      quality: jpegQuality,
+      mozjpeg: true,
+    })
+    .toFile(outputPath);
 }
 
 mkdirSync(outputRoot, { recursive: true });
@@ -64,16 +60,16 @@ for (const cottage of cottagePhotoManifest) {
   mkdirSync(cottageOutputDir, { recursive: true });
 
   const heroOutputPath = path.join(cottageOutputDir, "hero.jpg");
-  exportJpeg(sourceFiles[0], heroOutputPath, heroWidth);
+  await exportJpeg(sourceFiles[0], heroOutputPath, heroWidth);
 
   const galleryPaths = [];
 
-  sourceFiles.slice(1).forEach((inputPath, index) => {
+  for (const [index, inputPath] of sourceFiles.slice(1).entries()) {
     const fileName = `gallery-${String(index + 1).padStart(2, "0")}.jpg`;
     const outputPath = path.join(cottageOutputDir, fileName);
-    exportJpeg(inputPath, outputPath, galleryWidth);
+    await exportJpeg(inputPath, outputPath, galleryWidth);
     galleryPaths.push(`/images/cottages/${cottage.slug}/${fileName}`);
-  });
+  }
 
   generatedManifest[cottage.slug] = {
     title: cottage.title,
