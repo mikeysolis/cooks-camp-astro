@@ -1,5 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import { getEntry, render } from "astro:content";
+import { cottageCategories } from "../data/cottage-categories";
 import Layout from "../layouts/Layout.astro";
 
 const entry = await getEntry("pages", "photos");
@@ -9,6 +11,12 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const cottages = await getCollection("cottages");
+const countsByCategory = cottages.reduce<Record<string, number>>((counts, cottage) => {
+  const key = cottage.data.category;
+  counts[key] = (counts[key] ?? 0) + 1;
+  return counts;
+}, {});
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
@@ -23,14 +31,15 @@ const { Content } = await render(entry);
 
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {
-        Array.from({ length: 3 }).map((_, index) => (
+        cottageCategories.map((category) => (
           <article class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/80 p-5">
             <div class="aspect-[4/3] rounded-[1.25rem] bg-[linear-gradient(145deg,rgba(84,114,136,0.15),rgba(232,225,209,0.9))]" />
             <h2 class="mt-4 font-display text-2xl text-[var(--color-ink)]">
-              Photo set placeholder {index + 1}
+              {category.title}
             </h2>
             <p class="mt-2 text-[var(--color-muted)]">
-              The resized interior photography will land in the next content pass.
+              {countsByCategory[category.key] ?? 0} cottages will feed
+              this group once the modern web-ready photo sets are exported.
             </p>
           </article>
         ))

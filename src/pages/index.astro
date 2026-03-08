@@ -1,5 +1,15 @@
 ---
+import { getCollection } from "astro:content";
+import CottageCard from "../components/CottageCard.astro";
 import Layout from "../layouts/Layout.astro";
+
+const cottages = (await getCollection("cottages")).sort((a, b) => {
+  const left = a.data.order ?? 999;
+  const right = b.data.order ?? 999;
+  return left - right;
+});
+
+const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0, 4);
 ---
 
 <Layout
@@ -10,58 +20,87 @@ import Layout from "../layouts/Layout.astro";
     <div class="space-y-6">
       <p class="eyebrow">South Wellfleet, Cape Cod</p>
       <h1 class="font-display text-6xl leading-[0.95] text-[var(--color-ink)] sm:text-7xl">
-        A quieter,
-        <span class="text-[var(--color-sea)]">heritage-first</span>
-        return to Cook's.
+        Cottages above the Atlantic,
+        <span class="text-[var(--color-sea)]">kept simple on purpose.</span>
       </h1>
       <p class="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
-        The new site is being rebuilt to feel closer to the historic Cook's
-        experience: calmer, more text-forward, and more respectful of the place,
-        while still making cottage browsing and photo viewing easier on modern
-        screens.
+        Cook's by the Ocean overlooks the Atlantic in South Wellfleet, with
+        fourteen cottages spread across several acres of bluff and dune. The
+        rebuild keeps the site modern enough to browse easily while restoring
+        more of the old Cook's tone: calm, place-forward, and unhurried.
       </p>
       <div class="flex flex-wrap gap-3">
         <a class="button-primary" href="/cottages">Browse Cottages</a>
-        <a class="button-secondary" href="/photos">View Photos</a>
+        <a class="button-secondary" href="/contact">Request Dates</a>
       </div>
     </div>
 
     <div class="overflow-hidden rounded-[2rem] border border-[rgba(34,52,67,0.14)] bg-[linear-gradient(160deg,rgba(253,251,246,0.92),rgba(215,205,184,0.86))] p-8 shadow-[0_24px_65px_rgba(34,52,67,0.10)]">
       <div class="space-y-5">
-        <h2 class="font-display text-4xl text-[var(--color-ink)]">Stage 0 foundation</h2>
+        <h2 class="font-display text-4xl text-[var(--color-ink)]">How it works</h2>
         <p class="text-[var(--color-muted)]">
-          This first milestone establishes the Astro shell, navigation, placeholder
-          routes, and content collections before the full cabin and photo migration.
+          Rentals remain simple. Availability is handled by email, cottages are
+          grouped by size, and weekly stays run Saturday to Saturday.
         </p>
         <dl class="grid gap-4 text-sm text-[var(--color-muted)]">
           <div class="rounded-[1.25rem] bg-white/70 p-4">
-            <dt class="font-semibold text-[var(--color-ink)]">Current facts kept</dt>
-            <dd class="mt-1">Email contact, weekly Saturday rhythm, cabin roster, and amenity wording.</dd>
+            <dt class="font-semibold text-[var(--color-ink)]">Current facts</dt>
+            <dd class="mt-1">Email contact, weekly Saturday rhythm, full kitchens, half baths, outdoor showers, WiFi, and Rinnai heaters.</dd>
           </div>
           <div class="rounded-[1.25rem] bg-white/70 p-4">
-            <dt class="font-semibold text-[var(--color-ink)]">Historic spirit restored</dt>
-            <dd class="mt-1">Sidebar structure, calmer pacing, and a more archival sense of place.</dd>
+            <dt class="font-semibold text-[var(--color-ink)]">Historic spirit</dt>
+            <dd class="mt-1">A quieter structure, stronger typography, and more room for the older voice of the camps to come through.</dd>
           </div>
         </dl>
       </div>
     </div>
   </section>
 
+  <section class="mt-14 space-y-6">
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+      <div class="space-y-3">
+        <p class="eyebrow">Featured Cottages</p>
+        <h2 class="section-title">A few places to begin.</h2>
+      </div>
+      <p class="max-w-2xl text-[var(--color-muted)]">
+        The cottages are still organized the way long-time visitors expect: large,
+        medium, and studio cottages, each with its own character.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-2">
+      {
+        featuredCottages.map((cottage) => (
+          <CottageCard
+            href={`/cottages/${cottage.id}`}
+            title={cottage.data.title}
+            description={cottage.data.description}
+            sleeps={cottage.data.sleeps}
+            bedrooms={cottage.data.bedrooms}
+            bathrooms={cottage.data.bathrooms}
+            category={cottage.data.category}
+            hero={cottage.data.hero}
+          />
+        ))
+      }
+    </div>
+  </section>
+
   <section class="mt-14 grid gap-6 md:grid-cols-3">
-    <a class="feature-card" href="/cottages">
-      <p class="eyebrow">Cottages</p>
-      <h2 class="feature-title">14 cabins, grouped by size.</h2>
-      <p class="feature-copy">The current operational structure remains intact while the browsing experience becomes more legible.</p>
+    <a class="feature-card" href="/photos">
+      <p class="eyebrow">Modern Photos</p>
+      <h2 class="feature-title">Current interiors, curated carefully.</h2>
+      <p class="feature-copy">Modern photos remain central to the rebuild and will make the cottages easier to understand at a glance.</p>
     </a>
     <a class="feature-card" href="/legacy">
       <p class="eyebrow">Archive</p>
-      <h2 class="feature-title">Legacy material stays visible.</h2>
-      <p class="feature-copy">The archive is permanent and category-based, separate from the current cabin photography.</p>
+      <h2 class="feature-title">Older material stays visible.</h2>
+      <p class="feature-copy">The archive remains permanent, category-based, and visually separate from current photography.</p>
     </a>
     <a class="feature-card" href="/contact">
       <p class="eyebrow">Contact</p>
-      <h2 class="feature-title">Simple by design.</h2>
-      <p class="feature-copy">Email remains primary. The request dates form will be added after the shell and content model are verified.</p>
+      <h2 class="feature-title">Simple, personal, direct.</h2>
+      <p class="feature-copy">No booking engine. Just cottages, dates, and a straightforward path to get in touch.</p>
     </a>
   </section>
 </Layout>

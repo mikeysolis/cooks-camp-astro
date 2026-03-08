@@ -3,6 +3,6 @@ title: "Photos"
 description: "Modern cabin photography and the visual character of the property."
 ---
 
-Photography is central to the new site. Modern interior images will live here and on individual cottage pages, giving visitors a clear sense of each place without crowding the interface.
+Photography is central to the new site. The current cabin photos are being prepared as a more curated modern gallery, with the same quieter presentation carried across the cottage pages.
 
-The final gallery pass will use resized web exports from the current photo set under `docs/current_photos/`.
+The goal is not to dump every image at once. It is to give visitors a clear, trustworthy sense of the interiors and the atmosphere of the camps while keeping the archive distinct.
