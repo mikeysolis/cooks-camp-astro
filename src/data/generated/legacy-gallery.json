@@ -1,0 +1,488 @@
+{
+  "beach": {
+    "coverImage": "/images/legacy/beach/thumb-01.jpg",
+    "itemCount": 19,
+    "groups": [
+      {
+        "title": "The Beach",
+        "description": "Largest private beach on the outer banks of Cape Cod.",
+        "items": [
+          {
+            "full": "/images/legacy/beach/full-01.jpg",
+            "thumb": "/images/legacy/beach/thumb-01.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 1"
+          },
+          {
+            "full": "/images/legacy/beach/full-02.jpg",
+            "thumb": "/images/legacy/beach/thumb-02.jpg",
+            "caption": "Ladder to the beach by Mike Davis",
+            "alt": "Ladder to the beach by Mike Davis"
+          },
+          {
+            "full": "/images/legacy/beach/full-03.jpg",
+            "thumb": "/images/legacy/beach/thumb-03.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 3"
+          },
+          {
+            "full": "/images/legacy/beach/full-04.jpg",
+            "thumb": "/images/legacy/beach/thumb-04.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 4"
+          },
+          {
+            "full": "/images/legacy/beach/full-05.jpg",
+            "thumb": "/images/legacy/beach/thumb-05.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 5"
+          },
+          {
+            "full": "/images/legacy/beach/full-06.jpg",
+            "thumb": "/images/legacy/beach/thumb-06.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 6"
+          },
+          {
+            "full": "/images/legacy/beach/full-07.jpg",
+            "thumb": "/images/legacy/beach/thumb-07.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 7"
+          },
+          {
+            "full": "/images/legacy/beach/full-08.jpg",
+            "thumb": "/images/legacy/beach/thumb-08.jpg",
+            "caption": "The ladder up the dune",
+            "alt": "The ladder up the dune"
+          },
+          {
+            "full": "/images/legacy/beach/full-09.jpg",
+            "thumb": "/images/legacy/beach/thumb-09.jpg",
+            "caption": "Ladder up the dune by Mike Davis",
+            "alt": "Ladder up the dune by Mike Davis"
+          },
+          {
+            "full": "/images/legacy/beach/full-10.jpg",
+            "thumb": "/images/legacy/beach/thumb-10.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 10"
+          },
+          {
+            "full": "/images/legacy/beach/full-11.jpg",
+            "thumb": "/images/legacy/beach/thumb-11.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 11"
+          },
+          {
+            "full": "/images/legacy/beach/full-12.jpg",
+            "thumb": "/images/legacy/beach/thumb-12.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 12"
+          },
+          {
+            "full": "/images/legacy/beach/full-13.jpg",
+            "thumb": "/images/legacy/beach/thumb-13.jpg",
+            "caption": "Clam bake on the beach",
+            "alt": "Clam bake on the beach"
+          },
+          {
+            "full": "/images/legacy/beach/full-14.jpg",
+            "thumb": "/images/legacy/beach/thumb-14.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 14"
+          },
+          {
+            "full": "/images/legacy/beach/full-15.jpg",
+            "thumb": "/images/legacy/beach/thumb-15.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 15"
+          },
+          {
+            "full": "/images/legacy/beach/full-16.jpg",
+            "thumb": "/images/legacy/beach/thumb-16.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 16"
+          },
+          {
+            "full": "/images/legacy/beach/full-17.jpg",
+            "thumb": "/images/legacy/beach/thumb-17.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 17"
+          },
+          {
+            "full": "/images/legacy/beach/full-18.jpg",
+            "thumb": "/images/legacy/beach/thumb-18.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 18"
+          },
+          {
+            "full": "/images/legacy/beach/full-19.jpg",
+            "thumb": "/images/legacy/beach/thumb-19.jpg",
+            "caption": "",
+            "alt": "The Beach archive photo 19"
+          }
+        ]
+      }
+    ]
+  },
+  "camps": {
+    "coverImage": "/images/legacy/camps/thumb-01.jpg",
+    "itemCount": 10,
+    "groups": [
+      {
+        "title": "The camps",
+        "description": "A walk around the compound",
+        "items": [
+          {
+            "full": "/images/legacy/camps/full-01.jpg",
+            "thumb": "/images/legacy/camps/thumb-01.jpg",
+            "caption": "Marconi is no stranger to the spotlight",
+            "alt": "Marconi is no stranger to the spotlight"
+          },
+          {
+            "full": "/images/legacy/camps/full-02.jpg",
+            "thumb": "/images/legacy/camps/thumb-02.jpg",
+            "caption": "Sunrise as seen from the surf cam",
+            "alt": "Sunrise as seen from the surf cam"
+          },
+          {
+            "full": "/images/legacy/camps/full-03.jpg",
+            "thumb": "/images/legacy/camps/thumb-03.jpg",
+            "caption": "Sun sets on another day",
+            "alt": "Sun sets on another day"
+          },
+          {
+            "full": "/images/legacy/camps/full-04.jpg",
+            "thumb": "/images/legacy/camps/thumb-04.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 4"
+          },
+          {
+            "full": "/images/legacy/camps/full-05.jpg",
+            "thumb": "/images/legacy/camps/thumb-05.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 5"
+          },
+          {
+            "full": "/images/legacy/camps/full-06.jpg",
+            "thumb": "/images/legacy/camps/thumb-06.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 6"
+          },
+          {
+            "full": "/images/legacy/camps/full-07.jpg",
+            "thumb": "/images/legacy/camps/thumb-07.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 7"
+          },
+          {
+            "full": "/images/legacy/camps/full-08.jpg",
+            "thumb": "/images/legacy/camps/thumb-08.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 8"
+          },
+          {
+            "full": "/images/legacy/camps/full-09.jpg",
+            "thumb": "/images/legacy/camps/thumb-09.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 9"
+          },
+          {
+            "full": "/images/legacy/camps/full-10.jpg",
+            "thumb": "/images/legacy/camps/thumb-10.jpg",
+            "caption": "",
+            "alt": "The camps archive photo 10"
+          }
+        ]
+      }
+    ]
+  },
+  "sky-wildlife": {
+    "coverImage": "/images/legacy/sky-wildlife/thumb-01.jpg",
+    "itemCount": 19,
+    "groups": [
+      {
+        "title": "The camps from above",
+        "description": "When Billy H. showed up with a hanglider we were all concerned, but the results are spectacular.",
+        "items": [
+          {
+            "full": "/images/legacy/sky-wildlife/full-01.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-01.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 1"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-02.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-02.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 2"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-03.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-03.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 3"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-04.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-04.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 4"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-05.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-05.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 5"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-06.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-06.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 6"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-07.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-07.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 7"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-08.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-08.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 8"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-09.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-09.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 9"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-10.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-10.jpg",
+            "caption": "",
+            "alt": "The camps from above archive photo 10"
+          }
+        ]
+      },
+      {
+        "title": "The ocean from above",
+        "description": "Amazing wildlife shots. All photos were taken just offshore from the cottages.",
+        "items": [
+          {
+            "full": "/images/legacy/sky-wildlife/full-11.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-11.jpg",
+            "caption": "Two tuna cutting through a school of pogies",
+            "alt": "Two tuna cutting through a school of pogies"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-12.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-12.jpg",
+            "caption": "Humpback about to dive",
+            "alt": "Humpback about to dive"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-13.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-13.jpg",
+            "caption": "Humpback and tuna going after pogies",
+            "alt": "Humpback and tuna going after pogies"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-14.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-14.jpg",
+            "caption": "Humpback diving",
+            "alt": "Humpback diving"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-15.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-15.jpg",
+            "caption": "Humpback cutting through pogies",
+            "alt": "Humpback cutting through pogies"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-16.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-16.jpg",
+            "caption": "Leather back turtle (spotted by Cape ME)",
+            "alt": "Leather back turtle (spotted by Cape ME)"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-17.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-17.jpg",
+            "caption": "Sunfish",
+            "alt": "Sunfish"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-18.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-18.jpg",
+            "caption": "Pair of humpbacks",
+            "alt": "Pair of humpbacks"
+          },
+          {
+            "full": "/images/legacy/sky-wildlife/full-19.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-19.jpg",
+            "caption": "Pair of humpbacks",
+            "alt": "Pair of humpbacks"
+          }
+        ]
+      }
+    ]
+  },
+  "historic": {
+    "coverImage": "/images/legacy/historic/thumb-01.jpg",
+    "itemCount": 24,
+    "groups": [
+      {
+        "title": "Historical Photos",
+        "description": "",
+        "items": [
+          {
+            "full": "/images/legacy/historic/full-01.jpg",
+            "thumb": "/images/legacy/historic/thumb-01.jpg",
+            "caption": "Old US Coastguard Lifesaving Station at Cahoon Hollow. Now the Wellfleet Beachcomber.",
+            "alt": "Old US Coastguard Lifesaving Station at Cahoon Hollow. Now the Wellfleet Beachcomber."
+          },
+          {
+            "full": "/images/legacy/historic/full-02.jpg",
+            "thumb": "/images/legacy/historic/thumb-02.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 2"
+          },
+          {
+            "full": "/images/legacy/historic/full-03.jpg",
+            "thumb": "/images/legacy/historic/thumb-03.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 3"
+          },
+          {
+            "full": "/images/legacy/historic/full-04.jpg",
+            "thumb": "/images/legacy/historic/thumb-04.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 4"
+          },
+          {
+            "full": "/images/legacy/historic/full-05.jpg",
+            "thumb": "/images/legacy/historic/thumb-05.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 5"
+          },
+          {
+            "full": "/images/legacy/historic/full-06.jpg",
+            "thumb": "/images/legacy/historic/thumb-06.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 6"
+          },
+          {
+            "full": "/images/legacy/historic/full-07.jpg",
+            "thumb": "/images/legacy/historic/thumb-07.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 7"
+          },
+          {
+            "full": "/images/legacy/historic/full-08.jpg",
+            "thumb": "/images/legacy/historic/thumb-08.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 8"
+          },
+          {
+            "full": "/images/legacy/historic/full-09.jpg",
+            "thumb": "/images/legacy/historic/thumb-09.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 9"
+          },
+          {
+            "full": "/images/legacy/historic/full-10.jpg",
+            "thumb": "/images/legacy/historic/thumb-10.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 10"
+          },
+          {
+            "full": "/images/legacy/historic/full-11.jpg",
+            "thumb": "/images/legacy/historic/thumb-11.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 11"
+          },
+          {
+            "full": "/images/legacy/historic/full-12.jpg",
+            "thumb": "/images/legacy/historic/thumb-12.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 12"
+          },
+          {
+            "full": "/images/legacy/historic/full-13.jpg",
+            "thumb": "/images/legacy/historic/thumb-13.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 13"
+          },
+          {
+            "full": "/images/legacy/historic/full-14.jpg",
+            "thumb": "/images/legacy/historic/thumb-14.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 14"
+          },
+          {
+            "full": "/images/legacy/historic/full-15.jpg",
+            "thumb": "/images/legacy/historic/thumb-15.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 15"
+          },
+          {
+            "full": "/images/legacy/historic/full-16.jpg",
+            "thumb": "/images/legacy/historic/thumb-16.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 16"
+          },
+          {
+            "full": "/images/legacy/historic/full-17.jpg",
+            "thumb": "/images/legacy/historic/thumb-17.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 17"
+          },
+          {
+            "full": "/images/legacy/historic/full-18.jpg",
+            "thumb": "/images/legacy/historic/thumb-18.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 18"
+          },
+          {
+            "full": "/images/legacy/historic/full-19.jpg",
+            "thumb": "/images/legacy/historic/thumb-19.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 19"
+          },
+          {
+            "full": "/images/legacy/historic/full-20.jpg",
+            "thumb": "/images/legacy/historic/thumb-20.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 20"
+          },
+          {
+            "full": "/images/legacy/historic/full-21.jpg",
+            "thumb": "/images/legacy/historic/thumb-21.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 21"
+          },
+          {
+            "full": "/images/legacy/historic/full-22.jpg",
+            "thumb": "/images/legacy/historic/thumb-22.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 22"
+          },
+          {
+            "full": "/images/legacy/historic/full-23.jpg",
+            "thumb": "/images/legacy/historic/thumb-23.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 23"
+          },
+          {
+            "full": "/images/legacy/historic/full-24.jpg",
+            "thumb": "/images/legacy/historic/thumb-24.jpg",
+            "caption": "",
+            "alt": "Historical Photos archive photo 24"
+          }
+        ]
+      }
+    ]
+  }
+}

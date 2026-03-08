@@ -52,3 +52,11 @@ All notable changes to this project will be documented in this file.
 - Added a server-backed contact form designed for Vercel deployment
 - Added validation, honeypot filtering, signed form timing checks, and a lightweight per-IP rate limiter
 - Added Resend-based email delivery configuration and example environment variables
+
+## 0.0.6
+
+### Features
+
+- Added a repeatable legacy archive export pipeline based on the archived gallery pages in the legacy site copy
+- Exported and categorized archive images for beach, camps, sky-wildlife, and historic galleries
+- Replaced archive placeholders with rendered legacy gallery index and category pages

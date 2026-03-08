@@ -1,5 +1,6 @@
 ---
 import { legacyCategories } from "../../data/legacy";
+import { getLegacyCategoryGallery } from "../../data/legacy-gallery";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -10,23 +11,48 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props;
+const gallery = getLegacyCategoryGallery(category.slug);
 ---
 
 <Layout title={category.title} description={category.description}>
   <section class="space-y-8">
     <div class="space-y-4">
-      <p class="eyebrow">Legacy Category</p>
+      <p class="eyebrow">From the Archive</p>
       <h1 class="page-title">{category.title}</h1>
       <p class="page-copy max-w-3xl">{category.description}</p>
     </div>
 
-    <div class="rounded-[1.75rem] border border-dashed border-[rgba(34,52,67,0.18)] bg-white/68 p-8">
-      <h2 class="section-title">More coming soon</h2>
-      <p class="mt-4 max-w-2xl text-[var(--color-muted)]">
-        The route is in place and the archive taxonomy is locked. Images will
-        be added folder-first in a later commit without changing the page
-        structure.
-      </p>
-    </div>
+    {
+      gallery.groups.map((group) => (
+        <section class="space-y-5">
+          <div class="space-y-3">
+            <h2 class="section-title">{group.title}</h2>
+            {group.description && (
+              <p class="max-w-3xl text-[var(--color-muted)]">{group.description}</p>
+            )}
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {group.items.map((item) => (
+              <figure class="overflow-hidden rounded-[1.5rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]">
+                <a href={item.full} target="_blank" rel="noreferrer" class="block overflow-hidden rounded-[1.1rem] border border-[rgba(112,95,70,0.14)] bg-white/85">
+                  <img
+                    src={item.thumb}
+                    alt={item.alt}
+                    class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </a>
+                {item.caption && (
+                  <figcaption class="px-1 pb-1 pt-4 text-sm leading-6 text-[var(--color-muted)]">
+                    {item.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        </section>
+      ))
+    }
   </section>
 </Layout>
