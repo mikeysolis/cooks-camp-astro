@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="twitter:card" content="summary_Large_image">
+  <meta name="twitter:title" content="Cooks Camps">
+  <meta name="twitter:description" content="Beachside Cottages" <meta name="twitter:image"
+    content="https://cookscamps.com/img/cape.jpg">
+
+  <title>Cook's by the Ocean</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  <script src="js/carousel.js"></script>
+
+</head>
+
+<style>
+  a:link {
+    color: #28629c;
+  }
+
+  a:hover color: #153d75;
+  text-decoration: none;
+  }
+
+  a:visited {
+    color: #28629c;
+  }
+
+  a:active {
+    color: #28629c;
+  }
+
+  a2:link {
+    color: white;
+  }
+
+  a2:hover color: red;
+  text-decoration: none;
+  }
+
+  a2:visited {
+    color: white;
+  }
+
+  a2:active {
+    color: white;
+  }
+
+
+  img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+  }
+
+
+  .gallerycontainer {
+    position: relative;
+  }
+
+  .thumbnail img {}
+
+  .thumbnail:hover {
+    background - color: transparent;
+  }
+
+  .thumbnail span {
+    position: absolute;
+    visibility: hidden;
+    text-decoration: none;
+  }
+
+  .thumbnail span img {
+    border - width: 0;
+  }
+
+  .thumbnail:hover span {
+    visibility: visible;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  img {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+  }
+
+  .success {
+    background-color: #4CAF50;
+  }
+
+  /* Green */
+  .info {
+    background-color: #2196F3;
+  }
+
+  /* blue */
+  .warning {
+    background-color: #ff9800;
+  }
+
+  /* Orange */
+  .danger {
+    background-color: #f44336;
+  }
+
+  /* Red */
+  .other {
+    background-color: #e7e7e7;
+    color: black;
+  }
+
+  /* Gray */
+
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("%20img/aerial/sunset_cooksCamps.jpg.html");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .navbar-brand {
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 17px;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  h3 {
+    font-family: "Aerial", Times, serif;
+  }
+
+
+
+
+
+  * {
+    box-sizing: border-box
+  }
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container_overlay {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+
+
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 18%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 170%;
+    transition: .5s ease;
+    opacity: 0.7;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: 90;
+  }
+
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: .9;
+  }
+
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay_upper_left {
+    position: absolute;
+    top: 2%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 170%;
+    transition: .5s ease;
+    opacity: 0.75;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: 90;
+  }
+
+  span.blockspam {
+    display: none;
+  }
+
+
+  < !--https: //www.flickr.com/photos/md91180/sets/72157610957900258/ link to add to external photos-->
+
+  < !-- https: //lik.com/collections/limited-edition/products/atlantic-escape-->
+  < !-- https: //startbootstrap.com/snippets/full-slider-->
+  < !--https: //getbootstrap.com/docs/4.3/components/carousel/-->
+</style>
+
+<body id="page-top">
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm  bg-light navbar-light fixed-top">
+    <div class="container">
+      <img class="mx-auto rounded-circle" style="max-width:6%; ></img>
+         <div class=" container">
+      <span class="fa-stack fa-2x">
+        <a <i class="fab fa-instagram" href="https://www.instagram.com/cookscamps32/" target="_blank"></a></span>
+      <a class="navbar-brand" href="index.html#page-top"> &nbsp; &nbsp; COOKS CAMPS </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-trigger" href="index.html#page-top">
+              <font color="grey"> Home
+            </a>
+          <li class="nav-item">
+            <a class="nav-link js-trigger" href="index.html#portfolio">
+              <font color="grey">Cottages
+            </a>
+          <li class="nav-item">
+            <a class="nav-link js-trigger" href="index.html#pictures">
+              <font color="grey">Pictures
+            </a>
+          <li class="nav-item">
+
+            <a class="nav-link js-trigger" href="index.html#contact">
+              <font color="grey">Contact
+            </a>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('carousel1.JPG')">
+          <div class="carousel-caption d-md-block">
+
+            <div class="intro-lead-in text-white"> </div><br><br>
+
+            <h3 class="display-5">Wellfleet Beach Cottages</h3>
+
+            <div class="col-lg-16 text-center">Private Beach</div>
+            <div class="col-lg-16 text-center">Weekly Rentals</div>
+            <div class="col-lg-16 text-center"></div>
+
+
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+
+        <div class="carousel-item" style="background-image: url('carousel2.JPG')">
+          <div class="carousel-caption d-md-block">
+
+            <div class="intro-lead-in text-white"> </div><br><br>
+
+            <div class="col-lg-16 text-center">a place like no other</div>
+
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('carousel3.JPG')">
+          <div class="carousel-caption d-md-block">
+
+            <div class="intro-lead-in text-white"> </div><br><br>
+
+
+            <div class="col-lg-16 text-center">a place like no other</div>
+
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('carousel4.JPG')">
+          <div class="carousel-caption d-md-block">
+
+            <div class="intro-lead-in text-white"> </div><br><br>
+
+
+            <div class="col-lg-16 text-center">a place like no other</div>
+
+
+          </div>
+        </div>
+
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('carousel5.jpg')">
+          <div class="carousel-caption d-md-block">
+
+            <div class="intro-lead-in text-white"> </div><br><br>
+
+            <div class="col-lg-16 text-center">a place like no other</div>
+
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="index.html#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="index.html#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <br>
+
+
+
+  <!-- Mission -->
+  <section class="page-section" id="mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="section-heading text-uppercase"></h4>
+
+          <h3 class="section-subheading text-muted text-left">
+            <b>Cook's by the Ocean</b> is the finest beachside cottage colony in the world. Cooks overlooks the Atlantic
+            Ocean in Wellfleet, MA with fourteen
+            cottages available for weekly rental. The cottages are spaced over several acres of beachfront property and
+            are
+            located at the top of an 80 foot sand dune. The property is just south of LeCount Hollow Beach with access
+            to the
+            largest private beach on the outer banks of Cape Cod.
+
+            <!--<br><br>-->
+            <!--All cottages are equipped with full kitchens, half baths, outdoor showers and WiFi. -->
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <section class="bg-light page-section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-heading text-uppercase">Availability & Reservations</h3>
+            <p>
+              To <strong>check availability</strong> or make <strong>reservations</strong> please email us at
+              <span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span>
+              cooksbytheocean@<!-- sdfjsdhfkjypcs -->gmail.com
+            </p>
+            <p>
+              All of our rentals are by the week, Saturday to Saturday.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+    <!-- Photo Galleries -->
+
+    <section page-section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-heading text-uppercase">Individual Cottages</h3>
+            <h3 class="section-subheading text-muted">All cottages are complete with a full kitchen, half bath, outdoor
+              shower, WiFi and Rinnai propane heater.</h3>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="small.html"> <img class="rounded mx-auto d-block" src="img/cottages/camera/image_1r.JPG">
+              </a>
+              <h4>Studio Cottages</h4>
+              <p class="text-muted">Sleep up to 2 people </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="medium.html"> <img class="rounded mx-auto d-block" src="img/cottages/dunes/dunes1.JPG">
+              </a>
+              <h4>One Bedroom Cottages</h4>
+              <p class="text-muted">Sleep up to 4 or 5 people </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="large.html"> <img class="rounded mx-auto d-block" src="img/cottages/marconi/image_1f.JPG">
+              </a>
+              <h4>Two Bedroom Cottages</h4>
+              <p class="text-muted">Sleep up to 5, 6 or 7 people. Complete wtih fireplace.</p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- https://www.bonfire.com/support-safer-ocean-recreation/ -->
+
+    <br>
+    <br>
+
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+    <!-- Photo Galleries -->
+
+    <section class="bg-light page-section" id="pictures">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-heading text-uppercase">photo albums</h3>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="gallery_aerial.html"> <img class="rounded mx-auto d-block" src="img/aerial/aerial4r.JPG">
+              </a>
+              <h4>Cooks From the Air</h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="gallery_wild.html"> <img class="rounded mx-auto d-block" src="img/drone_wildlife/image_02.jpg" s>
+              </a>
+              <h4>Amazing Wildlife Shots </h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="gallery_historic.html"> <img class="rounded mx-auto d-block" src="img/historic/image_0.jpg" s>
+              </a>
+              <h4>Historical Photos</h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="gallery_camps.html"> <img class="rounded mx-auto d-block" src="img/camps/camps13r.jpg" s>
+              </a>
+              <h4>The Camps</h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="gallery_beach.html"> <img class="rounded mx-auto d-block" src="img/beach/image_0r.jpg" s>
+              </a>
+              <h4>The Beach</h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <a href="https://www.flickr.com/photos/md91180/sets/72157610957900258/" target=blank> <img
+                  class="rounded mx-auto d-block" src="img/cottages/camera/image_7f.jpg" s>
+              </a>
+              <h4>Through the Lens of Mike Davis</h4>
+              <p class="text-muted"> </p>
+              <p class="small text-muted">
+                </a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+
+
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Photo Galleries -->
+
+
+
+    <!-- Header -->
+
+    <!-- Photo Galleries -->
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-white">Cooks by the Ocean<br>PO Box 237
+            <br>South Wellfleet, MA 02663 <br> cooksbytheocean@gmail.com <a2>
+              <font color="white"> </font>
+            </a2>
+          </h3>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-left">
+        <div class="col-md-6">
+          <span class="copyright">Copyright &copy; Cooks by the Ocean 2019 <br>
+            Special thanks to all those who provided some great photos
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+    <!-- Enable responsive clickable image-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="image-map-resizer-master/js/imageMapResizer.min.js"></script>
+    <script type="text/javascript">
+
+      $('map').imageMapResize();
+
+    </script>
+    <script>
+      <!-- allow link to open modal-->
+      $(document).ready(function () {
+        if (window.location.href.indexOf('#portfolioModal1') != -1) {
+          $('#portfolioModal1').modal('show');
+        }
+
+      });
+    </script>
+
+
+
+
+</body>
+
+</html>
