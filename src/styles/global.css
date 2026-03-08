@@ -178,3 +178,47 @@ a {
 .prose :where(a) {
   color: var(--color-sea);
 }
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.contact-input {
+  width: 100%;
+  border: 1px solid rgba(34, 52, 67, 0.16);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.9rem 1rem;
+  font: inherit;
+  color: var(--color-ink);
+  box-sizing: border-box;
+}
+
+.contact-input:focus {
+  outline: 2px solid rgba(84, 114, 136, 0.22);
+  outline-offset: 2px;
+  border-color: rgba(84, 114, 136, 0.45);
+}
+
+.contact-error {
+  font-size: 0.95rem;
+  color: #924936;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

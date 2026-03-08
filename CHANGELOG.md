@@ -44,3 +44,11 @@ All notable changes to this project will be documented in this file.
 
 - Replaced the `sips` photo export path with `sharp` after discovering `sips` was producing black images from the current photo set
 - Regenerated all cottage images with the corrected exporter
+
+## 0.0.5
+
+### Features
+
+- Added a server-backed contact form designed for Vercel deployment
+- Added validation, honeypot filtering, signed form timing checks, and a lightweight per-IP rate limiter
+- Added Resend-based email delivery configuration and example environment variables

@@ -1,4 +1,9 @@
 ---
+export const prerender = false;
+
+import { isInputError } from "astro:actions";
+import { actions } from "astro:actions";
+import { signContactFormTimestamp } from "../lib/contact-form";
 import { getEntry, render } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
@@ -9,6 +14,28 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const result = Astro.getActionResult(actions.requestDates);
+const fieldErrors = isInputError(result?.error) ? result.error.fields : {};
+const formError = result?.error && !isInputError(result.error) ? result.error.message : "";
+const successMessage = result?.data?.message ?? "";
+const formStartedAt = Date.now().toString();
+const formToken = signContactFormTimestamp(formStartedAt);
+const cottages = [
+  "Marconi",
+  "Big Guilda",
+  "Pretty Home",
+  "Cones",
+  "Oversea",
+  "Sandy Scot",
+  "Summer Salt",
+  "Dunes",
+  "Pines",
+  "Sands",
+  "New Cabin",
+  "Little Guilda",
+  "Camera",
+  "The Captain",
+];
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
@@ -22,6 +49,102 @@ const { Content } = await render(entry);
     </div>
 
     <div class="space-y-6">
+      {
+        successMessage && (
+          <section class="rounded-[1.5rem] border border-[rgba(79,111,86,0.18)] bg-[rgba(232,241,232,0.9)] p-6 text-[var(--color-ink)]">
+            <h2 class="section-title">Request Sent</h2>
+            <p class="mt-3 text-[var(--color-muted)]">{successMessage}</p>
+          </section>
+        )
+      }
+
+      {
+        formError && (
+          <section class="rounded-[1.5rem] border border-[rgba(146,73,54,0.16)] bg-[rgba(250,239,233,0.92)] p-6 text-[var(--color-ink)]">
+            <h2 class="section-title">Unable to Send</h2>
+            <p class="mt-3 text-[var(--color-muted)]">{formError}</p>
+          </section>
+        )
+      }
+
+      <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/85 p-6 shadow-[0_18px_45px_rgba(34,52,67,0.08)]">
+        <div class="space-y-3">
+          <p class="eyebrow">Request Dates</p>
+          <h2 class="section-title">Send an Availability Request</h2>
+          <p class="text-[var(--color-muted)]">
+            Weekly rentals remain Saturday to Saturday. If you know which cottage
+            you are considering, include it here.
+          </p>
+        </div>
+
+        <form method="POST" action={actions.requestDates} class="mt-6 space-y-5">
+          <input type="hidden" name="formStartedAt" value={formStartedAt} />
+          <input type="hidden" name="formToken" value={formToken} />
+
+          <div class="contact-honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="contact-field">
+              <span class="contact-label">Name</span>
+              <input class="contact-input" type="text" name="name" autocomplete="name" required />
+              {fieldErrors.name && <span class="contact-error">{fieldErrors.name[0]}</span>}
+            </label>
+
+            <label class="contact-field">
+              <span class="contact-label">Email</span>
+              <input class="contact-input" type="email" name="email" autocomplete="email" required />
+              {fieldErrors.email && <span class="contact-error">{fieldErrors.email[0]}</span>}
+            </label>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr]">
+            <label class="contact-field">
+              <span class="contact-label">Cottage</span>
+              <select class="contact-input" name="cottage">
+                <option value="">No preference yet</option>
+                {cottages.map((cottage) => <option value={cottage}>{cottage}</option>)}
+              </select>
+              {fieldErrors.cottage && <span class="contact-error">{fieldErrors.cottage[0]}</span>}
+            </label>
+
+            <label class="contact-field">
+              <span class="contact-label">Guests</span>
+              <input class="contact-input" type="text" name="partySize" inputmode="numeric" />
+              {fieldErrors.partySize && <span class="contact-error">{fieldErrors.partySize[0]}</span>}
+            </label>
+          </div>
+
+          <label class="contact-field">
+            <span class="contact-label">Preferred dates</span>
+            <input
+              class="contact-input"
+              type="text"
+              name="preferredDates"
+              placeholder="Example: July 11 to July 18"
+              required
+            />
+            {fieldErrors.preferredDates && (
+              <span class="contact-error">{fieldErrors.preferredDates[0]}</span>
+            )}
+          </label>
+
+          <label class="contact-field">
+            <span class="contact-label">Message</span>
+            <textarea
+              class="contact-input min-h-36 resize-y"
+              name="message"
+              placeholder="Anything else that would help narrow the search."
+            />
+            {fieldErrors.message && <span class="contact-error">{fieldErrors.message[0]}</span>}
+          </label>
+
+          <button class="button-primary" type="submit">Send Request</button>
+        </form>
+      </section>
+
       <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/82 p-6">
         <h2 class="section-title">Current Contact Details</h2>
         <dl class="mt-4 space-y-4 text-[var(--color-muted)]">
@@ -48,7 +171,8 @@ const { Content } = await render(entry);
         <h2 class="section-title">What to Include</h2>
         <p class="mt-4 text-[var(--color-muted)]">
           If you are writing about a stay, the most helpful details are your
-          preferred dates, the cottage you are considering, and anything else
+          preferred dates, the cottage you are considering, the size of your
+          group, and anything else
           that would help narrow the search.
         </p>
       </section>
