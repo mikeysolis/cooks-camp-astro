@@ -1,0 +1,56 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const entry = await getEntry("pages", "contact");
+
+if (!entry) {
+  throw new Error("Missing contact page content.");
+}
+
+const { Content } = await render(entry);
+---
+
+<Layout title={entry.data.title} description={entry.data.description}>
+  <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+    <div class="space-y-6">
+      <p class="eyebrow">Contact / Request Dates</p>
+      <h1 class="page-title">{entry.data.title}</h1>
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/82 p-6">
+        <h2 class="section-title">Current Contact Details</h2>
+        <dl class="mt-4 space-y-4 text-[var(--color-muted)]">
+          <div>
+            <dt class="font-semibold text-[var(--color-ink)]">Email</dt>
+            <dd class="mt-1">
+              <a class="text-[var(--color-sea)] underline decoration-[rgba(84,114,136,0.35)] underline-offset-4" href="mailto:cooksbytheocean@gmail.com">
+                cooksbytheocean@gmail.com
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-semibold text-[var(--color-ink)]">Mailing Address</dt>
+            <dd class="mt-1">PO Box 237, South Wellfleet, MA 02663</dd>
+          </div>
+          <div>
+            <dt class="font-semibold text-[var(--color-ink)]">Rental Rhythm</dt>
+            <dd class="mt-1">Weekly rentals, Saturday to Saturday.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="rounded-[1.5rem] border border-dashed border-[rgba(34,52,67,0.18)] bg-[rgba(244,239,229,0.7)] p-6">
+        <h2 class="section-title">Next Commit</h2>
+        <p class="mt-4 text-[var(--color-muted)]">
+          The request dates form will be added after the shell and content model
+          foundation are verified.
+        </p>
+      </section>
+    </div>
+  </section>
+</Layout>

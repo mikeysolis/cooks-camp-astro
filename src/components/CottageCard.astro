@@ -1,0 +1,52 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  sleeps: number;
+  bedrooms: number;
+  bathrooms: string | number;
+  category: "large" | "medium" | "small";
+  hero: string;
+}
+
+const { href, title, description, sleeps, bedrooms, bathrooms, category, hero } =
+  Astro.props;
+---
+
+<a
+  href={href}
+  class="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-[rgba(34,52,67,0.14)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(34,52,67,0.12)]"
+>
+  <div class="aspect-[4/3] overflow-hidden border-b border-[rgba(34,52,67,0.1)] bg-[var(--color-mist)]">
+    <img
+      src={hero}
+      alt={`View of ${title}`}
+      class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+      loading="lazy"
+    />
+  </div>
+  <div class="flex flex-1 flex-col gap-4 p-5">
+    <div class="flex items-start justify-between gap-3">
+      <h2 class="font-display text-3xl text-[var(--color-ink)]">{title}</h2>
+      <span class="rounded-full border border-[rgba(34,52,67,0.14)] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[var(--color-sea)]">
+        {category}
+      </span>
+    </div>
+    <p class="text-base leading-7 text-[var(--color-muted)]">{description}</p>
+    <dl class="mt-auto grid grid-cols-3 gap-3 border-t border-[rgba(34,52,67,0.1)] pt-4 text-sm text-[var(--color-ink)]">
+      <div>
+        <dt class="text-[var(--color-muted)]">Sleeps</dt>
+        <dd class="mt-1 font-semibold">{sleeps}</dd>
+      </div>
+      <div>
+        <dt class="text-[var(--color-muted)]">Bedrooms</dt>
+        <dd class="mt-1 font-semibold">{bedrooms === 0 ? "Studio" : bedrooms}</dd>
+      </div>
+      <div>
+        <dt class="text-[var(--color-muted)]">Bath</dt>
+        <dd class="mt-1 font-semibold">{bathrooms}</dd>
+      </div>
+    </dl>
+  </div>
+</a>

@@ -1,0 +1,32 @@
+---
+import { legacyCategories } from "../../data/legacy";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return legacyCategories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+---
+
+<Layout title={category.title} description={category.description}>
+  <section class="space-y-8">
+    <div class="space-y-4">
+      <p class="eyebrow">Legacy Category</p>
+      <h1 class="page-title">{category.title}</h1>
+      <p class="page-copy max-w-3xl">{category.description}</p>
+    </div>
+
+    <div class="rounded-[1.75rem] border border-dashed border-[rgba(34,52,67,0.18)] bg-white/68 p-8">
+      <h2 class="section-title">More coming soon</h2>
+      <p class="mt-4 max-w-2xl text-[var(--color-muted)]">
+        The route is in place and the archive taxonomy is locked. Images will
+        be added folder-first in a later commit without changing the page
+        structure.
+      </p>
+    </div>
+  </section>
+</Layout>

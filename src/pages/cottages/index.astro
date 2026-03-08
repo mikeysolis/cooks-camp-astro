@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import CottageCard from "../../components/CottageCard.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const cottages = (await getCollection("cottages")).sort((a, b) => {
+  const left = a.data.order ?? 999;
+  const right = b.data.order ?? 999;
+  return left - right;
+});
+---
+
+<Layout
+  title="Cottages"
+  description="Browse the cottages at Cook's by the Ocean by size and character."
+>
+  <section class="space-y-6">
+    <div class="space-y-4">
+      <p class="eyebrow">Choose a Cottage</p>
+      <h1 class="page-title">A calm way to browse the camps.</h1>
+      <p class="page-copy max-w-3xl">
+        This is the foundation version of the cottages index. The final pass will
+        preserve the current grouping by size while leaning into the historic
+        voice and more curated imagery.
+      </p>
+    </div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      {
+        cottages.map((cottage) => (
+          <CottageCard
+            href={`/cottages/${cottage.slug}`}
+            title={cottage.data.title}
+            description={cottage.data.description}
+            sleeps={cottage.data.sleeps}
+            bedrooms={cottage.data.bedrooms}
+            bathrooms={cottage.data.bathrooms}
+            category={cottage.data.category}
+            hero={cottage.data.hero}
+          />
+        ))
+      }
+    </div>
+  </section>
+</Layout>

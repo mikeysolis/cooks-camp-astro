@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#e7dfd1"/>
+  <path d="M0 760C192 698 355 665 490 662C662 658 772 737 910 743C1082 750 1214 675 1379 659C1472 650 1546 657 1600 668V1000H0V760Z" fill="#d2c6ae"/>
+  <path d="M443 703L790 409L1121 703V724H1043V514H910V724H540V724H443V703Z" fill="#5c7382"/>
+  <path d="M910 514H1023V724H910V514Z" fill="#4d6270"/>
+  <rect x="614" y="572" width="116" height="94" fill="#d7c5a6"/>
+  <rect x="758" y="572" width="116" height="94" fill="#d7c5a6"/>
+  <rect x="952" y="573" width="96" height="151" fill="#ede4d5"/>
+  <path d="M713 441L761 371H848L877 441H713Z" fill="#8f6248"/>
+  <path d="M0 721C158 680 299 658 423 654C618 648 721 722 876 733C1049 744 1202 676 1385 659C1470 651 1542 654 1600 662V1000H0V721Z" fill="#c5b899" opacity=".65"/>
+  <text x="800" y="902" text-anchor="middle" fill="#223443" font-family="Georgia, serif" font-size="54">Cook's by the Ocean</text>
+  <text x="800" y="950" text-anchor="middle" fill="#587186" font-family="Georgia, serif" font-size="24" letter-spacing="6">FOUNDATION PLACEHOLDER</text>
+</svg>

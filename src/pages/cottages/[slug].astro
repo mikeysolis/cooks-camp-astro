@@ -1,0 +1,92 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const cottages = await getCollection("cottages");
+
+  return cottages.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={entry.data.title} description={entry.data.description}>
+  <article class="space-y-10">
+    <section class="overflow-hidden rounded-[2rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_20px_60px_rgba(34,52,67,0.08)]">
+      <div class="grid gap-0 lg:grid-cols-[1.35fr_0.95fr]">
+        <div class="min-h-[18rem] bg-[var(--color-mist)]">
+          <img
+            src={entry.data.hero}
+            alt={`Exterior or interior view of ${entry.data.title}`}
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="flex flex-col justify-between gap-8 p-8">
+          <div class="space-y-4">
+            <p class="eyebrow">{entry.data.category} cottage</p>
+            <h1 class="page-title">{entry.data.title}</h1>
+            <p class="page-copy">{entry.data.description}</p>
+          </div>
+          <dl class="grid grid-cols-2 gap-4 rounded-[1.5rem] border border-[rgba(34,52,67,0.1)] bg-[rgba(244,239,229,0.7)] p-5 text-sm">
+            <div>
+              <dt class="text-[var(--color-muted)]">Sleeps</dt>
+              <dd class="mt-1 text-lg font-semibold text-[var(--color-ink)]">{entry.data.sleeps}</dd>
+            </div>
+            <div>
+              <dt class="text-[var(--color-muted)]">Bedrooms</dt>
+              <dd class="mt-1 text-lg font-semibold text-[var(--color-ink)]">
+                {entry.data.bedrooms === 0 ? "Studio" : entry.data.bedrooms}
+              </dd>
+            </div>
+            <div>
+              <dt class="text-[var(--color-muted)]">Bath</dt>
+              <dd class="mt-1 text-lg font-semibold text-[var(--color-ink)]">{entry.data.bathrooms}</dd>
+            </div>
+            <div>
+              <dt class="text-[var(--color-muted)]">Status</dt>
+              <dd class="mt-1 text-lg font-semibold text-[var(--color-ink)]">Sample content loaded</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+      <div class="space-y-5">
+        <h2 class="section-title">Description</h2>
+        <div class="prose prose-lg max-w-none">
+          <Content />
+        </div>
+      </div>
+
+      <aside class="space-y-6">
+        <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/80 p-6">
+          <h2 class="section-title">Amenities</h2>
+          <ul class="mt-4 space-y-3 text-[var(--color-muted)]">
+            {entry.data.amenities.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+
+        <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-[rgba(84,114,136,0.08)] p-6">
+          <h2 class="section-title">Request Dates</h2>
+          <p class="mt-4 text-[var(--color-muted)]">
+            This first milestone verifies the cottage route and layout. The email
+            contact path remains live while the request form is added in a later
+            commit.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <a class="button-primary" href="/contact">Contact</a>
+            <a class="button-secondary" href="mailto:cooksbytheocean@gmail.com">
+              Email
+            </a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </article>
+</Layout>

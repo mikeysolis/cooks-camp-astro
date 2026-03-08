@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Cook's by the Ocean"
+  description="A heritage-first rebuild of Cook's by the Ocean in South Wellfleet."
+>
+  <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+    <div class="space-y-6">
+      <p class="eyebrow">South Wellfleet, Cape Cod</p>
+      <h1 class="font-display text-6xl leading-[0.95] text-[var(--color-ink)] sm:text-7xl">
+        A quieter,
+        <span class="text-[var(--color-sea)]">heritage-first</span>
+        return to Cook's.
+      </h1>
+      <p class="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
+        The new site is being rebuilt to feel closer to the historic Cook's
+        experience: calmer, more text-forward, and more respectful of the place,
+        while still making cottage browsing and photo viewing easier on modern
+        screens.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a class="button-primary" href="/cottages">Browse Cottages</a>
+        <a class="button-secondary" href="/photos">View Photos</a>
+      </div>
+    </div>
+
+    <div class="overflow-hidden rounded-[2rem] border border-[rgba(34,52,67,0.14)] bg-[linear-gradient(160deg,rgba(253,251,246,0.92),rgba(215,205,184,0.86))] p-8 shadow-[0_24px_65px_rgba(34,52,67,0.10)]">
+      <div class="space-y-5">
+        <h2 class="font-display text-4xl text-[var(--color-ink)]">Stage 0 foundation</h2>
+        <p class="text-[var(--color-muted)]">
+          This first milestone establishes the Astro shell, navigation, placeholder
+          routes, and content collections before the full cabin and photo migration.
+        </p>
+        <dl class="grid gap-4 text-sm text-[var(--color-muted)]">
+          <div class="rounded-[1.25rem] bg-white/70 p-4">
+            <dt class="font-semibold text-[var(--color-ink)]">Current facts kept</dt>
+            <dd class="mt-1">Email contact, weekly Saturday rhythm, cabin roster, and amenity wording.</dd>
+          </div>
+          <div class="rounded-[1.25rem] bg-white/70 p-4">
+            <dt class="font-semibold text-[var(--color-ink)]">Historic spirit restored</dt>
+            <dd class="mt-1">Sidebar structure, calmer pacing, and a more archival sense of place.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-14 grid gap-6 md:grid-cols-3">
+    <a class="feature-card" href="/cottages">
+      <p class="eyebrow">Cottages</p>
+      <h2 class="feature-title">14 cabins, grouped by size.</h2>
+      <p class="feature-copy">The current operational structure remains intact while the browsing experience becomes more legible.</p>
+    </a>
+    <a class="feature-card" href="/legacy">
+      <p class="eyebrow">Archive</p>
+      <h2 class="feature-title">Legacy material stays visible.</h2>
+      <p class="feature-copy">The archive is permanent and category-based, separate from the current cabin photography.</p>
+    </a>
+    <a class="feature-card" href="/contact">
+      <p class="eyebrow">Contact</p>
+      <h2 class="feature-title">Simple by design.</h2>
+      <p class="feature-copy">Email remains primary. The request dates form will be added after the shell and content model are verified.</p>
+    </a>
+  </section>
+</Layout>
