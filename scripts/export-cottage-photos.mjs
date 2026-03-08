@@ -73,7 +73,7 @@ for (const cottage of cottagePhotoManifest) {
       width: info.width,
       height: info.height,
       alt: `${cottage.title} photo ${index + 1}`,
-      caption: `${cottage.title} photo ${index + 1}`,
+      caption: "",
     });
   }
 

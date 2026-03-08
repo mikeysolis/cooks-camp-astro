@@ -68,3 +68,10 @@ All notable changes to this project will be documented in this file.
 - Added PhotoSwipe-based lightbox galleries for cottage photos and legacy archive pages
 - Added in-gallery previous/next navigation and caption rendering for archive images
 - Upgraded generated image manifests to include dimensions required by PhotoSwipe
+
+## 0.0.8
+
+### Updated
+
+- Restored lightbox captions on the working PhotoSwipe runtime path
+- Removed low-value numbered captions from cottage lightbox slides while preserving archive descriptions
