@@ -72,7 +72,7 @@ for (const cottage of cottagePhotoManifest) {
       src: `/images/cottages/${cottage.slug}/${fileName}`,
       width: info.width,
       height: info.height,
-      alt: `${cottage.title} photo ${index + 1}`,
+      alt: `Interior view of ${cottage.title} cottage`,
       caption: "",
     });
   }
@@ -83,7 +83,7 @@ for (const cottage of cottagePhotoManifest) {
       src: `/images/cottages/${cottage.slug}/hero.jpg`,
       width: heroInfo.width,
       height: heroInfo.height,
-      alt: `Exterior or interior view of ${cottage.title}`,
+      alt: `View of ${cottage.title} cottage`,
     },
     photos: galleryPaths,
     totalPhotos: sourceFiles.length,

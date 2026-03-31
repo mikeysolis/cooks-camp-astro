@@ -26,7 +26,7 @@ const galleryClass =
 
 <div id={galleryId} class={galleryClass}>
   {
-    items.map((item) => (
+    items.map((item, index) => (
       <figure
         class:list={[
           variant === "archive"
@@ -39,6 +39,9 @@ const galleryClass =
           data-pswp-width={item.fullWidth}
           data-pswp-height={item.fullHeight}
           data-pswp-caption={item.caption ?? item.alt}
+          aria-label={item.caption
+            ? `Open image ${index + 1} of ${items.length}: ${item.caption}`
+            : `Open image ${index + 1} of ${items.length}: ${item.alt}`}
           class:list={[
             "block overflow-hidden",
             variant === "archive"

@@ -20,6 +20,7 @@ const formError = result?.error && !isInputError(result.error) ? result.error.me
 const successMessage = result?.data?.message ?? "";
 const formStartedAt = Date.now().toString();
 const formToken = signContactFormTimestamp(formStartedAt);
+const hasFieldErrors = Object.keys(fieldErrors).length > 0;
 const cottages = [
   "Marconi",
   "Big Guilda",
@@ -51,7 +52,11 @@ const cottages = [
     <div class="space-y-6">
       {
         successMessage && (
-          <section class="rounded-[1.5rem] border border-[rgba(79,111,86,0.18)] bg-[rgba(232,241,232,0.9)] p-6 text-[var(--color-ink)]">
+          <section
+            class="rounded-[1.5rem] border border-[rgba(79,111,86,0.18)] bg-[rgba(232,241,232,0.9)] p-6 text-[var(--color-ink)]"
+            role="status"
+            aria-live="polite"
+          >
             <h2 class="section-title">Request Sent</h2>
             <p class="mt-3 text-[var(--color-muted)]">{successMessage}</p>
           </section>
@@ -60,7 +65,11 @@ const cottages = [
 
       {
         formError && (
-          <section class="rounded-[1.5rem] border border-[rgba(146,73,54,0.16)] bg-[rgba(250,239,233,0.92)] p-6 text-[var(--color-ink)]">
+          <section
+            class="rounded-[1.5rem] border border-[rgba(146,73,54,0.16)] bg-[rgba(250,239,233,0.92)] p-6 text-[var(--color-ink)]"
+            role="alert"
+            aria-live="assertive"
+          >
             <h2 class="section-title">Unable to Send</h2>
             <p class="mt-3 text-[var(--color-muted)]">{formError}</p>
           </section>
@@ -71,13 +80,18 @@ const cottages = [
         <div class="space-y-3">
           <p class="eyebrow">Request Dates</p>
           <h2 class="section-title">Send an Availability Request</h2>
-          <p class="text-[var(--color-muted)]">
+          <p class="text-[var(--color-muted)]" id="request-form-help">
             Weekly rentals remain Saturday to Saturday. If you know which cottage
             you are considering, include it here.
           </p>
         </div>
 
-        <form method="POST" action={actions.requestDates} class="mt-6 space-y-5">
+        <form
+          method="POST"
+          action={actions.requestDates}
+          class="mt-6 space-y-5"
+          aria-describedby={hasFieldErrors ? "request-form-help request-form-errors" : "request-form-help"}
+        >
           <input type="hidden" name="formStartedAt" value={formStartedAt} />
           <input type="hidden" name="formToken" value={formToken} />
 
@@ -86,34 +100,74 @@ const cottages = [
             <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
           </div>
 
+          {hasFieldErrors && (
+            <p
+              id="request-form-errors"
+              class="rounded-[1rem] border border-[rgba(146,73,54,0.16)] bg-[rgba(250,239,233,0.92)] px-4 py-3 text-sm text-[var(--color-ink)]"
+              role="alert"
+            >
+              Please correct the highlighted fields and try again.
+            </p>
+          )}
+
           <div class="grid gap-5 sm:grid-cols-2">
             <label class="contact-field">
               <span class="contact-label">Name</span>
-              <input class="contact-input" type="text" name="name" autocomplete="name" required />
-              {fieldErrors.name && <span class="contact-error">{fieldErrors.name[0]}</span>}
+              <input
+                class="contact-input"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                aria-invalid={fieldErrors.name ? "true" : "false"}
+                aria-describedby={fieldErrors.name ? "name-error" : undefined}
+              />
+              {fieldErrors.name && <span class="contact-error" id="name-error">{fieldErrors.name[0]}</span>}
             </label>
 
             <label class="contact-field">
               <span class="contact-label">Email</span>
-              <input class="contact-input" type="email" name="email" autocomplete="email" required />
-              {fieldErrors.email && <span class="contact-error">{fieldErrors.email[0]}</span>}
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-invalid={fieldErrors.email ? "true" : "false"}
+                aria-describedby={fieldErrors.email ? "email-error" : undefined}
+              />
+              {fieldErrors.email && <span class="contact-error" id="email-error">{fieldErrors.email[0]}</span>}
             </label>
           </div>
 
           <div class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr]">
             <label class="contact-field">
               <span class="contact-label">Cottage</span>
-              <select class="contact-input" name="cottage">
+              <select
+                class="contact-input"
+                name="cottage"
+                aria-invalid={fieldErrors.cottage ? "true" : "false"}
+                aria-describedby={fieldErrors.cottage ? "cottage-error" : undefined}
+              >
                 <option value="">No preference yet</option>
                 {cottages.map((cottage) => <option value={cottage}>{cottage}</option>)}
               </select>
-              {fieldErrors.cottage && <span class="contact-error">{fieldErrors.cottage[0]}</span>}
+              {fieldErrors.cottage && <span class="contact-error" id="cottage-error">{fieldErrors.cottage[0]}</span>}
             </label>
 
             <label class="contact-field">
               <span class="contact-label">Guests</span>
-              <input class="contact-input" type="text" name="partySize" inputmode="numeric" />
-              {fieldErrors.partySize && <span class="contact-error">{fieldErrors.partySize[0]}</span>}
+              <input
+                class="contact-input"
+                type="text"
+                name="partySize"
+                inputmode="numeric"
+                aria-invalid={fieldErrors.partySize ? "true" : "false"}
+                aria-describedby={fieldErrors.partySize ? "party-size-error" : undefined}
+              />
+              {fieldErrors.partySize && (
+                <span class="contact-error" id="party-size-error">{fieldErrors.partySize[0]}</span>
+              )}
             </label>
           </div>
 
@@ -125,9 +179,11 @@ const cottages = [
               name="preferredDates"
               placeholder="Example: July 11 to July 18"
               required
+              aria-invalid={fieldErrors.preferredDates ? "true" : "false"}
+              aria-describedby={fieldErrors.preferredDates ? "preferred-dates-error" : undefined}
             />
             {fieldErrors.preferredDates && (
-              <span class="contact-error">{fieldErrors.preferredDates[0]}</span>
+              <span class="contact-error" id="preferred-dates-error">{fieldErrors.preferredDates[0]}</span>
             )}
           </label>
 
@@ -137,8 +193,10 @@ const cottages = [
               class="contact-input min-h-36 resize-y"
               name="message"
               placeholder="Anything else that would help narrow the search."
+              aria-invalid={fieldErrors.message ? "true" : "false"}
+              aria-describedby={fieldErrors.message ? "message-error" : undefined}
             />
-            {fieldErrors.message && <span class="contact-error">{fieldErrors.message[0]}</span>}
+            {fieldErrors.message && <span class="contact-error" id="message-error">{fieldErrors.message[0]}</span>}
           </label>
 
           <button class="button-primary" type="submit">Send Request</button>
