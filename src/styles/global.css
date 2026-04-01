@@ -7,7 +7,7 @@
   src: url("/fonts/bickham-script-pro/BickhamScriptPro-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   src: url("/fonts/bickham-script-pro/BickhamScriptPro-Semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
+  font-display: block;
 }
 
 @theme {
