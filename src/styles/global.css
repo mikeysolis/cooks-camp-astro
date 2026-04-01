@@ -120,6 +120,18 @@ textarea:focus-visible {
   margin-left: 3.1rem;
 }
 
+.mobile-site-wordmark {
+  font-size: 3.35rem;
+  line-height: 0.84;
+}
+
+.mobile-site-tagline {
+  font-size: 1.7rem;
+  line-height: 0.8;
+  margin-top: -0.92rem;
+  margin-left: 2.1rem;
+}
+
 .page-copy {
   font-size: 1.125rem;
   line-height: 1.8;
