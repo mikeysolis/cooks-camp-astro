@@ -18,6 +18,4 @@ featured: false
 order: 12
 ---
 
-Little Guilda sits on a small hill just back from the bluff and has one of the best views in the camps, looking south over the Cape Cod National Seashore. It sleeps two and keeps the compact, studio-style layout of the smaller cottages.
-
-The historic site ties Little Guilda closely to Big Guilda, remembering both cottages as part of an earlier story on these dunes. That family connection gives the cottage a little more weight than its size suggests.
+Little Guilda has one of the best views in the entire camps. Situated on a small hill set just back from the bluff and looking out over the Cape Cod National Seashore to the south, Little Guilda sleeps two people.

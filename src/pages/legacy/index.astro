@@ -15,7 +15,7 @@ const { Content } = await render(entry);
 <Layout title={entry.data.title} description={entry.data.description}>
   <section class="space-y-8">
     <div class="space-y-4">
-      <p class="eyebrow">Archive</p>
+      <p class="eyebrow">Historic Gallery</p>
       <h1 class="page-title">{entry.data.title}</h1>
       <div class="prose prose-lg max-w-3xl">
         <Content />
@@ -40,7 +40,7 @@ const { Content } = await render(entry);
             <div class="space-y-3 p-4">
               <div class="flex items-start justify-between gap-3">
                 <div>
-                  <p class="eyebrow">From the Archive</p>
+                  <p class="eyebrow">Historic Gallery</p>
                   <h2 class="mt-3 font-display text-3xl text-[var(--color-ink)]">{category.title}</h2>
                 </div>
                 <span class="rounded-full border border-[rgba(112,95,70,0.18)] bg-white/75 px-3 py-1 text-xs uppercase tracking-[0.22em] text-[var(--color-sea)]">

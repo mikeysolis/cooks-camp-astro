@@ -1,8 +1,8 @@
 ---
 title: "Photos"
-description: "Modern cabin photography and the visual character of the property."
+description: "Current photographs of the cottages and the property."
 ---
 
-Photography is central to the new site. The current cabin photos are presented as a more curated modern gallery, with the same quieter presentation carried across the cottage pages.
+There are three different size cottages of which no two cottages are the same. The large cottages have fireplaces and all cottages have heaters to keep them warm and cozy in the spring and fall. Each cottage has its own personality and history.
 
-The goal is not to dump every image at once. It is to give visitors a clear, trustworthy sense of the interiors and the atmosphere of the camps while keeping the archive distinct.
+For older photographs of Cook's, the camps, and the beach, see the Historic Gallery.

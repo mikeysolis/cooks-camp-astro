@@ -18,6 +18,4 @@ featured: false
 order: 6
 ---
 
-Sandy Scot overlooks the center of the camps and toward the Atlantic. It has one bedroom with both a full and a twin bed, and it sleeps five.
-
-The historic language for Sandy Scot focused on how much camp life you could see from it in summer. That vantage still feels important, placing the cottage within the middle of the compound rather than off to one side.
+Sandy Scot looks out over the center of the camps and towards the Atlantic. It has a single bedroom with both a full and twin size bed. Sandy Scot sleeps five people.

@@ -2,21 +2,36 @@ export const legacyCategories = [
   {
     slug: "beach",
     title: "The Beach",
-    description: "Private shoreline, dune paths, and the Atlantic beyond the bluff.",
+    description: "Private shoreline, dune paths, surf, and older beach days at Cook's.",
   },
   {
     slug: "camps",
     title: "The Camps",
-    description: "Views across the compound, flagpole moments, and the shape of the place.",
+    description: "Views across the compound, the bluff, the flagpole, and daily life around the cottages.",
+  },
+  {
+    slug: "dawn-dusk",
+    title: "Dawn & Dusk",
+    description: "Sunrise, moonrise, sunset, beach fires, and the changing light over the Atlantic.",
+  },
+  {
+    slug: "interiors",
+    title: "Interiors",
+    description: "Older views inside the cottages, including kitchens, bedrooms, and living rooms.",
   },
   {
     slug: "sky-wildlife",
     title: "Sky & Wildlife",
-    description: "Aerial views, offshore life, and the weather and light that define the bluff.",
+    description: "Aerial views, offshore life, and the weather that defines the bluff.",
+  },
+  {
+    slug: "winter",
+    title: "Winter",
+    description: "Off-season views of the cottages and dune in colder months.",
   },
   {
     slug: "historic",
-    title: "From the Archive",
-    description: "Older photographs that carry the family memory of Cook's forward.",
+    title: "Historic Photos",
+    description: "Older photographs of Cook's, earlier seasons, and family history at the camps.",
   },
 ];

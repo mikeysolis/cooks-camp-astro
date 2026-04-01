@@ -94,39 +94,6 @@ const galleryClass =
         paddingFn: () => ({ top: 36, bottom: 88, left: 24, right: 24 }),
       });
 
-      lightbox.on("uiRegister", () => {
-        lightbox.pswp?.ui.registerElement({
-          name: "cookscamps-caption",
-          order: 9,
-          isButton: false,
-          appendTo: "root",
-          html: "",
-          onInit: (el, pswp) => {
-            const updateCaption = () => {
-              const slideElement = pswp.currSlide?.data?.element;
-              const caption =
-                slideElement instanceof HTMLElement
-                  ? slideElement.dataset.pswpCaption?.trim() || ""
-                  : "";
-
-              el.replaceChildren();
-
-              if (!caption) {
-                return;
-              }
-
-              const content = document.createElement("div");
-              content.className = "pswp__cookscamps-caption-inner";
-              content.textContent = caption;
-              el.append(content);
-            };
-
-            pswp.on("change", updateCaption);
-            updateCaption();
-          },
-        });
-      });
-
       lightbox.init();
     });
   }

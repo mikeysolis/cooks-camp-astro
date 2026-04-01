@@ -17,6 +17,4 @@ featured: false
 order: 7
 ---
 
-Summer Salt is a medium cottage with one bedroom and room for four. It looks out over the center of the camps and toward LeCount Hollow Beach to the north.
-
-Older copy described Summer Salt in a very plainspoken way, and that still fits. It is part of the strength of Cook's that even the smaller descriptions feel settled and sure of themselves.
+Summer Salt looks out over the center of the camps and LeCount Hollow Beach to the north. Summer Salt has one bedroom and sleeps four people.

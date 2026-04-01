@@ -15,20 +15,21 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
 
 <Layout
   title="Cook's by the Ocean"
-  description="A heritage-first rebuild of Cook's by the Ocean in South Wellfleet."
+  description="Fourteen cottages above the Atlantic in South Wellfleet, available for weekly rental."
 >
   <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
     <div class="space-y-6">
       <p class="eyebrow">South Wellfleet, Cape Cod</p>
       <h1 class="font-display text-6xl leading-[0.95] text-[var(--color-ink)] sm:text-7xl">
-        Cottages above the Atlantic,
-        <span class="text-[var(--color-sea)]">kept simple on purpose.</span>
+        Cook's by the Ocean.
+        <span class="text-[var(--color-sea)]">Happy Birthday Dad!</span>
+        <!-- <span class="text-[var(--color-sea)]">Over 85 years on the dunes above the Atlantic.</span> -->
       </h1>
       <p class="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
-        Cook's by the Ocean overlooks the Atlantic in South Wellfleet, with
-        fourteen cottages spread across several acres of bluff and dune. The
-        rebuild keeps the site modern enough to browse easily while restoring
-        more of the old Cook's tone: calm, place-forward, and unhurried.
+        In continuous operation by the same family for over 85 years, Cook's
+        remains a place where simplicity and peace define both the time you
+        spend here and the memories you take away. Fourteen cottages sit above
+        the Atlantic in South Wellfleet, just south of LeCount Hollow Beach.
       </p>
       <div class="flex flex-wrap gap-3">
         <a class="button-primary" href="/cottages">Browse Cottages</a>
@@ -38,19 +39,22 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
 
     <div class="overflow-hidden rounded-[2rem] border border-[rgba(34,52,67,0.14)] bg-[linear-gradient(160deg,rgba(253,251,246,0.92),rgba(215,205,184,0.86))] p-8 shadow-[0_24px_65px_rgba(34,52,67,0.10)]">
       <div class="space-y-5">
-        <h2 class="font-display text-4xl text-[var(--color-ink)]">How it works</h2>
+        <h2 class="font-display text-4xl text-[var(--color-ink)]">At a Glance</h2>
         <p class="text-[var(--color-muted)]">
-          Rentals remain simple. Availability is handled by email, cottages are
-          grouped by size, and weekly stays run Saturday to Saturday.
+          To check availability or make reservations, send an email with the
+          cottage you have in mind and the dates you are considering.
         </p>
+        <div>
+          <a class="button-secondary" href="/contact">Contact Us</a>
+        </div>
         <dl class="grid gap-4 text-sm text-[var(--color-muted)]">
           <div class="rounded-[1.25rem] bg-white/70 p-4">
-            <dt class="font-semibold text-[var(--color-ink)]">Current facts</dt>
-            <dd class="mt-1">Email contact, weekly Saturday rhythm, full kitchens, half baths, outdoor showers, WiFi, and Rinnai heaters.</dd>
+            <dt class="font-semibold text-[var(--color-ink)]">By the Week</dt>
+            <dd class="mt-1">All rentals are by the week, Saturday to Saturday.</dd>
           </div>
           <div class="rounded-[1.25rem] bg-white/70 p-4">
-            <dt class="font-semibold text-[var(--color-ink)]">Historic spirit</dt>
-            <dd class="mt-1">A quieter structure, stronger typography, and more room for the older voice of the camps to come through.</dd>
+            <dt class="font-semibold text-[var(--color-ink)]">In Each Cottage</dt>
+            <dd class="mt-1">Full kitchen, half bath, outdoor shower, WiFi, and Rinnai propane heater.</dd>
           </div>
         </dl>
       </div>
@@ -63,10 +67,7 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
         <p class="eyebrow">Featured Cottages</p>
         <h2 class="section-title">A few places to begin.</h2>
       </div>
-      <p class="max-w-2xl text-[var(--color-muted)]">
-        The cottages are still organized the way long-time visitors expect: large,
-        medium, and studio cottages, each with its own character.
-      </p>
+      <p class="max-w-2xl text-[var(--color-muted)]">Large, medium, and studio cottages.</p>
     </div>
 
     <div class="grid gap-6 lg:grid-cols-2">
@@ -89,19 +90,19 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
 
   <section class="mt-14 grid gap-6 md:grid-cols-3">
     <a class="feature-card" href="/photos">
-      <p class="eyebrow">Modern Photos</p>
-      <h2 class="feature-title">Current interiors, curated carefully.</h2>
-      <p class="feature-copy">Modern photos remain central to the rebuild and will make the cottages easier to understand at a glance.</p>
+      <p class="eyebrow">Photos</p>
+      <h2 class="feature-title">Inside the cottages.</h2>
+      <p class="feature-copy">View the interiors, light, and the shape of each cottage.</p>
     </a>
     <a class="feature-card" href="/legacy">
-      <p class="eyebrow">Archive</p>
-      <h2 class="feature-title">Older material stays visible.</h2>
-      <p class="feature-copy">The archive remains permanent, category-based, and visually separate from current photography.</p>
+      <p class="eyebrow">Historic Gallery</p>
+      <h2 class="feature-title">Historical photographs of Cook's.</h2>
+      <p class="feature-copy">Historical photos of the camps, the beach, and the earlier years at Cook's.</p>
     </a>
     <a class="feature-card" href="/contact">
       <p class="eyebrow">Contact</p>
-      <h2 class="feature-title">Simple, personal, direct.</h2>
-      <p class="feature-copy">No booking engine. Just cottages, dates, and a straightforward path to get in touch.</p>
+      <h2 class="feature-title">Availability & Reservations.</h2>
+      <p class="feature-copy">Tell us your dates, the cottage you have in mind, and anything else that would help narrow the search.</p>
     </a>
   </section>
 </Layout>

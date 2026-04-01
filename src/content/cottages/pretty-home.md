@@ -18,6 +18,4 @@ featured: false
 order: 3
 ---
 
-Pretty Home looks north over LeCount Hollow Beach and keeps the straightforward comfort of the larger cottages. It has two bedrooms, sleeps five, and includes a fireplace.
-
-The historic site described Pretty Home as one of the newer cottages at Cook's. Even so, it belongs to the same older rhythm of simple rooms, dune light, and long weekly stays.
+Pretty Home looks down over LeCount Hollow Beach to the north. Pretty Home has two bedrooms, sleeps five people, and has a fireplace.

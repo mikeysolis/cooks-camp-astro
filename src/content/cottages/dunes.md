@@ -18,6 +18,4 @@ featured: false
 order: 8
 ---
 
-Dunes sits below most of the other cottages and looks north over LeCount Hollow Beach. It is one of the more private cottages and has its own path out to the edge of the dune.
-
-The historic site also described Dunes as being pretty much to itself. That quiet separation still seems like the right way to think about it.
+Dunes sits below most of the other cottages and looks out over LeCount Hollow Beach to the north. One of the more private cottages with its own path out to the edge of the dune, Dunes has one bedroom and sleeps four people.

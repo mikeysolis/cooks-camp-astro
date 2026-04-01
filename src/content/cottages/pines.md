@@ -18,6 +18,4 @@ featured: true
 order: 9
 ---
 
-Pines is one of the most private cottages, set back in the pine forest with one bedroom and room for four. It feels removed in the best way, with the woods close at hand and the surf still part of the background.
-
-Historic copy remembered both a front and back deck and described the place as very quiet, with the pounding of the surf the main sound you hear from it. That is exactly the kind of line worth keeping in spirit.
+Pines is one of the most private cottages. Nestled back in the pine forest, Pines has one bedroom and sleeps four people.

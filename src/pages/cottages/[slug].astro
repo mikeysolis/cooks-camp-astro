@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import PhotoSwipeGallery from "../../components/PhotoSwipeGallery.astro";
 import { getCottagePhotoSet } from "../../data/cottage-photos";
+import { getHistoricCottageMedia } from "../../data/historic-cottage-media";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -16,6 +17,12 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const photoSet = getCottagePhotoSet(entry.id);
+const historicMedia = getHistoricCottageMedia(entry.id);
+const categoryLabel = {
+  large: "two bedroom cottage",
+  medium: "one bedroom cottage",
+  small: "studio cottage",
+}[entry.data.category];
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
@@ -31,7 +38,7 @@ const photoSet = getCottagePhotoSet(entry.id);
         </div>
         <div class="flex flex-col justify-between gap-8 p-8">
           <div class="space-y-4">
-            <p class="eyebrow">{entry.data.category} cottage</p>
+            <p class="eyebrow">{categoryLabel}</p>
             <h1 class="page-title">{entry.data.title}</h1>
             <p class="page-copy">{entry.data.description}</p>
           </div>
@@ -69,7 +76,7 @@ const photoSet = getCottagePhotoSet(entry.id);
 
       <aside class="space-y-6">
         <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/80 p-6">
-          <h2 class="section-title">Amenities</h2>
+          <h2 class="section-title">In Each Cottage</h2>
           <ul class="mt-4 space-y-3 text-[var(--color-muted)]">
             {entry.data.amenities.map((item) => <li>{item}</li>)}
           </ul>
@@ -78,9 +85,8 @@ const photoSet = getCottagePhotoSet(entry.id);
         <section class="rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-[rgba(84,114,136,0.08)] p-6">
           <h2 class="section-title">Request Dates</h2>
           <p class="mt-4 text-[var(--color-muted)]">
-            Cook's keeps the next step straightforward. Email remains the
-            current contact path, and the request form can be used to ask about
-            dates for this cottage or any of the others.
+            To check availability or make reservations, use the request form or
+            send us an email at cooksbytheocean@gmail.com.
           </p>
           <div class="mt-5 flex flex-wrap gap-3">
             <a class="button-primary" href="/contact">Contact</a>
@@ -94,7 +100,7 @@ const photoSet = getCottagePhotoSet(entry.id);
           <h2 class="section-title">Related</h2>
           <div class="mt-4 flex flex-wrap gap-3">
             <a class="button-secondary" href="/location">Location</a>
-            <a class="button-secondary" href="/legacy">Legacy Gallery</a>
+            <a class="button-secondary" href="/legacy">Historic Gallery</a>
           </div>
         </section>
       </aside>
@@ -130,5 +136,43 @@ const photoSet = getCottagePhotoSet(entry.id);
         )
       }
     </section>
+
+    {
+      (historicMedia.photos.length > 0 || historicMedia.map) && (
+        <section class="space-y-8">
+          <div class="space-y-2">
+            <p class="eyebrow">Historic Photos</p>
+            <h2 class="section-title">Earlier views of {entry.data.title}</h2>
+          </div>
+
+          {historicMedia.photos.length > 0 && (
+            <PhotoSwipeGallery
+              galleryId={`historic-cottage-gallery-${entry.id}`}
+              items={historicMedia.photos}
+              variant="archive"
+              showCaptions={true}
+            />
+          )}
+
+          {historicMedia.map && (
+            <figure class="max-w-3xl overflow-hidden rounded-[1.75rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]">
+              <div class="overflow-hidden rounded-[1.1rem] border border-[rgba(112,95,70,0.14)] bg-white/85">
+                <img
+                  src={historicMedia.map.src}
+                  width={historicMedia.map.width}
+                  height={historicMedia.map.height}
+                  alt={historicMedia.map.alt}
+                  class="w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="px-1 pb-1 pt-4 text-sm leading-6 text-[var(--color-muted)]">
+                Historic cottage map.
+              </figcaption>
+            </figure>
+          )}
+        </section>
+      )
+    }
   </article>
 </Layout>

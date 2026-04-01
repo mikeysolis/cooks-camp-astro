@@ -1,0 +1,980 @@
+{
+  "big-guilda": {
+    "title": "Big Guilda",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-01.jpg",
+        "fullWidth": 901,
+        "fullHeight": 623,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 498,
+        "alt": "Historic photo of Big Guilda",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Big Guilda",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 897,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 538,
+        "alt": "Historic photo of Big Guilda",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Big Guilda",
+        "caption": "Living room"
+      },
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Big Guilda",
+        "caption": "Living room"
+      },
+      {
+        "full": "/images/historic-cottages/big-guilda/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/big-guilda/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Big Guilda",
+        "caption": "View from kitchen"
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/big-guilda/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Big Guilda"
+    }
+  },
+  "camera": {
+    "title": "Camera",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/camera/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/camera/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/camera/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/camera/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/camera/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/camera/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/camera/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Camera",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/camera/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Camera"
+    }
+  },
+  "cones": {
+    "title": "Cones",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/cones/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/cones/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/cones/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/cones/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/cones/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/cones/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/cones/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Cones",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/cones/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Cones"
+    }
+  },
+  "dunes": {
+    "title": "Dunes",
+    "totalHistoricPhotos": 4,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/dunes/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/dunes/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Dunes",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/dunes/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/dunes/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Dunes",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/dunes/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/dunes/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Dunes",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/dunes/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/dunes/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Dunes",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/dunes/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Dunes"
+    }
+  },
+  "little-guilda": {
+    "title": "Little Guilda",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Little Guilda",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Little Guilda",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Little Guilda",
+        "caption": "Looking into the kitchen"
+      },
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Little Guilda",
+        "caption": "Living room"
+      },
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-05.jpg",
+        "fullWidth": 900,
+        "fullHeight": 1200,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-05.jpg",
+        "thumbWidth": 540,
+        "thumbHeight": 720,
+        "alt": "Historic photo of Little Guilda",
+        "caption": "View to the south from the kitchen window"
+      },
+      {
+        "full": "/images/historic-cottages/little-guilda/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/little-guilda/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Little Guilda",
+        "caption": "View to the east from the kitchen window"
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/little-guilda/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Little Guilda"
+    }
+  },
+  "marconi": {
+    "title": "Marconi",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/marconi/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Marconi",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/marconi/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Marconi",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/marconi/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Marconi",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/marconi/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Marconi",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/marconi/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 749,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 449,
+        "alt": "Historic photo of Marconi",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/marconi/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/marconi/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Marconi",
+        "caption": "Living room fireplace"
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/marconi/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Marconi"
+    }
+  },
+  "new-cabin": {
+    "title": "New Cabin",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 797,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 478,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/new-cabin/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/new-cabin/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of New Cabin",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/new-cabin/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for New Cabin"
+    }
+  },
+  "oversea": {
+    "title": "Oversea",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/oversea/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/oversea/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/oversea/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/oversea/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/oversea/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/oversea/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/oversea/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Oversea",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/oversea/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Oversea"
+    }
+  },
+  "pines": {
+    "title": "Pines",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/pines/historic-01.jpg",
+        "fullWidth": 600,
+        "fullHeight": 450,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-01.jpg",
+        "thumbWidth": 600,
+        "thumbHeight": 450,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pines/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pines/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pines/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pines/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pines/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pines/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pines",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/pines/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Pines"
+    }
+  },
+  "pretty-home": {
+    "title": "Pretty Home",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 744,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 446,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 625,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 375,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 683,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 410,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/pretty-home/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/pretty-home/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Pretty Home",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/pretty-home/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Pretty Home"
+    }
+  },
+  "sands": {
+    "title": "Sands",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/sands/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sands/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 908,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 545,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sands/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sands/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 798,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 479,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sands/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sands/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sands/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sands",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/sands/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Sands"
+    }
+  },
+  "sandy-scot": {
+    "title": "Sandy Scot",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/sandy-scot/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/sandy-scot/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Sandy Scot",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/sandy-scot/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Sandy Scot"
+    }
+  },
+  "summer-salt": {
+    "title": "Summer Salt",
+    "totalHistoricPhotos": 5,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/summer-salt/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/summer-salt/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Summer Salt",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/summer-salt/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/summer-salt/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Summer Salt",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/summer-salt/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/summer-salt/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of Summer Salt",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/summer-salt/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 800,
+        "thumb": "/images/historic-cottages/summer-salt/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 480,
+        "alt": "Historic photo of Summer Salt",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/summer-salt/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 675,
+        "thumb": "/images/historic-cottages/summer-salt/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 405,
+        "alt": "Historic photo of Summer Salt",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/summer-salt/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for Summer Salt"
+    }
+  },
+  "the-captain": {
+    "title": "The Captain",
+    "totalHistoricPhotos": 6,
+    "photos": [
+      {
+        "full": "/images/historic-cottages/the-captain/historic-01.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-01.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/the-captain/historic-02.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-02.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/the-captain/historic-03.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-03.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/the-captain/historic-04.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-04.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/the-captain/historic-05.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-05.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      },
+      {
+        "full": "/images/historic-cottages/the-captain/historic-06.jpg",
+        "fullWidth": 1200,
+        "fullHeight": 900,
+        "thumb": "/images/historic-cottages/the-captain/historic-thumb-06.jpg",
+        "thumbWidth": 720,
+        "thumbHeight": 540,
+        "alt": "Historic photo of The Captain",
+        "caption": ""
+      }
+    ],
+    "map": {
+      "src": "/images/historic-cottages/the-captain/map.jpg",
+      "width": 1200,
+      "height": 675,
+      "alt": "Historic cottage map for The Captain"
+    }
+  }
+}

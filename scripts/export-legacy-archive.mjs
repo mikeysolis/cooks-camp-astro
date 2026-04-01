@@ -6,6 +6,8 @@ import sharp from "sharp";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
 const legacyRoot = path.join(projectRoot, "docs/site-legacy/www.cooksbytheocean.com");
+const liveCapturePagesRoot = path.join(projectRoot, "docs/historic/live-capture/pages");
+const liveCaptureAssetsRoot = path.join(projectRoot, "docs/historic/live-capture/assets");
 const outputRoot = path.join(projectRoot, "public/images/legacy");
 const generatedDir = path.join(projectRoot, "src/data/generated");
 const generatedManifestPath = path.join(generatedDir, "legacy-gallery.json");
@@ -15,7 +17,14 @@ const gallerySources = [
     category: "beach",
     groups: [
       {
+        kind: "legacy-lightbox",
         sourcePage: "gallery_beach.html",
+      },
+      {
+        kind: "historic-live",
+        sourcePage: "beach.html",
+        title: "Earlier Beach Days",
+        description: "Family days, surf, and older views along the beach.",
       },
     ],
   },
@@ -23,7 +32,36 @@ const gallerySources = [
     category: "camps",
     groups: [
       {
+        kind: "legacy-lightbox",
         sourcePage: "gallery_camps.html",
+      },
+      {
+        kind: "historic-live",
+        sourcePage: "camps.html",
+        title: "Around the Camps",
+        description: "A broader walk around the cottages, flagpole, bluff, and compound.",
+      },
+    ],
+  },
+  {
+    category: "dawn-dusk",
+    groups: [
+      {
+        kind: "historic-live",
+        sourcePage: "dawn-dusk.html",
+        title: "Dawn & Dusk",
+        description: "Sunrise, moonrise, sunset, beach fires, and the light at Cook's.",
+      },
+    ],
+  },
+  {
+    category: "interiors",
+    groups: [
+      {
+        kind: "historic-live",
+        sourcePage: "interiors.html",
+        title: "Interiors",
+        description: "A few older views inside the cottages.",
       },
     ],
   },
@@ -31,10 +69,29 @@ const gallerySources = [
     category: "sky-wildlife",
     groups: [
       {
+        kind: "legacy-lightbox",
         sourcePage: "gallery_aerial.html",
       },
       {
+        kind: "legacy-lightbox",
         sourcePage: "gallery_wild.html",
+      },
+      {
+        kind: "historic-live",
+        sourcePage: "arial-view.html",
+        title: "Aerial View",
+        description: "A flyby view from the historic site.",
+      },
+    ],
+  },
+  {
+    category: "winter",
+    groups: [
+      {
+        kind: "historic-live",
+        sourcePage: "winter.html",
+        title: "Winter",
+        description: "Off-season views of the cottages and bluff.",
       },
     ],
   },
@@ -42,6 +99,7 @@ const gallerySources = [
     category: "historic",
     groups: [
       {
+        kind: "legacy-lightbox",
         sourcePage: "gallery_historic.html",
       },
     ],
@@ -65,13 +123,13 @@ function decodeEntities(value) {
     .replace(/&gt;/g, ">");
 }
 
-function parseGalleryPage(sourcePage) {
+function parseLegacyLightboxPage(sourcePage) {
   const filePath = path.join(legacyRoot, sourcePage);
   const html = readFileSync(filePath, "utf8");
   const titleMatch = html.match(/<h1>([\s\S]*?)<\/h1>/i);
   const descriptionMatch = html.match(/<h4[^>]*class="page-description[^"]*"[^>]*>([\s\S]*?)<\/h4>/i);
   const anchorPattern =
-    /<a class="lightbox" href="([^"]+)">[\s\S]*?<img src="([^"]+)"[^>]*>/gi;
+    /<a class="lightbox" href="([^"]+)"\s*>[\s\S]*?<img src="([^"]+)"[^>]*>/gi;
 
   const matches = [...html.matchAll(anchorPattern)];
   const items = matches.map((match, index) => {
@@ -81,15 +139,66 @@ function parseGalleryPage(sourcePage) {
     const captionMatch = block.match(/<div class="caption">[\s\S]*?<p>([\s\S]*?)<\/p>/i);
 
     return {
-      fullSource: match[1],
-      thumbSource: match[2],
+      fullInput: path.join(legacyRoot, match[1]),
       caption: decodeEntities(stripTags(captionMatch?.[1] ?? "")),
+      alt: "",
     };
   });
 
   return {
     title: decodeEntities(stripTags(titleMatch?.[1] ?? sourcePage)),
     description: decodeEntities(stripTags(descriptionMatch?.[1] ?? "")),
+    items,
+  };
+}
+
+function canonicalizeCapturedPath(rawPath) {
+  return rawPath
+    .replace(/^\.\.\//, "")
+    .split("/")
+    .map((segment) => encodeURIComponent(decodeURIComponent(segment)).replace(/'/g, "%27"))
+    .join("/");
+}
+
+function humanizeFilename(rawPath) {
+  const decoded = decodeURIComponent(path.basename(rawPath, path.extname(rawPath)));
+  return decoded.replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function parseHistoricLivePage({ sourcePage, title, description }) {
+  const filePath = path.join(liveCapturePagesRoot, sourcePage);
+  const html = readFileSync(filePath, "utf8");
+  const imagePattern = /<img[^>]+src="([^"]+)"/gi;
+  const items = [];
+  const seen = new Set();
+
+  for (const match of html.matchAll(imagePattern)) {
+    const source = decodeEntities(match[1].trim());
+
+    if (!source.startsWith("../Pictures/") && !source.startsWith("../NewBasicCutout")) {
+      continue;
+    }
+
+    const localRelativePath = canonicalizeCapturedPath(source);
+
+    if (seen.has(localRelativePath)) {
+      continue;
+    }
+
+    seen.add(localRelativePath);
+
+    const label = humanizeFilename(localRelativePath);
+
+    items.push({
+      fullInput: path.join(liveCaptureAssetsRoot, localRelativePath),
+      caption: label,
+      alt: label,
+    });
+  }
+
+  return {
+    title,
+    description,
     items,
   };
 }
@@ -110,6 +219,18 @@ async function exportJpeg(inputPath, outputPath, width) {
     .toFile(outputPath);
 }
 
+function parseGallerySource(source) {
+  if (source.kind === "legacy-lightbox") {
+    return parseLegacyLightboxPage(source.sourcePage);
+  }
+
+  if (source.kind === "historic-live") {
+    return parseHistoricLivePage(source);
+  }
+
+  throw new Error(`Unsupported gallery source kind: ${source.kind}`);
+}
+
 mkdirSync(outputRoot, { recursive: true });
 mkdirSync(generatedDir, { recursive: true });
 
@@ -123,7 +244,7 @@ for (const categorySource of gallerySources) {
   const groups = [];
 
   for (const source of categorySource.groups) {
-    const parsed = parseGalleryPage(source.sourcePage);
+    const parsed = parseGallerySource(source);
     const items = [];
 
     for (const item of parsed.items) {
@@ -131,10 +252,9 @@ for (const categorySource of gallerySources) {
       const basename = String(itemCounter).padStart(2, "0");
       const fullOutput = path.join(categoryDir, `full-${basename}.jpg`);
       const thumbOutput = path.join(categoryDir, `thumb-${basename}.jpg`);
-      const fullInput = path.join(legacyRoot, item.fullSource);
 
-      const fullInfo = await exportJpeg(fullInput, fullOutput, fullWidth);
-      const thumbInfo = await exportJpeg(fullInput, thumbOutput, thumbWidth);
+      const fullInfo = await exportJpeg(item.fullInput, fullOutput, fullWidth);
+      const thumbInfo = await exportJpeg(item.fullInput, thumbOutput, thumbWidth);
 
       items.push({
         full: `/images/legacy/${categorySource.category}/full-${basename}.jpg`,
@@ -144,7 +264,7 @@ for (const categorySource of gallerySources) {
         thumbWidth: thumbInfo.width,
         thumbHeight: thumbInfo.height,
         caption: item.caption,
-        alt: item.caption || `${parsed.title} archive photo ${items.length + 1}`,
+        alt: item.alt || item.caption || `${parsed.title} archive photo ${items.length + 1}`,
       });
     }
 

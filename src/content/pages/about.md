@@ -3,8 +3,8 @@ title: "About Cook's"
 description: "A family-run stretch of cottages above the Atlantic in South Wellfleet."
 ---
 
-Cook's by the Ocean sits above the Atlantic in South Wellfleet, with cottages spread across the bluff and the beach just below. The place has long been defined less by promotion than by returning families, word of mouth, and the feeling of finding it again.
+Cook's By The Ocean has been managing this cottage resort since 1932. We have 14 cottages open for rentals from the Friday before Memorial Day in May thru Columbus Day weekend in October. The minimum rental is weekly. (Saturday to Saturday) We are on our fifth generation of families returning year after year.
 
-The historic site carries much of the voice that still feels right for Cook's: simple, direct, and rooted in place. The cottages are all different in size and shape, but the rhythm of the property remains steady from one to the next.
+The cottages are scattered about on the sand dunes 125 feet above the beach on the Atlantic Ocean side of Cape Cod. The beach is uncrowded with available access for all our guests. Only the pictures posted on our site can describe what you will discover here at Cook's By The Ocean.
 
-This rebuild keeps the current facts in place while trying to restore more of that older tone. The goal is not to make the camps feel new. The goal is to make the site feel closer to the place itself.
+This is a very special place, and it is our wonderful guests that visit year after year that make it so special.

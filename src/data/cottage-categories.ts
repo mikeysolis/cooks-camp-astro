@@ -1,17 +1,17 @@
 export const cottageCategories = [
   {
     key: "large",
-    title: "Large cottages",
-    blurb: "The largest cottages at Cook's, with room to spread out and fireplaces in the houses that have long anchored the camps.",
+    title: "Choose the perfect large cottage",
+    blurb: "Two bedroom cottages sleep up to 5, 6 or 7 people. Complete with fireplace.",
   },
   {
     key: "medium",
-    title: "Medium cottages",
-    blurb: "One-bedroom cottages set among the dune paths, the center of the camps, and the edge of the pines.",
+    title: "Choose the perfect medium sized cottage",
+    blurb: "One bedroom cottages sleep up to 4 or 5 people.",
   },
   {
     key: "small",
-    title: "Studio cottages",
-    blurb: "Smaller cottages for two, each with its own angle on the bluff, beach, or morning light.",
+    title: "Choose the perfect little cottage",
+    blurb: "Studio cottages sleep up to 2 people.",
   },
 ] as const;

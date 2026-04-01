@@ -18,6 +18,4 @@ featured: false
 order: 11
 ---
 
-New Cabin is a studio for two that looks north over LeCount Hollow Beach and the Atlantic. Set on a hill pretty much by itself, it keeps the smaller-cottage simplicity that runs through the site.
-
-Historic copy joked that New Cabin had already been around for decades when it was still being called new. That kind of old Cook's understatement is part of the charm.
+New Cabin looks to the north over LeCount Hollow Beach and the Atlantic. It is a studio and sleeps two people.

@@ -4,6 +4,10 @@ import galleryManifest from "./generated/legacy-gallery.json";
 type LegacyGalleryItem = {
   full: string;
   thumb: string;
+  fullWidth: number;
+  fullHeight: number;
+  thumbWidth: number;
+  thumbHeight: number;
   caption: string;
   alt: string;
 };

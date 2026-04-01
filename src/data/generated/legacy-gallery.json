@@ -1,7 +1,7 @@
 {
   "beach": {
     "coverImage": "/images/legacy/beach/thumb-01.jpg",
-    "itemCount": 19,
+    "itemCount": 32,
     "groups": [
       {
         "title": "The Beach",
@@ -196,6 +196,142 @@
             "thumbHeight": 720,
             "caption": "",
             "alt": "The Beach archive photo 19"
+          },
+          {
+            "full": "/images/legacy/beach/full-20.jpg",
+            "thumb": "/images/legacy/beach/thumb-20.jpg",
+            "fullWidth": 930,
+            "fullHeight": 1400,
+            "thumbWidth": 478,
+            "thumbHeight": 720,
+            "caption": "",
+            "alt": "The Beach archive photo 20"
+          }
+        ]
+      },
+      {
+        "title": "Earlier Beach Days",
+        "description": "Family days, surf, and older views along the beach.",
+        "items": [
+          {
+            "full": "/images/legacy/beach/full-21.jpg",
+            "thumb": "/images/legacy/beach/thumb-21.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Rob & Faye Beach",
+            "alt": "Rob & Faye Beach"
+          },
+          {
+            "full": "/images/legacy/beach/full-22.jpg",
+            "thumb": "/images/legacy/beach/thumb-22.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Beach North copy",
+            "alt": "Beach North copy"
+          },
+          {
+            "full": "/images/legacy/beach/full-23.jpg",
+            "thumb": "/images/legacy/beach/thumb-23.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Looking South copy",
+            "alt": "Looking South copy"
+          },
+          {
+            "full": "/images/legacy/beach/full-24.jpg",
+            "thumb": "/images/legacy/beach/thumb-24.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Laurie Beach North",
+            "alt": "Laurie Beach North"
+          },
+          {
+            "full": "/images/legacy/beach/full-25.jpg",
+            "thumb": "/images/legacy/beach/thumb-25.jpg",
+            "fullWidth": 600,
+            "fullHeight": 400,
+            "thumbWidth": 600,
+            "thumbHeight": 400,
+            "caption": "Beach Vollyball",
+            "alt": "Beach Vollyball"
+          },
+          {
+            "full": "/images/legacy/beach/full-26.jpg",
+            "thumb": "/images/legacy/beach/thumb-26.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Beach5",
+            "alt": "Beach5"
+          },
+          {
+            "full": "/images/legacy/beach/full-27.jpg",
+            "thumb": "/images/legacy/beach/thumb-27.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Laurie & Shirley Beach",
+            "alt": "Laurie & Shirley Beach"
+          },
+          {
+            "full": "/images/legacy/beach/full-28.jpg",
+            "thumb": "/images/legacy/beach/thumb-28.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Sand and Sea",
+            "alt": "Sand and Sea"
+          },
+          {
+            "full": "/images/legacy/beach/full-29.jpg",
+            "thumb": "/images/legacy/beach/thumb-29.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Laurie Beach",
+            "alt": "Laurie Beach"
+          },
+          {
+            "full": "/images/legacy/beach/full-30.jpg",
+            "thumb": "/images/legacy/beach/thumb-30.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Beach Surf",
+            "alt": "Beach Surf"
+          },
+          {
+            "full": "/images/legacy/beach/full-31.jpg",
+            "thumb": "/images/legacy/beach/thumb-31.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Jen & Mat Beach",
+            "alt": "Jen & Mat Beach"
+          },
+          {
+            "full": "/images/legacy/beach/full-32.jpg",
+            "thumb": "/images/legacy/beach/thumb-32.jpg",
+            "fullWidth": 450,
+            "fullHeight": 600,
+            "thumbWidth": 450,
+            "thumbHeight": 600,
+            "caption": "Remembering Liz1",
+            "alt": "Remembering Liz1"
           }
         ]
       }
@@ -203,7 +339,7 @@
   },
   "camps": {
     "coverImage": "/images/legacy/camps/thumb-01.jpg",
-    "itemCount": 10,
+    "itemCount": 24,
     "groups": [
       {
         "title": "The camps",
@@ -310,12 +446,382 @@
             "alt": "The camps archive photo 10"
           }
         ]
+      },
+      {
+        "title": "Around the Camps",
+        "description": "A broader walk around the cottages, flagpole, bluff, and compound.",
+        "items": [
+          {
+            "full": "/images/legacy/camps/full-11.jpg",
+            "thumb": "/images/legacy/camps/thumb-11.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Arial B",
+            "alt": "Arial B"
+          },
+          {
+            "full": "/images/legacy/camps/full-12.jpg",
+            "thumb": "/images/legacy/camps/thumb-12.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Arial A",
+            "alt": "Arial A"
+          },
+          {
+            "full": "/images/legacy/camps/full-13.jpg",
+            "thumb": "/images/legacy/camps/thumb-13.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Arial C",
+            "alt": "Arial C"
+          },
+          {
+            "full": "/images/legacy/camps/full-14.jpg",
+            "thumb": "/images/legacy/camps/thumb-14.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Harley on the Bluff",
+            "alt": "Harley on the Bluff"
+          },
+          {
+            "full": "/images/legacy/camps/full-15.jpg",
+            "thumb": "/images/legacy/camps/thumb-15.jpg",
+            "fullWidth": 600,
+            "fullHeight": 400,
+            "thumbWidth": 600,
+            "thumbHeight": 400,
+            "caption": "Bench Sunrise",
+            "alt": "Bench Sunrise"
+          },
+          {
+            "full": "/images/legacy/camps/full-16.jpg",
+            "thumb": "/images/legacy/camps/thumb-16.jpg",
+            "fullWidth": 600,
+            "fullHeight": 400,
+            "thumbWidth": 600,
+            "thumbHeight": 400,
+            "caption": "Rainbow",
+            "alt": "Rainbow"
+          },
+          {
+            "full": "/images/legacy/camps/full-17.jpg",
+            "thumb": "/images/legacy/camps/thumb-17.jpg",
+            "fullWidth": 600,
+            "fullHeight": 167,
+            "thumbWidth": 600,
+            "thumbHeight": 167,
+            "caption": "fog compound",
+            "alt": "fog compound"
+          },
+          {
+            "full": "/images/legacy/camps/full-18.jpg",
+            "thumb": "/images/legacy/camps/thumb-18.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Raising the Pole",
+            "alt": "Raising the Pole"
+          },
+          {
+            "full": "/images/legacy/camps/full-19.jpg",
+            "thumb": "/images/legacy/camps/thumb-19.jpg",
+            "fullWidth": 450,
+            "fullHeight": 600,
+            "thumbWidth": 450,
+            "thumbHeight": 600,
+            "caption": "George Story & Flag",
+            "alt": "George Story & Flag"
+          },
+          {
+            "full": "/images/legacy/camps/full-20.jpg",
+            "thumb": "/images/legacy/camps/thumb-20.jpg",
+            "fullWidth": 600,
+            "fullHeight": 260,
+            "thumbWidth": 600,
+            "thumbHeight": 260,
+            "caption": "Cook's By The Ocean 7",
+            "alt": "Cook's By The Ocean 7"
+          },
+          {
+            "full": "/images/legacy/camps/full-21.jpg",
+            "thumb": "/images/legacy/camps/thumb-21.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Little Gilda copy",
+            "alt": "Little Gilda copy"
+          },
+          {
+            "full": "/images/legacy/camps/full-22.jpg",
+            "thumb": "/images/legacy/camps/thumb-22.jpg",
+            "fullWidth": 600,
+            "fullHeight": 477,
+            "thumbWidth": 600,
+            "thumbHeight": 477,
+            "caption": "Little Gilda8",
+            "alt": "Little Gilda8"
+          },
+          {
+            "full": "/images/legacy/camps/full-23.jpg",
+            "thumb": "/images/legacy/camps/thumb-23.jpg",
+            "fullWidth": 600,
+            "fullHeight": 402,
+            "thumbWidth": 600,
+            "thumbHeight": 402,
+            "caption": "Sands Book",
+            "alt": "Sands Book"
+          },
+          {
+            "full": "/images/legacy/camps/full-24.jpg",
+            "thumb": "/images/legacy/camps/thumb-24.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Stormy",
+            "alt": "Stormy"
+          }
+        ]
+      }
+    ]
+  },
+  "dawn-dusk": {
+    "coverImage": "/images/legacy/dawn-dusk/thumb-01.jpg",
+    "itemCount": 15,
+    "groups": [
+      {
+        "title": "Dawn & Dusk",
+        "description": "Sunrise, moonrise, sunset, beach fires, and the light at Cook's.",
+        "items": [
+          {
+            "full": "/images/legacy/dawn-dusk/full-01.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-01.jpg",
+            "fullWidth": 600,
+            "fullHeight": 400,
+            "thumbWidth": 600,
+            "thumbHeight": 400,
+            "caption": "Atlantic Moonrise",
+            "alt": "Atlantic Moonrise"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-02.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-02.jpg",
+            "fullWidth": 600,
+            "fullHeight": 399,
+            "thumbWidth": 600,
+            "thumbHeight": 399,
+            "caption": "Atlantic Sunrise",
+            "alt": "Atlantic Sunrise"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-03.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-03.jpg",
+            "fullWidth": 600,
+            "fullHeight": 431,
+            "thumbWidth": 600,
+            "thumbHeight": 431,
+            "caption": "Cape Cod Dawn",
+            "alt": "Cape Cod Dawn"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-04.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-04.jpg",
+            "fullWidth": 600,
+            "fullHeight": 330,
+            "thumbWidth": 600,
+            "thumbHeight": 330,
+            "caption": "Cape Cod Daybreak",
+            "alt": "Cape Cod Daybreak"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-05.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-05.jpg",
+            "fullWidth": 600,
+            "fullHeight": 415,
+            "thumbWidth": 600,
+            "thumbHeight": 415,
+            "caption": "Little Gilda Sunrise 1974",
+            "alt": "Little Gilda Sunrise 1974"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-06.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-06.jpg",
+            "fullWidth": 600,
+            "fullHeight": 455,
+            "thumbWidth": 600,
+            "thumbHeight": 455,
+            "caption": "Sands Sunrise 1974",
+            "alt": "Sands Sunrise 1974"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-07.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-07.jpg",
+            "fullWidth": 600,
+            "fullHeight": 367,
+            "thumbWidth": 600,
+            "thumbHeight": 367,
+            "caption": "Sunrise copy",
+            "alt": "Sunrise copy"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-08.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-08.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Old Salts",
+            "alt": "Old Salts"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-09.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-09.jpg",
+            "fullWidth": 600,
+            "fullHeight": 250,
+            "thumbWidth": 600,
+            "thumbHeight": 250,
+            "caption": "Cook's Sunset",
+            "alt": "Cook's Sunset"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-10.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-10.jpg",
+            "fullWidth": 600,
+            "fullHeight": 390,
+            "thumbWidth": 600,
+            "thumbHeight": 390,
+            "caption": "End of the Day",
+            "alt": "End of the Day"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-11.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-11.jpg",
+            "fullWidth": 600,
+            "fullHeight": 426,
+            "thumbWidth": 600,
+            "thumbHeight": 426,
+            "caption": "Moon Over Marconi",
+            "alt": "Moon Over Marconi"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-12.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-12.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Cape Cod Sunset",
+            "alt": "Cape Cod Sunset"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-13.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-13.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Beach Fire",
+            "alt": "Beach Fire"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-14.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-14.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Night Time at Cook's",
+            "alt": "Night Time at Cook's"
+          },
+          {
+            "full": "/images/legacy/dawn-dusk/full-15.jpg",
+            "thumb": "/images/legacy/dawn-dusk/thumb-15.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Night at Cook's",
+            "alt": "Night at Cook's"
+          }
+        ]
+      }
+    ]
+  },
+  "interiors": {
+    "coverImage": "/images/legacy/interiors/thumb-01.jpg",
+    "itemCount": 5,
+    "groups": [
+      {
+        "title": "Interiors",
+        "description": "A few older views inside the cottages.",
+        "items": [
+          {
+            "full": "/images/legacy/interiors/full-01.jpg",
+            "thumb": "/images/legacy/interiors/thumb-01.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Cam Kit",
+            "alt": "Cam Kit"
+          },
+          {
+            "full": "/images/legacy/interiors/full-02.jpg",
+            "thumb": "/images/legacy/interiors/thumb-02.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Marc Kitchen",
+            "alt": "Marc Kitchen"
+          },
+          {
+            "full": "/images/legacy/interiors/full-03.jpg",
+            "thumb": "/images/legacy/interiors/thumb-03.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Marc Curtins",
+            "alt": "Marc Curtins"
+          },
+          {
+            "full": "/images/legacy/interiors/full-04.jpg",
+            "thumb": "/images/legacy/interiors/thumb-04.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "Marc BR",
+            "alt": "Marc BR"
+          },
+          {
+            "full": "/images/legacy/interiors/full-05.jpg",
+            "thumb": "/images/legacy/interiors/thumb-05.jpg",
+            "fullWidth": 600,
+            "fullHeight": 450,
+            "thumbWidth": 600,
+            "thumbHeight": 450,
+            "caption": "3'rd LR",
+            "alt": "3'rd LR"
+          }
+        ]
       }
     ]
   },
   "sky-wildlife": {
     "coverImage": "/images/legacy/sky-wildlife/thumb-01.jpg",
-    "itemCount": 19,
+    "itemCount": 20,
     "groups": [
       {
         "title": "The camps from above",
@@ -516,6 +1022,124 @@
             "thumbHeight": 380,
             "caption": "Pair of humpbacks",
             "alt": "Pair of humpbacks"
+          }
+        ]
+      },
+      {
+        "title": "Aerial View",
+        "description": "A flyby view from the historic site.",
+        "items": [
+          {
+            "full": "/images/legacy/sky-wildlife/full-20.jpg",
+            "thumb": "/images/legacy/sky-wildlife/thumb-20.jpg",
+            "fullWidth": 600,
+            "fullHeight": 419,
+            "thumbWidth": 600,
+            "thumbHeight": 419,
+            "caption": "Flyby",
+            "alt": "Flyby"
+          }
+        ]
+      }
+    ]
+  },
+  "winter": {
+    "coverImage": "/images/legacy/winter/thumb-01.jpg",
+    "itemCount": 9,
+    "groups": [
+      {
+        "title": "Winter",
+        "description": "Off-season views of the cottages and bluff.",
+        "items": [
+          {
+            "full": "/images/legacy/winter/full-01.jpg",
+            "thumb": "/images/legacy/winter/thumb-01.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Gate",
+            "alt": "Gate"
+          },
+          {
+            "full": "/images/legacy/winter/full-02.jpg",
+            "thumb": "/images/legacy/winter/thumb-02.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "New & PH",
+            "alt": "New & PH"
+          },
+          {
+            "full": "/images/legacy/winter/full-03.jpg",
+            "thumb": "/images/legacy/winter/thumb-03.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "LG & Camera2",
+            "alt": "LG & Camera2"
+          },
+          {
+            "full": "/images/legacy/winter/full-04.jpg",
+            "thumb": "/images/legacy/winter/thumb-04.jpg",
+            "fullWidth": 600,
+            "fullHeight": 355,
+            "thumbWidth": 600,
+            "thumbHeight": 355,
+            "caption": "Marc2",
+            "alt": "Marc2"
+          },
+          {
+            "full": "/images/legacy/winter/full-05.jpg",
+            "thumb": "/images/legacy/winter/thumb-05.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Marconi Front",
+            "alt": "Marconi Front"
+          },
+          {
+            "full": "/images/legacy/winter/full-06.jpg",
+            "thumb": "/images/legacy/winter/thumb-06.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Marconi",
+            "alt": "Marconi"
+          },
+          {
+            "full": "/images/legacy/winter/full-07.jpg",
+            "thumb": "/images/legacy/winter/thumb-07.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Camera2",
+            "alt": "Camera2"
+          },
+          {
+            "full": "/images/legacy/winter/full-08.jpg",
+            "thumb": "/images/legacy/winter/thumb-08.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "Pines",
+            "alt": "Pines"
+          },
+          {
+            "full": "/images/legacy/winter/full-09.jpg",
+            "thumb": "/images/legacy/winter/thumb-09.jpg",
+            "fullWidth": 600,
+            "fullHeight": 449,
+            "thumbWidth": 600,
+            "thumbHeight": 449,
+            "caption": "12&3",
+            "alt": "12&3"
           }
         ]
       }

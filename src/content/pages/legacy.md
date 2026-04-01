@@ -1,8 +1,6 @@
 ---
-title: "Legacy Gallery"
-description: "A permanent archive honoring the older visual history of Cook's."
+title: "Historic Gallery"
+description: "Older photographs of Cook's, the camps, and the beach."
 ---
 
-The archive is a permanent part of the rebuild. It exists to honor the older site and the family memory attached to the place without confusing archival material with current cabin photography.
-
-The gallery stays category-based and intentionally curated. It should feel closer to a scrapbook or family record than a modern inventory page.
+To explore the cottages and their settings, use the galleries below. The Beach, The Camps, Dawn & Dusk, Interiors, Winter, Historic Photos, and Sky & Wildlife galleries will provide you with the special unique features that you'll discover in this beautiful setting at Cook's By The Ocean.

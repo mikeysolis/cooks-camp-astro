@@ -18,6 +18,4 @@ featured: false
 order: 14
 ---
 
-The Captain looks out over LeCount Hollow Beach and sleeps two. It keeps the small-cottage balance that Cook's does well: enough room, enough light, and a strong sense of where you are.
-
-The historic site noted that The Captain was formerly called The Professor. That bit of camp memory belongs more to the archive than the booking facts, but it is worth carrying forward in the tone of the page.
+The Captain looks out over LeCount Hollow Beach. The Captain sleeps two people.
