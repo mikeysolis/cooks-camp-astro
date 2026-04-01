@@ -41,7 +41,7 @@ const isActive = (href: string) => {
           </summary>
           <nav
             aria-label="Primary"
-            class="mt-4 rounded-[1.5rem] border border-[rgba(34,52,67,0.1)] bg-white p-3 shadow-[0_20px_40px_rgba(34,52,67,0.08)]"
+            class="mt-4 rounded-[0.9rem] border border-[rgba(34,52,67,0.1)] bg-white p-3 shadow-[0_20px_40px_rgba(34,52,67,0.08)]"
           >
             <ul class="space-y-2">
               {
@@ -65,7 +65,7 @@ const isActive = (href: string) => {
 
     <div class="mx-auto grid min-h-screen max-w-7xl gap-8 px-5 py-6 md:grid-cols-[16rem_minmax(0,1fr)] md:px-8 md:py-8 xl:grid-cols-[18rem_minmax(0,1fr)]">
       <aside class="hidden md:block">
-        <div class="sticky top-8 space-y-8 rounded-[2rem] border border-[rgba(34,52,67,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(244,239,229,0.9))] p-6 shadow-[0_20px_55px_rgba(34,52,67,0.08)]">
+        <div class="sticky top-8 space-y-8 rounded-[1rem] border border-[rgba(34,52,67,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(244,239,229,0.9))] p-6 shadow-[0_20px_55px_rgba(34,52,67,0.08)]">
           <div class="space-y-2">
             <a href="/" class="inline-block" aria-label="Cook's by the Ocean home">
               <span class="site-wordmark block">Cook's</span>
@@ -100,11 +100,11 @@ const isActive = (href: string) => {
       </aside>
 
       <main id="main-content" class="pb-10" tabindex="-1">
-        <div class="rounded-[2rem] border border-[rgba(34,52,67,0.1)] bg-[rgba(255,252,247,0.8)] p-6 shadow-[0_24px_70px_rgba(34,52,67,0.08)] backdrop-blur lg:p-8">
+        <div class="rounded-[1rem] border border-[rgba(34,52,67,0.1)] bg-[rgba(255,252,247,0.8)] p-6 shadow-[0_24px_70px_rgba(34,52,67,0.08)] backdrop-blur lg:p-8">
           <slot />
         </div>
 
-        <footer class="mt-6 rounded-[1.75rem] border border-[rgba(34,52,67,0.08)] bg-white/70 px-6 py-5 text-sm text-[var(--color-muted)]">
+        <footer class="mt-6 rounded-[0.95rem] border border-[rgba(34,52,67,0.08)] bg-white/70 px-6 py-5 text-sm text-[var(--color-muted)]">
           Cook's by the Ocean. South Wellfleet, MA. Email
           <a class="text-[var(--color-sea)] underline decoration-[rgba(84,114,136,0.35)] underline-offset-4" href="mailto:cooksbytheocean@gmail.com">
             cooksbytheocean@gmail.com

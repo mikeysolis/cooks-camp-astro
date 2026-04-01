@@ -30,8 +30,8 @@ const galleryClass =
       <figure
         class:list={[
           variant === "archive"
-            ? "overflow-hidden rounded-[1.5rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]"
-            : "overflow-hidden rounded-[1.5rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)]",
+            ? "overflow-hidden rounded-[0.85rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]"
+            : "overflow-hidden rounded-[0.85rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_18px_45px_rgba(34,52,67,0.08)]",
         ]}
       >
         <a
@@ -45,7 +45,7 @@ const galleryClass =
           class:list={[
             "block overflow-hidden",
             variant === "archive"
-              ? "rounded-[1.1rem] border border-[rgba(112,95,70,0.14)] bg-white/85"
+              ? "rounded-[0.6rem] border border-[rgba(112,95,70,0.14)] bg-white/85"
               : "",
           ]}
         >
@@ -54,7 +54,7 @@ const galleryClass =
             width={item.thumbWidth}
             height={item.thumbHeight}
             alt={item.alt}
-            class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]"
+            class="aspect-[4/3] w-full object-cover transition duration-300 hover:scale-[1.01]"
             loading="lazy"
           />
         </a>

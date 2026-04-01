@@ -151,13 +151,13 @@ textarea:focus-visible {
 
 .button-primary:hover,
 .button-secondary:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.5px);
 }
 
 .sidebar-link,
 .mobile-nav-link {
   display: block;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   padding: 0.8rem 1rem;
   text-decoration: none;
   color: var(--color-muted);
@@ -179,7 +179,7 @@ textarea:focus-visible {
 
 .feature-card {
   display: block;
-  border-radius: 1.6rem;
+  border-radius: 1rem;
   border: 1px solid rgba(34, 52, 67, 0.12);
   background: rgba(255, 255, 255, 0.78);
   padding: 1.5rem;
@@ -188,8 +188,8 @@ textarea:focus-visible {
 }
 
 .feature-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 45px rgba(34, 52, 67, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(34, 52, 67, 0.06);
 }
 
 .feature-card:focus-visible,
