@@ -1,0 +1,52 @@
+---
+import type { ResponsiveImageAsset, ResponsiveImageSource } from "../data/responsive-image";
+
+interface Props {
+  image: ResponsiveImageAsset;
+  alt?: string;
+  sizes?: string;
+  pictureClass?: string;
+  imgClass?: string;
+  loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+  decoding?: "sync" | "async" | "auto";
+}
+
+const {
+  image,
+  alt,
+  sizes,
+  pictureClass,
+  imgClass,
+  loading = "lazy",
+  fetchpriority,
+  decoding = "async",
+} = Astro.props;
+
+const resolvedAlt = alt ?? image.alt;
+
+function buildSrcSet(sources: ResponsiveImageSource[] | undefined) {
+  return sources?.map((source) => `${source.src} ${source.width}w`).join(", ");
+}
+
+const avifSrcSet = buildSrcSet(image.formats.avif);
+const webpSrcSet = buildSrcSet(image.formats.webp);
+const jpgSrcSet = buildSrcSet(image.formats.jpg);
+---
+
+<picture class={pictureClass}>
+  {avifSrcSet && <source type="image/avif" srcset={avifSrcSet} sizes={sizes} />}
+  {webpSrcSet && <source type="image/webp" srcset={webpSrcSet} sizes={sizes} />}
+  <img
+    src={image.fallback.src}
+    srcset={jpgSrcSet}
+    sizes={sizes}
+    width={image.width}
+    height={image.height}
+    alt={resolvedAlt}
+    class={imgClass}
+    loading={loading}
+    fetchpriority={fetchpriority}
+    decoding={decoding}
+  />
+</picture>

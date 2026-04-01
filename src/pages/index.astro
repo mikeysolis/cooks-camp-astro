@@ -81,7 +81,7 @@ const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0
             bedrooms={cottage.data.bedrooms}
             bathrooms={cottage.data.bathrooms}
             category={cottage.data.category}
-            hero={getCottagePhotoSet(cottage.id).hero.src}
+            image={getCottagePhotoSet(cottage.id).card}
           />
         ))
       }

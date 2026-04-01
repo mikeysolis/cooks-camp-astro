@@ -1,4 +1,7 @@
 ---
+import ResponsiveImage from "./ResponsiveImage.astro";
+import type { ResponsiveImageAsset } from "../data/responsive-image";
+
 interface Props {
   href: string;
   title: string;
@@ -7,10 +10,21 @@ interface Props {
   bedrooms: number;
   bathrooms: string | number;
   category: "large" | "medium" | "small";
-  hero: string;
+  image: ResponsiveImageAsset;
+  imageSizes?: string;
 }
 
-const { href, title, description, sleeps, bedrooms, bathrooms, category, hero } =
+const {
+  href,
+  title,
+  description,
+  sleeps,
+  bedrooms,
+  bathrooms,
+  category,
+  image,
+  imageSizes = "(min-width: 1280px) 28rem, (min-width: 1024px) 42vw, (min-width: 768px) 50vw, 100vw",
+} =
   Astro.props;
 ---
 
@@ -19,10 +33,12 @@ const { href, title, description, sleeps, bedrooms, bathrooms, category, hero } 
   class="group flex h-full flex-col overflow-hidden rounded-[0.85rem] border border-[rgba(34,52,67,0.14)] bg-white/85 shadow-[0_14px_36px_rgba(34,52,67,0.07)] transition duration-200 hover:-translate-y-px hover:shadow-[0_18px_42px_rgba(34,52,67,0.09)]"
 >
   <div class="aspect-[4/3] overflow-hidden border-b border-[rgba(34,52,67,0.1)] bg-[var(--color-mist)]">
-    <img
-      src={hero}
+    <ResponsiveImage
+      image={image}
       alt={`View of ${title}`}
-      class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.01]"
+      sizes={imageSizes}
+      pictureClass="block h-full w-full"
+      imgClass="h-full w-full object-cover transition duration-300 group-hover:scale-[1.01]"
       loading="lazy"
     />
   </div>

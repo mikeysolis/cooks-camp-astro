@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "photos:sync": "node scripts/export-cottage-photos.mjs",
+    "maps:sync": "node scripts/export-location-maps.mjs",
     "archive:sync": "node scripts/export-legacy-archive.mjs",
     "historic:cottages:sync": "node scripts/export-historic-cottage-media.mjs"
   },

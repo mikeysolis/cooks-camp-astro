@@ -1,5 +1,7 @@
 ---
 import { getEntry, render } from "astro:content";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
+import { getLocationImage } from "../data/location-images";
 import Layout from "../layouts/Layout.astro";
 
 const entry = await getEntry("pages", "location");
@@ -9,6 +11,8 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const propertyMap = getLocationImage("property");
+const capeCodMap = getLocationImage("capeCod");
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
@@ -19,12 +23,11 @@ const { Content } = await render(entry);
       <Content />
     </div>
     <figure class="max-w-3xl overflow-hidden rounded-[1rem] border border-[rgba(34,52,67,0.12)] bg-white/80 shadow-[0_18px_45px_rgba(34,52,67,0.08)]">
-      <img
-        src="/images/historic/cooks-property-map.jpg"
-        alt="Historic map of Cook's by the Ocean showing the cottages and the layout of the property."
-        width="600"
-        height="456"
-        class="w-full object-cover"
+      <ResponsiveImage
+        image={propertyMap}
+        sizes="(min-width: 1280px) 960px, (min-width: 1024px) 75vw, 100vw"
+        pictureClass="block"
+        imgClass="w-full object-cover"
         loading="lazy"
       />
       <figcaption class="px-5 py-4 text-sm leading-6 text-[var(--color-muted)]">
@@ -32,12 +35,11 @@ const { Content } = await render(entry);
       </figcaption>
     </figure>
     <figure class="max-w-3xl overflow-hidden rounded-[1rem] border border-[rgba(34,52,67,0.12)] bg-white/80 shadow-[0_18px_45px_rgba(34,52,67,0.08)]">
-      <img
-        src="/images/historic/cape-cod-map.png"
-        alt="Regional map of Cape Cod for orientation before following the directions to Cook's by the Ocean."
-        width="700"
-        height="467"
-        class="w-full object-cover"
+      <ResponsiveImage
+        image={capeCodMap}
+        sizes="(min-width: 1280px) 960px, (min-width: 1024px) 75vw, 100vw"
+        pictureClass="block"
+        imgClass="w-full object-cover"
         loading="lazy"
       />
       <figcaption class="px-5 py-4 text-sm leading-6 text-[var(--color-muted)]">

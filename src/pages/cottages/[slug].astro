@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import PhotoSwipeGallery from "../../components/PhotoSwipeGallery.astro";
+import ResponsiveImage from "../../components/ResponsiveImage.astro";
 import { getCottagePhotoSet } from "../../data/cottage-photos";
 import { getHistoricCottageMedia } from "../../data/historic-cottage-media";
 import Layout from "../../layouts/Layout.astro";
@@ -30,10 +31,13 @@ const categoryLabel = {
     <section class="overflow-hidden rounded-[1rem] border border-[rgba(34,52,67,0.12)] bg-white/85 shadow-[0_20px_60px_rgba(34,52,67,0.08)]">
       <div class="grid gap-0 lg:grid-cols-[1.35fr_0.95fr]">
         <div class="min-h-[18rem] bg-[var(--color-mist)]">
-          <img
-            src={photoSet.hero.src}
-            alt={photoSet.hero.alt}
-            class="h-full w-full object-cover"
+          <ResponsiveImage
+            image={photoSet.hero}
+            sizes="(min-width: 1024px) 58vw, 100vw"
+            pictureClass="block h-full w-full"
+            imgClass="h-full w-full object-cover"
+            loading="eager"
+            fetchpriority="high"
           />
         </div>
         <div class="flex flex-col justify-between gap-8 p-8">

@@ -1,0 +1,64 @@
+{
+  "property": {
+    "fallback": {
+      "src": "/images/historic/maps/property-map-600-c07dd29a96.jpg",
+      "width": 600,
+      "height": 456
+    },
+    "formats": {
+      "webp": [
+        {
+          "src": "/images/historic/maps/property-map-600-98dec038d8.webp",
+          "width": 600,
+          "height": 456
+        }
+      ],
+      "jpg": [
+        {
+          "src": "/images/historic/maps/property-map-600-c07dd29a96.jpg",
+          "width": 600,
+          "height": 456
+        }
+      ]
+    },
+    "width": 600,
+    "height": 456,
+    "alt": "Historic map of Cook's by the Ocean showing the cottages and the layout of the property."
+  },
+  "capeCod": {
+    "fallback": {
+      "src": "/images/historic/maps/cape-cod-map-700-3d580e5314.jpg",
+      "width": 700,
+      "height": 467
+    },
+    "formats": {
+      "webp": [
+        {
+          "src": "/images/historic/maps/cape-cod-map-640-f50efb4432.webp",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "src": "/images/historic/maps/cape-cod-map-700-d1eb0ed264.webp",
+          "width": 700,
+          "height": 467
+        }
+      ],
+      "jpg": [
+        {
+          "src": "/images/historic/maps/cape-cod-map-640-b3a75c3efc.jpg",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "src": "/images/historic/maps/cape-cod-map-700-3d580e5314.jpg",
+          "width": 700,
+          "height": 467
+        }
+      ]
+    },
+    "width": 700,
+    "height": 467,
+    "alt": "Regional map of Cape Cod for orientation before following the directions to Cook's by the Ocean."
+  }
+}

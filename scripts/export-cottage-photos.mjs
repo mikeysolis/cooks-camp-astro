@@ -1,12 +1,22 @@
-import { mkdirSync, readdirSync, statSync, writeFileSync } from "node:fs";
+import { readdirSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "sharp";
+import {
+  exportResponsiveAsset,
+  exportSingleJpegAsset,
+  prepareOutputDir,
+} from "./image-export-utils.mjs";
 import { cottagePhotoManifest } from "./cottage-photo-manifest.mjs";
 
-const heroWidth = 1600;
+const cardWidths = [320, 480, 720];
+const heroWidths = [640, 960, 1280, 1600];
 const galleryWidth = 1200;
-const jpegQuality = 80;
+const responsiveFormats = {
+  avif: 50,
+  webp: 72,
+  jpg: 76,
+};
+const galleryJpegQuality = 76;
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
@@ -27,25 +37,6 @@ function listSourceFiles(sourceDir) {
     );
 }
 
-async function exportJpeg(inputPath, outputPath, maxDimension) {
-  return sharp(inputPath)
-    .rotate()
-    .resize({
-      width: maxDimension,
-      height: maxDimension,
-      fit: "inside",
-      withoutEnlargement: true,
-    })
-    .jpeg({
-      quality: jpegQuality,
-      mozjpeg: true,
-    })
-    .toFile(outputPath);
-}
-
-mkdirSync(outputRoot, { recursive: true });
-mkdirSync(generatedDir, { recursive: true });
-
 const generatedManifest = {};
 
 for (const cottage of cottagePhotoManifest) {
@@ -56,22 +47,47 @@ for (const cottage of cottagePhotoManifest) {
     throw new Error(`No source photos found for ${cottage.slug} in ${cottage.sourceDir}`);
   }
 
+  const publicBasePath = `/images/cottages/${cottage.slug}`;
   const cottageOutputDir = path.join(outputRoot, cottage.slug);
-  mkdirSync(cottageOutputDir, { recursive: true });
+  prepareOutputDir(cottageOutputDir);
 
-  const heroOutputPath = path.join(cottageOutputDir, "hero.jpg");
-  const heroInfo = await exportJpeg(sourceFiles[0], heroOutputPath, heroWidth);
+  const coverSource = sourceFiles[0];
+  const card = await exportResponsiveAsset({
+    inputPath: coverSource,
+    outputDir: cottageOutputDir,
+    publicBasePath,
+    baseName: "card",
+    widths: cardWidths,
+    formats: responsiveFormats,
+    alt: `View of ${cottage.title} cottage`,
+  });
+
+  const hero = await exportResponsiveAsset({
+    inputPath: coverSource,
+    outputDir: cottageOutputDir,
+    publicBasePath,
+    baseName: "hero",
+    widths: heroWidths,
+    formats: responsiveFormats,
+    alt: `View of ${cottage.title} cottage`,
+  });
 
   const galleryPaths = [];
 
   for (const [index, inputPath] of sourceFiles.slice(1).entries()) {
-    const fileName = `gallery-${String(index + 1).padStart(2, "0")}.jpg`;
-    const outputPath = path.join(cottageOutputDir, fileName);
-    const info = await exportJpeg(inputPath, outputPath, galleryWidth);
+    const asset = await exportSingleJpegAsset({
+      inputPath,
+      outputDir: cottageOutputDir,
+      publicBasePath,
+      baseName: `gallery-${String(index + 1).padStart(2, "0")}`,
+      width: galleryWidth,
+      quality: galleryJpegQuality,
+    });
+
     galleryPaths.push({
-      src: `/images/cottages/${cottage.slug}/${fileName}`,
-      width: info.width,
-      height: info.height,
+      src: asset.src,
+      width: asset.width,
+      height: asset.height,
       alt: `Interior view of ${cottage.title} cottage`,
       caption: "",
     });
@@ -79,18 +95,14 @@ for (const cottage of cottagePhotoManifest) {
 
   generatedManifest[cottage.slug] = {
     title: cottage.title,
-    hero: {
-      src: `/images/cottages/${cottage.slug}/hero.jpg`,
-      width: heroInfo.width,
-      height: heroInfo.height,
-      alt: `View of ${cottage.title} cottage`,
-    },
+    card,
+    hero,
     photos: galleryPaths,
     totalPhotos: sourceFiles.length,
   };
 
   console.log(
-    `${cottage.slug}: exported ${sourceFiles.length} photos (${galleryPaths.length} gallery, 1 hero)`,
+    `${cottage.slug}: exported ${sourceFiles.length} photos (${galleryPaths.length} gallery, responsive card + hero)`,
   );
 }
 

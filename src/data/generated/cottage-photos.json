@@ -1,92 +1,227 @@
 {
   "marconi": {
     "title": "Marconi",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/marconi/card-720-662754162b.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/marconi/card-320-ad67dda701.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/marconi/card-480-39724f58f0.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/marconi/card-720-28435b8167.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/marconi/card-320-1c8f15228f.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/marconi/card-480-7da23ac7a1.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/marconi/card-720-7b5db9a99e.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/marconi/card-320-f6f80dce14.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/marconi/card-480-fa89ba32ca.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/marconi/card-720-662754162b.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Marconi cottage"
+    },
     "hero": {
-      "src": "/images/cottages/marconi/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/marconi/hero-1600-7a7641f9c9.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/marconi/hero-640-8f0b20dea9.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/marconi/hero-960-ca8c61b208.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1280-8a421163c8.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1600-368128aef9.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/marconi/hero-640-7b4d5a1163.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/marconi/hero-960-2c928358eb.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1280-96e76bde25.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1600-50671de5e8.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/marconi/hero-640-1ec19d7b85.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/marconi/hero-960-5a6c53cd03.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1280-a146fc010c.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/marconi/hero-1600-7a7641f9c9.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Marconi cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/marconi/gallery-01.jpg",
+        "src": "/images/cottages/marconi/gallery-01-900-9b5f75121b.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-02.jpg",
+        "src": "/images/cottages/marconi/gallery-02-1200-b259dc8360.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-03.jpg",
+        "src": "/images/cottages/marconi/gallery-03-1200-96439301ce.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-04.jpg",
+        "src": "/images/cottages/marconi/gallery-04-1200-996e98a0bd.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-05.jpg",
+        "src": "/images/cottages/marconi/gallery-05-1200-4e8ecd4a6a.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-06.jpg",
+        "src": "/images/cottages/marconi/gallery-06-1200-f2704b6b2a.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-07.jpg",
+        "src": "/images/cottages/marconi/gallery-07-900-912f486e1b.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-08.jpg",
+        "src": "/images/cottages/marconi/gallery-08-1200-81cf8234e1.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-09.jpg",
+        "src": "/images/cottages/marconi/gallery-09-1200-12c4c7fddd.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-10.jpg",
+        "src": "/images/cottages/marconi/gallery-10-1200-37dc4820ef.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-11.jpg",
+        "src": "/images/cottages/marconi/gallery-11-1200-e4a73e3356.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/marconi/gallery-12.jpg",
+        "src": "/images/cottages/marconi/gallery-12-1200-76981509d4.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Marconi cottage",
@@ -97,57 +232,192 @@
   },
   "big-guilda": {
     "title": "Big Guilda",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/big-guilda/card-720-7ff6999201.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/big-guilda/card-320-886701c8f9.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-480-67b764bbf0.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-720-a110727646.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/big-guilda/card-320-b52975e7a4.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-480-783fb47227.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-720-eb07b3ea51.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/big-guilda/card-320-95757147f0.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-480-a8bdc26e9b.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/big-guilda/card-720-7ff6999201.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Big Guilda cottage"
+    },
     "hero": {
-      "src": "/images/cottages/big-guilda/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/big-guilda/hero-1600-6943214d24.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/big-guilda/hero-640-c849882d9c.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-960-b417f42275.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1280-ac6b8828ca.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1600-f94a1b91c3.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/big-guilda/hero-640-558bd013ed.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-960-e8314c8279.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1280-3466055e4c.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1600-5223797432.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/big-guilda/hero-640-d8f3213765.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-960-9628788620.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1280-5fdcde87c5.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/big-guilda/hero-1600-6943214d24.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Big Guilda cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/big-guilda/gallery-01.jpg",
+        "src": "/images/cottages/big-guilda/gallery-01-1200-3c23eb06bc.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-02.jpg",
+        "src": "/images/cottages/big-guilda/gallery-02-900-16f90bd0c1.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-03.jpg",
+        "src": "/images/cottages/big-guilda/gallery-03-1200-8ee20888d8.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-04.jpg",
+        "src": "/images/cottages/big-guilda/gallery-04-1200-637ab8f03e.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-05.jpg",
+        "src": "/images/cottages/big-guilda/gallery-05-1200-15e591afdf.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-06.jpg",
+        "src": "/images/cottages/big-guilda/gallery-06-1200-26e26a0ecb.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/big-guilda/gallery-07.jpg",
+        "src": "/images/cottages/big-guilda/gallery-07-1200-98fb895f64.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Big Guilda cottage",
@@ -158,71 +428,206 @@
   },
   "pretty-home": {
     "title": "Pretty Home",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/pretty-home/card-720-c8bbcc54f9.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/pretty-home/card-320-977d98dedb.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-480-a413682eb5.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-720-89b7919364.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/pretty-home/card-320-3f4354e06f.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-480-9386867c15.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-720-23e08fc888.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/pretty-home/card-320-84813f0254.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-480-d0dd5ba020.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pretty-home/card-720-c8bbcc54f9.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Pretty Home cottage"
+    },
     "hero": {
-      "src": "/images/cottages/pretty-home/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/pretty-home/hero-1600-4d1dfa3ba0.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/pretty-home/hero-640-d4fc5af45d.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-960-b873437306.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1280-768e5ec38d.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1600-33b668af84.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/pretty-home/hero-640-f86539b55a.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-960-4b4a93fc0f.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1280-d15547cd73.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1600-f40f388d67.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/pretty-home/hero-640-36a2b3552e.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-960-153715bcca.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1280-6416c11d88.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pretty-home/hero-1600-4d1dfa3ba0.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Pretty Home cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/pretty-home/gallery-01.jpg",
+        "src": "/images/cottages/pretty-home/gallery-01-1200-3e66c03a50.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-02.jpg",
+        "src": "/images/cottages/pretty-home/gallery-02-900-9f8cfe7a44.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-03.jpg",
+        "src": "/images/cottages/pretty-home/gallery-03-1200-d9ad5188c3.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-04.jpg",
+        "src": "/images/cottages/pretty-home/gallery-04-900-d15c2c7733.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-05.jpg",
+        "src": "/images/cottages/pretty-home/gallery-05-1200-96b1e7da29.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-06.jpg",
+        "src": "/images/cottages/pretty-home/gallery-06-1200-9c0d8871aa.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-07.jpg",
+        "src": "/images/cottages/pretty-home/gallery-07-1200-a4d976326e.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-08.jpg",
+        "src": "/images/cottages/pretty-home/gallery-08-900-d27246ca1a.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Pretty Home cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pretty-home/gallery-09.jpg",
+        "src": "/images/cottages/pretty-home/gallery-09-1200-a1a639b451.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pretty Home cottage",
@@ -233,43 +638,178 @@
   },
   "cones": {
     "title": "Cones",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/cones/card-720-06bb091a5d.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/cones/card-320-af1bf84b82.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/cones/card-480-287ae01638.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/cones/card-720-298f0504bb.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/cones/card-320-7ce18168f1.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/cones/card-480-c3b7f89728.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/cones/card-720-4a4b24f012.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/cones/card-320-b4f9fe95bc.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/cones/card-480-7d3ed02666.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/cones/card-720-06bb091a5d.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Cones cottage"
+    },
     "hero": {
-      "src": "/images/cottages/cones/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/cones/hero-1600-6db684af84.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/cones/hero-640-10f8537822.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/cones/hero-960-a413417417.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/cones/hero-1280-461ab724da.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/cones/hero-1600-26ae6d3736.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/cones/hero-640-932c07188b.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/cones/hero-960-8fa74a2aaa.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/cones/hero-1280-9a74a6aa87.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/cones/hero-1600-7e1e7d0aa6.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/cones/hero-640-6dbb6e14df.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/cones/hero-960-8c09f1d12e.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/cones/hero-1280-2919df1323.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/cones/hero-1600-6db684af84.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Cones cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/cones/gallery-01.jpg",
+        "src": "/images/cottages/cones/gallery-01-1200-bd57278eff.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Cones cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/cones/gallery-02.jpg",
+        "src": "/images/cottages/cones/gallery-02-1200-0a6e744948.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Cones cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/cones/gallery-03.jpg",
+        "src": "/images/cottages/cones/gallery-03-900-d9ad39263f.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Cones cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/cones/gallery-04.jpg",
+        "src": "/images/cottages/cones/gallery-04-1200-cf3cd8166e.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Cones cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/cones/gallery-05.jpg",
+        "src": "/images/cottages/cones/gallery-05-1200-d894f9dc07.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Cones cottage",
@@ -280,22 +820,157 @@
   },
   "oversea": {
     "title": "Oversea",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/oversea/card-720-75629f6c3c.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/oversea/card-320-84f6f8df7b.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/oversea/card-480-0c1cf15e06.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/oversea/card-720-d93ecac9a3.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/oversea/card-320-67c64ae90f.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/oversea/card-480-b159472559.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/oversea/card-720-73c6f6b847.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/oversea/card-320-5458507527.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/oversea/card-480-9ee4e3ca1a.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/oversea/card-720-75629f6c3c.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Oversea cottage"
+    },
     "hero": {
-      "src": "/images/cottages/oversea/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/oversea/hero-1600-42a4777194.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/oversea/hero-640-4b5fbc07bb.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/oversea/hero-960-63b0ad2c0f.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1280-df8e5dcb1b.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1600-c4c257d487.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/oversea/hero-640-5e6cca342f.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/oversea/hero-960-4340acb4a7.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1280-a1fa4c030e.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1600-7539d0e7d0.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/oversea/hero-640-293dd62931.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/oversea/hero-960-00e15b4918.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1280-64225e993f.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/oversea/hero-1600-42a4777194.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Oversea cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/oversea/gallery-01.jpg",
+        "src": "/images/cottages/oversea/gallery-01-900-9c1cabedd5.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Oversea cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/oversea/gallery-02.jpg",
+        "src": "/images/cottages/oversea/gallery-02-900-8d941be5a4.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Oversea cottage",
@@ -306,36 +981,171 @@
   },
   "sandy-scot": {
     "title": "Sandy Scot",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/sandy-scot/card-720-2c8fa03e1f.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/sandy-scot/card-320-bab5abc180.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-480-1972008437.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-720-93e66bb698.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/sandy-scot/card-320-6a2a861d6e.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-480-c122c4fc19.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-720-b575ca12ce.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/sandy-scot/card-320-957557991a.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-480-f7d3a54228.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sandy-scot/card-720-2c8fa03e1f.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Sandy Scot cottage"
+    },
     "hero": {
-      "src": "/images/cottages/sandy-scot/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/sandy-scot/hero-1600-6fa1005609.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/sandy-scot/hero-640-94e960b7f2.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-960-8139489b17.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1280-586df6ef54.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1600-25c8f4651d.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/sandy-scot/hero-640-dd223c8c30.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-960-b3cf443a19.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1280-ec07a299d4.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1600-508c4a3fe1.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/sandy-scot/hero-640-f471ecda61.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-960-2c0593a567.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1280-aa8b08c405.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sandy-scot/hero-1600-6fa1005609.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Sandy Scot cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/sandy-scot/gallery-01.jpg",
+        "src": "/images/cottages/sandy-scot/gallery-01-1200-56fd14b87d.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Sandy Scot cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/sandy-scot/gallery-02.jpg",
+        "src": "/images/cottages/sandy-scot/gallery-02-1200-679fd07dd1.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Sandy Scot cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/sandy-scot/gallery-03.jpg",
+        "src": "/images/cottages/sandy-scot/gallery-03-900-397898374d.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Sandy Scot cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/sandy-scot/gallery-04.jpg",
+        "src": "/images/cottages/sandy-scot/gallery-04-900-a1fe96ddef.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Sandy Scot cottage",
@@ -346,22 +1156,157 @@
   },
   "summer-salt": {
     "title": "Summer Salt",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/summer-salt/card-720-198c18eeda.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/summer-salt/card-320-d1fe9db439.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-480-f7c40abb2d.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-720-6c965ac69f.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/summer-salt/card-320-50b52eb43d.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-480-a75686c3a8.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-720-581b3ca315.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/summer-salt/card-320-6664267623.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-480-2d968ea8f8.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/summer-salt/card-720-198c18eeda.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Summer Salt cottage"
+    },
     "hero": {
-      "src": "/images/cottages/summer-salt/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/summer-salt/hero-1600-8fae2ac242.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/summer-salt/hero-640-a5498aeb01.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-960-c909088cbc.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1280-ae8383b3c0.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1600-2af449df1f.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/summer-salt/hero-640-c9d91b3cc3.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-960-2f9713ceff.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1280-a1b9f4571b.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1600-bc909065a4.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/summer-salt/hero-640-2b84e310f9.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-960-88f4ff39d2.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1280-aea5a02d9f.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/summer-salt/hero-1600-8fae2ac242.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Summer Salt cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/summer-salt/gallery-01.jpg",
+        "src": "/images/cottages/summer-salt/gallery-01-1200-ebd6aefa2e.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Summer Salt cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/summer-salt/gallery-02.jpg",
+        "src": "/images/cottages/summer-salt/gallery-02-900-31555d7b37.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Summer Salt cottage",
@@ -372,36 +1317,171 @@
   },
   "dunes": {
     "title": "Dunes",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/dunes/card-720-c554f317a5.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/dunes/card-320-cdb4900a86.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/dunes/card-480-c70ccbe4fe.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/dunes/card-720-b84129afe2.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/dunes/card-320-a8792bb6b7.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/dunes/card-480-81d79c9fd3.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/dunes/card-720-c9d63b0aeb.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/dunes/card-320-01ea68d622.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/dunes/card-480-c2183003d5.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/dunes/card-720-c554f317a5.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Dunes cottage"
+    },
     "hero": {
-      "src": "/images/cottages/dunes/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/dunes/hero-1600-9e4dc8db14.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/dunes/hero-640-fd2eafff48.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/dunes/hero-960-db12aa1692.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1280-c037e384eb.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1600-585443b102.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/dunes/hero-640-251edcf18d.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/dunes/hero-960-54fea7e020.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1280-9a51c8f830.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1600-98b33187d0.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/dunes/hero-640-d5acfcddaa.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/dunes/hero-960-bc2b9a3439.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1280-dc42e472c7.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/dunes/hero-1600-9e4dc8db14.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Dunes cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/dunes/gallery-01.jpg",
+        "src": "/images/cottages/dunes/gallery-01-1200-fceb8e127f.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Dunes cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/dunes/gallery-02.jpg",
+        "src": "/images/cottages/dunes/gallery-02-1200-5abf412074.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Dunes cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/dunes/gallery-03.jpg",
+        "src": "/images/cottages/dunes/gallery-03-900-b603055eba.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of Dunes cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/dunes/gallery-04.jpg",
+        "src": "/images/cottages/dunes/gallery-04-1200-828ff3afc4.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Dunes cottage",
@@ -412,36 +1492,171 @@
   },
   "pines": {
     "title": "Pines",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/pines/card-720-a5b0270eee.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/pines/card-320-431e9df435.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pines/card-480-cd2befacb6.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pines/card-720-0c7a908395.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/pines/card-320-eb5410a82a.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pines/card-480-c24e50b7ad.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pines/card-720-18f942311f.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/pines/card-320-285d3e4d30.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/pines/card-480-b43103ae91.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/pines/card-720-a5b0270eee.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Pines cottage"
+    },
     "hero": {
-      "src": "/images/cottages/pines/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/pines/hero-1600-732ea3551b.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/pines/hero-640-563ed536c4.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pines/hero-960-b7e588246f.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pines/hero-1280-5c4dfeeb85.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pines/hero-1600-58a907c377.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/pines/hero-640-5ba0139380.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pines/hero-960-728143a830.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pines/hero-1280-23ab2d77c6.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pines/hero-1600-8ef1149201.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/pines/hero-640-06420ffd84.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/pines/hero-960-0fbeef37fe.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/pines/hero-1280-7430976382.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/pines/hero-1600-732ea3551b.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Pines cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/pines/gallery-01.jpg",
+        "src": "/images/cottages/pines/gallery-01-1200-d8572c1cda.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pines cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pines/gallery-02.jpg",
+        "src": "/images/cottages/pines/gallery-02-1200-84abac728b.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pines cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pines/gallery-03.jpg",
+        "src": "/images/cottages/pines/gallery-03-1200-3252d3784a.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pines cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/pines/gallery-04.jpg",
+        "src": "/images/cottages/pines/gallery-04-1200-864a215814.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Pines cottage",
@@ -452,22 +1667,157 @@
   },
   "sands": {
     "title": "Sands",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/sands/card-720-f274ff34fd.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/sands/card-320-769a4fc135.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sands/card-480-e032652358.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sands/card-720-1b8f238fc0.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/sands/card-320-24fbf8469e.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sands/card-480-ef8c7afefc.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sands/card-720-17eb22544d.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/sands/card-320-76eae49bfa.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/sands/card-480-47ffc209c6.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/sands/card-720-f274ff34fd.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Sands cottage"
+    },
     "hero": {
-      "src": "/images/cottages/sands/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/sands/hero-1600-24ddcd9d89.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/sands/hero-640-bfbad4965c.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sands/hero-960-6223f9d2e3.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sands/hero-1280-c11a52b851.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sands/hero-1600-ccc7c6da65.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/sands/hero-640-a41bd08345.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sands/hero-960-14b57eed18.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sands/hero-1280-b7c7fa1b1a.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sands/hero-1600-04d2bbaf6e.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/sands/hero-640-967045723f.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/sands/hero-960-3d1e021b54.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/sands/hero-1280-848585b1e5.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/sands/hero-1600-24ddcd9d89.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Sands cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/sands/gallery-01.jpg",
+        "src": "/images/cottages/sands/gallery-01-1200-413082af45.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Sands cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/sands/gallery-02.jpg",
+        "src": "/images/cottages/sands/gallery-02-1200-fa8b60e2e2.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Sands cottage",
@@ -478,22 +1828,157 @@
   },
   "new-cabin": {
     "title": "New Cabin",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/new-cabin/card-720-3fd4293996.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/new-cabin/card-320-ce70151b6c.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-480-6ff0c663fd.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-720-2342f916c2.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/new-cabin/card-320-4663c00154.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-480-abb573888f.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-720-8b9603e176.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/new-cabin/card-320-e96fdb64a2.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-480-0d5a7ea5cd.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/new-cabin/card-720-3fd4293996.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of New Cabin cottage"
+    },
     "hero": {
-      "src": "/images/cottages/new-cabin/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/new-cabin/hero-1600-973b17d35c.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/new-cabin/hero-640-4c33f69588.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-960-d7c990dd24.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1280-1da4e945fa.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1600-2ae1e0c44a.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/new-cabin/hero-640-523fcfd5f0.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-960-982110ab2e.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1280-cbd1e2eb0d.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1600-301f46e923.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/new-cabin/hero-640-8b66951ba2.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-960-1677a6be02.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1280-db41c40444.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/new-cabin/hero-1600-973b17d35c.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of New Cabin cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/new-cabin/gallery-01.jpg",
+        "src": "/images/cottages/new-cabin/gallery-01-1200-93a1805c2a.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of New Cabin cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/new-cabin/gallery-02.jpg",
+        "src": "/images/cottages/new-cabin/gallery-02-1200-5d249c6565.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of New Cabin cottage",
@@ -504,36 +1989,171 @@
   },
   "little-guilda": {
     "title": "Little Guilda",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/little-guilda/card-720-675da4e1f8.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/little-guilda/card-320-32a3a6f3e8.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-480-dfac20d92b.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-720-5be6124a75.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/little-guilda/card-320-08f9834014.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-480-3014996bb3.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-720-02e3f76260.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/little-guilda/card-320-b88f1636b8.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-480-b0ab196e9c.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/little-guilda/card-720-675da4e1f8.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Little Guilda cottage"
+    },
     "hero": {
-      "src": "/images/cottages/little-guilda/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/little-guilda/hero-1600-217f0c3370.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/little-guilda/hero-640-b1a341d1d8.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-960-544480d243.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1280-3da94d5add.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1600-427a6ee76f.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/little-guilda/hero-640-529ef60ca7.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-960-15363ebd23.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1280-265d1b6b42.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1600-858c2c32a5.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/little-guilda/hero-640-32b8f0b96b.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-960-908b89407d.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1280-bb1ed13c6d.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/little-guilda/hero-1600-217f0c3370.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Little Guilda cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/little-guilda/gallery-01.jpg",
+        "src": "/images/cottages/little-guilda/gallery-01-1200-1997d1abd5.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Little Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/little-guilda/gallery-02.jpg",
+        "src": "/images/cottages/little-guilda/gallery-02-1200-1dc910c748.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Little Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/little-guilda/gallery-03.jpg",
+        "src": "/images/cottages/little-guilda/gallery-03-1200-523a6a8d6c.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Little Guilda cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/little-guilda/gallery-04.jpg",
+        "src": "/images/cottages/little-guilda/gallery-04-1200-5188f140b1.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Little Guilda cottage",
@@ -544,22 +2164,157 @@
   },
   "camera": {
     "title": "Camera",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/camera/card-720-512e9eb0cd.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/camera/card-320-ca26e5f5bb.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/camera/card-480-0c2f4fba32.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/camera/card-720-96579da27b.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/camera/card-320-41237d6cd5.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/camera/card-480-2642ea6150.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/camera/card-720-237bed3c25.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/camera/card-320-4716b9049d.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/camera/card-480-8e49909276.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/camera/card-720-512e9eb0cd.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of Camera cottage"
+    },
     "hero": {
-      "src": "/images/cottages/camera/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/camera/hero-1600-ab763b2979.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/camera/hero-640-bc2a043fac.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/camera/hero-960-2ac65d5c80.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/camera/hero-1280-9c03985ae3.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/camera/hero-1600-2270012aeb.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/camera/hero-640-f2eee35ba1.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/camera/hero-960-5a673d7df1.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/camera/hero-1280-53005f424b.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/camera/hero-1600-c11ac7f6af.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/camera/hero-640-c3bef91e82.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/camera/hero-960-5f79c9ae04.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/camera/hero-1280-dfe64aa408.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/camera/hero-1600-ab763b2979.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of Camera cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/camera/gallery-01.jpg",
+        "src": "/images/cottages/camera/gallery-01-1200-40eea4438d.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Camera cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/camera/gallery-02.jpg",
+        "src": "/images/cottages/camera/gallery-02-1200-6df5c76370.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of Camera cottage",
@@ -570,29 +2325,164 @@
   },
   "the-captain": {
     "title": "The Captain",
+    "card": {
+      "fallback": {
+        "src": "/images/cottages/the-captain/card-720-6a79ade8a6.jpg",
+        "width": 720,
+        "height": 540
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/the-captain/card-320-b9395a823a.avif",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/the-captain/card-480-dbb101181e.avif",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/the-captain/card-720-f36ae4a678.avif",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/the-captain/card-320-c1814ffb31.webp",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/the-captain/card-480-819fc6541a.webp",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/the-captain/card-720-1aa260f316.webp",
+            "width": 720,
+            "height": 540
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/the-captain/card-320-3c2c436683.jpg",
+            "width": 320,
+            "height": 240
+          },
+          {
+            "src": "/images/cottages/the-captain/card-480-5a1f5b7de5.jpg",
+            "width": 480,
+            "height": 360
+          },
+          {
+            "src": "/images/cottages/the-captain/card-720-6a79ade8a6.jpg",
+            "width": 720,
+            "height": 540
+          }
+        ]
+      },
+      "width": 720,
+      "height": 540,
+      "alt": "View of The Captain cottage"
+    },
     "hero": {
-      "src": "/images/cottages/the-captain/hero.jpg",
+      "fallback": {
+        "src": "/images/cottages/the-captain/hero-1600-1f502b49db.jpg",
+        "width": 1600,
+        "height": 1200
+      },
+      "formats": {
+        "avif": [
+          {
+            "src": "/images/cottages/the-captain/hero-640-8ec7d1700a.avif",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-960-9327a76444.avif",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1280-b398aebdcb.avif",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1600-44ab944c87.avif",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "webp": [
+          {
+            "src": "/images/cottages/the-captain/hero-640-8da1ed0c28.webp",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-960-3c0d3eb6b0.webp",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1280-3bba04eb29.webp",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1600-d79ae9a998.webp",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "jpg": [
+          {
+            "src": "/images/cottages/the-captain/hero-640-6deb68f8fd.jpg",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-960-5793d78027.jpg",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1280-fa4b05fb4b.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          {
+            "src": "/images/cottages/the-captain/hero-1600-1f502b49db.jpg",
+            "width": 1600,
+            "height": 1200
+          }
+        ]
+      },
       "width": 1600,
       "height": 1200,
       "alt": "View of The Captain cottage"
     },
     "photos": [
       {
-        "src": "/images/cottages/the-captain/gallery-01.jpg",
+        "src": "/images/cottages/the-captain/gallery-01-900-d9b812f63e.jpg",
         "width": 900,
         "height": 1200,
         "alt": "Interior view of The Captain cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/the-captain/gallery-02.jpg",
+        "src": "/images/cottages/the-captain/gallery-02-1200-1e872885c7.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of The Captain cottage",
         "caption": ""
       },
       {
-        "src": "/images/cottages/the-captain/gallery-03.jpg",
+        "src": "/images/cottages/the-captain/gallery-03-1200-974ee700c5.jpg",
         "width": 1200,
         "height": 900,
         "alt": "Interior view of The Captain cottage",
