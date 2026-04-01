@@ -1,11 +1,19 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
+const seoFields = {
+  noindex: z.boolean().optional(),
+  ogImage: z.string().optional(),
+  seoDescription: z.string().optional(),
+  seoTitle: z.string().optional(),
+};
+
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    ...seoFields,
   }),
 });
 
@@ -24,6 +32,7 @@ const cottages = defineCollection({
     featured: z.boolean(),
     order: z.number().optional(),
     legacyHighlights: z.array(z.string()).optional(),
+    ...seoFields,
   }),
 });
 

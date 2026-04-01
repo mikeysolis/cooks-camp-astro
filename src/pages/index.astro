@@ -11,19 +11,24 @@ const cottages = (await getCollection("cottages")).sort((a, b) => {
 });
 
 const featuredCottages = cottages.filter((entry) => entry.data.featured).slice(0, 4);
+const homeShareImage = getCottagePhotoSet(featuredCottages[0]?.id ?? cottages[0]?.id ?? "").hero.fallback.src;
 ---
 
 <Layout
   title="Cook's by the Ocean"
   description="Fourteen cottages above the Atlantic in South Wellfleet, available for weekly rental."
+  seoTitle="Cook's by the Ocean | Wellfleet Beach Cottages"
+  seoDescription="Fourteen beach cottages above the Atlantic in South Wellfleet, Cape Cod, available for weekly rental."
+  ogImage={homeShareImage}
+  ogImageAlt="A cottage view at Cook's by the Ocean in South Wellfleet."
 >
   <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
     <div class="space-y-6">
       <p class="eyebrow">South Wellfleet, Cape Cod</p>
       <h1 class="font-display text-6xl leading-[0.95] text-[var(--color-ink)] sm:text-7xl">
         Cook's by the Ocean.
+        <!-- <span class="text-[var(--color-sea)]">Wellfleet beach cottages by the Atlantic.</span> -->
         <span class="text-[var(--color-sea)]">Happy Birthday Dad!</span>
-        <!-- <span class="text-[var(--color-sea)]">Over 85 years on the dunes above the Atlantic.</span> -->
       </h1>
       <p class="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
         In continuous operation by the same family for over 85 years, Cook's

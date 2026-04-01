@@ -30,3 +30,34 @@ Add more redirects once you identify what’s getting traffic (analytics or serv
 - Top legacy URLs redirect to equivalent pages.
 - No loops, no chain redirects.
 - 404 page is helpful for unmatched legacy paths.
+
+## Implemented MVP mappings
+
+- `/index.html` -> `/`
+- `/large.html` -> `/cottages`
+- `/medium.html` -> `/cottages`
+- `/small.html` -> `/cottages`
+- `/Cones.html` -> `/cottages/cones`
+- `/big_guilda.html` -> `/cottages/big-guilda`
+- `/camera.html` -> `/cottages/camera`
+- `/captain.html` -> `/cottages/the-captain`
+- `/dunes.html` -> `/cottages/dunes`
+- `/little_guilda.html` -> `/cottages/little-guilda`
+- `/marconi.html` -> `/cottages/marconi`
+- `/new_cabin.html` -> `/cottages/new-cabin`
+- `/oversea.html` -> `/cottages/oversea`
+- `/pines.html` -> `/cottages/pines`
+- `/pretty_home.html` -> `/cottages/pretty-home`
+- `/sands.html` -> `/cottages/sands`
+- `/sandy_scott.html` -> `/cottages/sandy-scot`
+- `/summer_salt.html` -> `/cottages/summer-salt`
+- `/gallery_beach.html` -> `/legacy/beach`
+- `/gallery_camps.html` -> `/legacy/camps`
+- `/gallery_historic.html` -> `/legacy/historic`
+- `/gallery_aerial.html` -> `/legacy/sky-wildlife`
+- `/gallery_wild.html` -> `/legacy/sky-wildlife`
+
+Notes:
+
+- `/robots.txt.html` redirects to `/robots.txt`.
+- `/thumbnail-gallery.css.html` is treated as a bad legacy capture path and redirects to `/legacy`.

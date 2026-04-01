@@ -103,6 +103,9 @@ This roadmap is staged to ship a usable, respectful MVP early, then layer in fea
 - Fast, indexable site
 - Good metadata and social previews
 
+Reference:
+- `docs/specs/12-seo-implementation-checklist.md`
+
 ### Tasks
 - sitemap + robots
 - per-page titles/descriptions from frontmatter

@@ -13,14 +13,29 @@ export function getStaticPaths() {
 
 const { category } = Astro.props;
 const gallery = getLegacyCategoryGallery(category.slug);
+const galleryHasContent = gallery.itemCount > 0;
+const seoTitle = `${category.title} | Historic Gallery | Cook's by the Ocean`;
 ---
 
-<Layout title={category.title} description={category.description}>
+<Layout
+  title={category.title}
+  description={category.description}
+  seoTitle={seoTitle}
+  seoDescription={category.description}
+  ogImage={gallery.coverImage?.fallback.src}
+  ogImageAlt={`Historic image from the ${category.title} gallery at Cook's by the Ocean.`}
+  noindex={!galleryHasContent}
+>
   <section class="space-y-8">
     <div class="space-y-4">
       <p class="eyebrow">Historic Gallery</p>
       <h1 class="page-title">{category.title}</h1>
       <p class="page-copy max-w-3xl">{category.description}</p>
+      <div class="flex flex-wrap gap-3">
+        <a class="button-secondary" href="/legacy">All Historic Galleries</a>
+        <a class="button-secondary" href="/photos">Current Cottage Photos</a>
+        <a class="button-secondary" href="/cottages">Browse the Cottages</a>
+      </div>
     </div>
 
     {

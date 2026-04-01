@@ -24,15 +24,30 @@ const cottagesByCategory = cottages.reduce<Record<string, typeof cottages>>((gro
   groups[key] = [...current, cottage];
   return groups;
 }, {});
+const photosShareImage = getCottagePhotoSet(cottages[0]?.id ?? "").hero.fallback.src;
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.description}
+  seoTitle={entry.data.seoTitle ?? "Current Cottage Photos | Cook's by the Ocean"}
+  seoDescription={
+    entry.data.seoDescription ??
+    "Current photographs of the cottages and grounds at Cook's by the Ocean in South Wellfleet."
+  }
+  ogImage={entry.data.ogImage ?? photosShareImage}
+  ogImageAlt="Current cottage photography from Cook's by the Ocean."
+>
   <section class="space-y-8">
     <div class="space-y-4">
       <p class="eyebrow">Modern Photos</p>
-      <h1 class="page-title">{entry.data.title}</h1>
+      <h1 class="page-title">Current Cottage Photos</h1>
       <div class="prose prose-lg max-w-3xl">
         <Content />
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a class="button-secondary" href="/cottages">Browse the Cottages</a>
+        <a class="button-secondary" href="/legacy">Historic Photos</a>
       </div>
     </div>
 

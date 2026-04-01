@@ -5,6 +5,7 @@ import { isInputError } from "astro:actions";
 import { actions } from "astro:actions";
 import { signContactFormTimestamp } from "../lib/contact-form";
 import { getEntry, render } from "astro:content";
+import { getLocationImage } from "../data/location-images";
 import Layout from "../layouts/Layout.astro";
 
 const entry = await getEntry("pages", "contact");
@@ -21,6 +22,7 @@ const successMessage = result?.data?.message ?? "";
 const formStartedAt = Date.now().toString();
 const formToken = signContactFormTimestamp(formStartedAt);
 const hasFieldErrors = Object.keys(fieldErrors).length > 0;
+const propertyMap = getLocationImage("property");
 const cottages = [
   "Marconi",
   "Big Guilda",
@@ -39,11 +41,21 @@ const cottages = [
 ];
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.description}
+  seoTitle={entry.data.seoTitle ?? "Contact and Request Dates | Cook's by the Ocean"}
+  seoDescription={
+    entry.data.seoDescription ??
+    "Email Cook's by the Ocean or send a request for dates for a weekly cottage stay in South Wellfleet."
+  }
+  ogImage={entry.data.ogImage ?? propertyMap.fallback.src}
+  ogImageAlt="Historic property map of Cook's by the Ocean."
+>
   <section class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
     <div class="space-y-6">
       <p class="eyebrow">Contact / Request Dates</p>
-      <h1 class="page-title">{entry.data.title}</h1>
+      <h1 class="page-title">Contact and Request Dates</h1>
       <div class="prose prose-lg max-w-none">
         <Content />
       </div>

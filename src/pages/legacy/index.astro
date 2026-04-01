@@ -11,15 +11,30 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const legacyShareImage = entry.data.ogImage ?? legacyCategoriesWithGallery.find((category) => category.coverImage)?.coverImage?.fallback.src;
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.description}
+  seoTitle={entry.data.seoTitle ?? "Historic Gallery | Cook's by the Ocean"}
+  seoDescription={
+    entry.data.seoDescription ??
+    "Historic photographs of Cook's, the camps, the beach, and earlier years in South Wellfleet."
+  }
+  ogImage={legacyShareImage}
+  ogImageAlt="Historic photography from Cook's by the Ocean."
+>
   <section class="space-y-8">
     <div class="space-y-4">
       <p class="eyebrow">Historic Gallery</p>
-      <h1 class="page-title">{entry.data.title}</h1>
+      <h1 class="page-title">Historic Photos of Cook's by the Ocean</h1>
       <div class="prose prose-lg max-w-3xl">
         <Content />
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a class="button-secondary" href="/photos">Current Cottage Photos</a>
+        <a class="button-secondary" href="/cottages">Browse the Cottages</a>
       </div>
     </div>
 

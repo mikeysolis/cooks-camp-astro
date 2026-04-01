@@ -1,0 +1,45 @@
+---
+import { getLocationImage } from "../data/location-images";
+import Layout from "../layouts/Layout.astro";
+
+const propertyMap = getLocationImage("property");
+---
+
+<Layout
+  title="Page Not Found"
+  description="The page you were looking for could not be found."
+  seoTitle="Page Not Found | Cook's by the Ocean"
+  seoDescription="The page you were looking for could not be found. Return to the home page, browse cottages, or request dates."
+  ogImage={propertyMap.fallback.src}
+  ogImageAlt="Historic property map of Cook's by the Ocean."
+  noindex={true}
+>
+  <section class="max-w-3xl space-y-8">
+    <div class="space-y-4">
+      <p class="eyebrow">404</p>
+      <h1 class="page-title">That page could not be found.</h1>
+      <p class="page-copy">
+        The link may be out of date, or the page may have moved as the site was
+        reorganized. You can return to the main pages below and continue from there.
+      </p>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-3">
+      <a class="feature-card" href="/">
+        <p class="eyebrow">Home</p>
+        <h2 class="feature-title">Return to Cook&apos;s.</h2>
+        <p class="feature-copy">Start again from the main page.</p>
+      </a>
+      <a class="feature-card" href="/cottages">
+        <p class="eyebrow">Cottages</p>
+        <h2 class="feature-title">Browse the cottages.</h2>
+        <p class="feature-copy">See the large, medium, and studio cottages.</p>
+      </a>
+      <a class="feature-card" href="/contact">
+        <p class="eyebrow">Contact</p>
+        <h2 class="feature-title">Request dates.</h2>
+        <p class="feature-copy">Send a note if you were trying to reach a specific page.</p>
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -13,6 +13,7 @@
     "historic:cottages:sync": "node scripts/export-historic-cottage-media.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "@astrojs/vercel": "^9.0.4",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.1",

@@ -24,12 +24,19 @@ const cottagesByCategory = cottages.reduce<
 <Layout
   title="Cottages"
   description="Browse the cottages at Cook's by the Ocean by size and character."
+  seoTitle="Cottages | Cook's by the Ocean, South Wellfleet"
+  seoDescription="Browse the 14 cottages at Cook's by the Ocean, from large cottages to studio cottages in South Wellfleet."
+  ogImage={getCottagePhotoSet(cottages[0]?.id ?? "").hero.fallback.src}
+  ogImageAlt="One of the cottages at Cook's by the Ocean in South Wellfleet."
 >
   <section class="space-y-10">
     <div class="space-y-4">
       <p class="eyebrow">Individual Cottages</p>
-      <h1 class="page-title">Choose the cottage that suits you best.</h1>
-      <p class="page-copy max-w-3xl">There are three different size cottages of which no two cottages are the same.</p>
+      <h1 class="page-title">Browse the cottages at Cook's by the Ocean.</h1>
+      <p class="page-copy max-w-3xl">
+        Fourteen cottages sit above the Atlantic in South Wellfleet. There are three
+        different sizes, and no two cottages are quite the same.
+      </p>
     </div>
 
     {

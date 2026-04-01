@@ -1,5 +1,6 @@
 ---
 import { getEntry, render } from "astro:content";
+import { getLocationImage } from "../data/location-images";
 import Layout from "../layouts/Layout.astro";
 
 const entry = await getEntry("pages", "about");
@@ -9,14 +10,30 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const propertyMap = getLocationImage("property");
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.description}
+  seoTitle={entry.data.seoTitle ?? "About Cook's by the Ocean"}
+  seoDescription={
+    entry.data.seoDescription ??
+    "The history of Cook's by the Ocean, a family-run group of cottages in South Wellfleet."
+  }
+  ogImage={entry.data.ogImage ?? propertyMap.fallback.src}
+  ogImageAlt="Historic property map of Cook's by the Ocean."
+>
   <section class="space-y-6">
     <p class="eyebrow">About / History</p>
-    <h1 class="page-title">{entry.data.title}</h1>
+    <h1 class="page-title">About Cook's by the Ocean</h1>
     <div class="prose prose-lg max-w-3xl">
       <Content />
+    </div>
+    <div class="flex flex-wrap gap-3 pt-2">
+      <a class="button-secondary" href="/cottages">Browse the Cottages</a>
+      <a class="button-secondary" href="/location">Read the Directions</a>
+      <a class="button-secondary" href="/contact">Request Dates</a>
     </div>
   </section>
 </Layout>
