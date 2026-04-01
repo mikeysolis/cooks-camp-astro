@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "sharp";
+import { exportResponsiveAsset, prepareOutputDir } from "./image-export-utils.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
@@ -10,11 +10,18 @@ const outputRoot = path.join(projectRoot, "public/images/historic-cottages");
 const generatedDir = path.join(projectRoot, "src/data/generated");
 const generatedManifestPath = path.join(generatedDir, "historic-cottage-media.json");
 
-const galleryWidth = 1200;
-const thumbWidth = 720;
-const mapWidth = 1200;
-const jpegQuality = 78;
 const maxHistoricPhotos = 6;
+const historicThumbWidths = [320, 480, 720];
+const historicFullWidths = [960, 1280, 1600];
+const mapWidths = [640, 960, 1200];
+const historicFormats = {
+  webp: 64,
+  jpg: 68,
+};
+const mapFormats = {
+  webp: 76,
+  jpg: 80,
+};
 
 const cottageSources = [
   { slug: "big-guilda", title: "Big Guilda", htmlPage: "big_guilda.html", legacyDir: "big_guilda" },
@@ -86,22 +93,6 @@ function findMapSource(legacyDir) {
   return mapFile ? path.join(fullDir, mapFile) : null;
 }
 
-async function exportJpeg(inputPath, outputPath, width) {
-  return sharp(inputPath, { animated: true })
-    .rotate()
-    .resize({
-      width,
-      height: width,
-      fit: "inside",
-      withoutEnlargement: true,
-    })
-    .jpeg({
-      quality: jpegQuality,
-      mozjpeg: true,
-    })
-    .toFile(outputPath);
-}
-
 mkdirSync(outputRoot, { recursive: true });
 mkdirSync(generatedDir, { recursive: true });
 
@@ -111,27 +102,38 @@ for (const cottage of cottageSources) {
   const selectedItems = parseCottageGallery(cottage.htmlPage);
   const mapSource = findMapSource(cottage.legacyDir);
   const cottageOutputDir = path.join(outputRoot, cottage.slug);
-  mkdirSync(cottageOutputDir, { recursive: true });
+  const publicBasePath = `/images/historic-cottages/${cottage.slug}`;
+  prepareOutputDir(cottageOutputDir);
 
   const photos = [];
 
   for (const [index, item] of selectedItems.entries()) {
     const basename = String(index + 1).padStart(2, "0");
-    const outputFull = path.join(cottageOutputDir, `historic-${basename}.jpg`);
-    const outputThumb = path.join(cottageOutputDir, `historic-thumb-${basename}.jpg`);
     const inputFull = path.join(legacyRoot, item.fullSource);
-
-    const fullInfo = await exportJpeg(inputFull, outputFull, galleryWidth);
-    const thumbInfo = await exportJpeg(inputFull, outputThumb, thumbWidth);
+    const alt = item.caption || `Historic photo of ${cottage.title}`;
+    const full = await exportResponsiveAsset({
+      inputPath: inputFull,
+      outputDir: cottageOutputDir,
+      publicBasePath,
+      baseName: `historic-${basename}-full`,
+      widths: historicFullWidths,
+      formats: historicFormats,
+      alt,
+    });
+    const thumb = await exportResponsiveAsset({
+      inputPath: inputFull,
+      outputDir: cottageOutputDir,
+      publicBasePath,
+      baseName: `historic-${basename}-thumb`,
+      widths: historicThumbWidths,
+      formats: historicFormats,
+      alt,
+    });
 
     photos.push({
-      full: `/images/historic-cottages/${cottage.slug}/historic-${basename}.jpg`,
-      fullWidth: fullInfo.width,
-      fullHeight: fullInfo.height,
-      thumb: `/images/historic-cottages/${cottage.slug}/historic-thumb-${basename}.jpg`,
-      thumbWidth: thumbInfo.width,
-      thumbHeight: thumbInfo.height,
-      alt: `Historic photo of ${cottage.title}`,
+      full,
+      thumb,
+      alt,
       caption: item.caption,
     });
   }
@@ -139,15 +141,15 @@ for (const cottage of cottageSources) {
   let map = null;
 
   if (mapSource) {
-    const outputMap = path.join(cottageOutputDir, "map.jpg");
-    const mapInfo = await exportJpeg(mapSource, outputMap, mapWidth);
-
-    map = {
-      src: `/images/historic-cottages/${cottage.slug}/map.jpg`,
-      width: mapInfo.width,
-      height: mapInfo.height,
+    map = await exportResponsiveAsset({
+      inputPath: mapSource,
+      outputDir: cottageOutputDir,
+      publicBasePath,
+      baseName: "map",
+      widths: mapWidths,
+      formats: mapFormats,
       alt: `Historic cottage map for ${cottage.title}`,
-    };
+    });
   }
 
   generatedManifest[cottage.slug] = {

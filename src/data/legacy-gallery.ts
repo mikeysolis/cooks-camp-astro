@@ -1,13 +1,10 @@
 import { legacyCategories } from "./legacy";
 import galleryManifest from "./generated/legacy-gallery.json";
+import type { ResponsiveImageAsset } from "./responsive-image";
 
 type LegacyGalleryItem = {
-  full: string;
-  thumb: string;
-  fullWidth: number;
-  fullHeight: number;
-  thumbWidth: number;
-  thumbHeight: number;
+  full: ResponsiveImageAsset;
+  thumb: ResponsiveImageAsset;
   caption: string;
   alt: string;
 };
@@ -19,7 +16,7 @@ type LegacyGalleryGroup = {
 };
 
 type LegacyGalleryCategory = {
-  coverImage: string;
+  coverImage: ResponsiveImageAsset | null;
   itemCount: number;
   groups: LegacyGalleryGroup[];
 };
@@ -29,7 +26,7 @@ const manifest = galleryManifest as Record<string, LegacyGalleryCategory>;
 export function getLegacyCategoryGallery(slug: string) {
   return (
     manifest[slug] ?? {
-      coverImage: "",
+      coverImage: null,
       itemCount: 0,
       groups: [],
     }

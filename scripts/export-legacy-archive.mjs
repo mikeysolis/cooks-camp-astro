@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "sharp";
+import { exportResponsiveAsset, prepareOutputDir } from "./image-export-utils.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
@@ -106,9 +106,12 @@ const gallerySources = [
   },
 ];
 
-const fullWidth = 1600;
-const thumbWidth = 720;
-const jpegQuality = 78;
+const fullWidths = [960, 1280, 1600];
+const thumbWidths = [320, 480, 720];
+const historicFormats = {
+  webp: 64,
+  jpg: 68,
+};
 
 function stripTags(value) {
   return value.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").trim();
@@ -203,22 +206,6 @@ function parseHistoricLivePage({ sourcePage, title, description }) {
   };
 }
 
-async function exportJpeg(inputPath, outputPath, width) {
-  return sharp(inputPath, { animated: true })
-    .rotate()
-    .resize({
-      width,
-      height: width,
-      fit: "inside",
-      withoutEnlargement: true,
-    })
-    .jpeg({
-      quality: jpegQuality,
-      mozjpeg: true,
-    })
-    .toFile(outputPath);
-}
-
 function parseGallerySource(source) {
   if (source.kind === "legacy-lightbox") {
     return parseLegacyLightboxPage(source.sourcePage);
@@ -238,7 +225,7 @@ const generatedManifest = {};
 
 for (const categorySource of gallerySources) {
   const categoryDir = path.join(outputRoot, categorySource.category);
-  mkdirSync(categoryDir, { recursive: true });
+  prepareOutputDir(categoryDir);
 
   let itemCounter = 0;
   const groups = [];
@@ -250,19 +237,29 @@ for (const categorySource of gallerySources) {
     for (const item of parsed.items) {
       itemCounter += 1;
       const basename = String(itemCounter).padStart(2, "0");
-      const fullOutput = path.join(categoryDir, `full-${basename}.jpg`);
-      const thumbOutput = path.join(categoryDir, `thumb-${basename}.jpg`);
-
-      const fullInfo = await exportJpeg(item.fullInput, fullOutput, fullWidth);
-      const thumbInfo = await exportJpeg(item.fullInput, thumbOutput, thumbWidth);
+      const publicBasePath = `/images/legacy/${categorySource.category}`;
+      const full = await exportResponsiveAsset({
+        inputPath: item.fullInput,
+        outputDir: categoryDir,
+        publicBasePath,
+        baseName: `full-${basename}`,
+        widths: fullWidths,
+        formats: historicFormats,
+        alt: item.alt || item.caption || `${parsed.title} archive photo ${items.length + 1}`,
+      });
+      const thumb = await exportResponsiveAsset({
+        inputPath: item.fullInput,
+        outputDir: categoryDir,
+        publicBasePath,
+        baseName: `thumb-${basename}`,
+        widths: thumbWidths,
+        formats: historicFormats,
+        alt: item.alt || item.caption || `${parsed.title} archive photo ${items.length + 1}`,
+      });
 
       items.push({
-        full: `/images/legacy/${categorySource.category}/full-${basename}.jpg`,
-        thumb: `/images/legacy/${categorySource.category}/thumb-${basename}.jpg`,
-        fullWidth: fullInfo.width,
-        fullHeight: fullInfo.height,
-        thumbWidth: thumbInfo.width,
-        thumbHeight: thumbInfo.height,
+        full,
+        thumb,
         caption: item.caption,
         alt: item.alt || item.caption || `${parsed.title} archive photo ${items.length + 1}`,
       });
@@ -275,7 +272,7 @@ for (const categorySource of gallerySources) {
     });
   }
 
-  const coverImage = groups[0]?.items[0]?.thumb ?? "";
+  const coverImage = groups[0]?.items[0]?.thumb ?? null;
   const itemCount = groups.reduce((total, group) => total + group.items.length, 0);
 
   generatedManifest[categorySource.category] = {

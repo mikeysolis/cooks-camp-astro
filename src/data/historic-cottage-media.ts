@@ -1,22 +1,14 @@
 import mediaManifest from "./generated/historic-cottage-media.json";
+import type { ResponsiveImageAsset } from "./responsive-image";
 
 type HistoricGalleryItem = {
-  full: string;
-  fullWidth: number;
-  fullHeight: number;
-  thumb: string;
-  thumbWidth: number;
-  thumbHeight: number;
+  full: ResponsiveImageAsset;
+  thumb: ResponsiveImageAsset;
   alt: string;
   caption: string;
 };
 
-type HistoricMap = {
-  src: string;
-  width: number;
-  height: number;
-  alt: string;
-};
+type HistoricMap = ResponsiveImageAsset;
 
 type HistoricCottageMedia = {
   title?: string;

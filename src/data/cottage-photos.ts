@@ -4,9 +4,8 @@ import type { ResponsiveImageAsset } from "./responsive-image";
 const fallbackHero = "/images/placeholders/cottage-outline.svg";
 
 type CottageGalleryItem = {
-  src: string;
-  width: number;
-  height: number;
+  thumb: ResponsiveImageAsset;
+  full: ResponsiveImageAsset;
   alt: string;
   caption: string;
 };

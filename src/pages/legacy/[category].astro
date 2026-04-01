@@ -37,11 +37,7 @@ const gallery = getLegacyCategoryGallery(category.slug);
             galleryId={`legacy-gallery-${category.slug}-${group.title.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-")}`}
             items={group.items.map((item) => ({
               full: item.full,
-              fullWidth: item.fullWidth,
-              fullHeight: item.fullHeight,
               thumb: item.thumb,
-              thumbWidth: item.thumbWidth,
-              thumbHeight: item.thumbHeight,
               alt: item.alt,
               caption: item.caption,
             }))}

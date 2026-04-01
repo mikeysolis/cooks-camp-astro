@@ -1,11 +1,16 @@
 ---
+import ResponsiveImage from "./ResponsiveImage.astro";
+import type { ResponsiveImageAsset } from "../data/responsive-image";
+
+type GalleryImageAsset = string | ResponsiveImageAsset;
+
 interface GalleryItem {
-  full: string;
-  fullWidth: number;
-  fullHeight: number;
-  thumb: string;
-  thumbWidth: number;
-  thumbHeight: number;
+  full: GalleryImageAsset;
+  fullWidth?: number;
+  fullHeight?: number;
+  thumb: GalleryImageAsset;
+  thumbWidth?: number;
+  thumbHeight?: number;
   alt: string;
   caption?: string;
 }
@@ -15,18 +20,70 @@ interface Props {
   items: GalleryItem[];
   variant?: "modern" | "archive";
   showCaptions?: boolean;
+  thumbSizes?: string;
 }
 
-const { galleryId, items, variant = "modern", showCaptions = false } = Astro.props;
+const {
+  galleryId,
+  items,
+  variant = "modern",
+  showCaptions = false,
+  thumbSizes,
+} = Astro.props;
 const galleryClass =
   variant === "archive"
     ? "pswp-gallery grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
     : "pswp-gallery grid gap-4 sm:grid-cols-2 xl:grid-cols-3";
+const resolvedThumbSizes =
+  thumbSizes ?? "(min-width: 1280px) 26vw, (min-width: 640px) 50vw, 100vw";
+
+function isResponsiveImageAsset(value: GalleryImageAsset): value is ResponsiveImageAsset {
+  return typeof value === "object" && value !== null && "formats" in value && "fallback" in value;
+}
+
+function getPreferredSource(value: GalleryImageAsset) {
+  if (!isResponsiveImageAsset(value)) {
+    return value;
+  }
+
+  return (
+    value.formats.webp?.at(-1)?.src ??
+    value.formats.jpg?.at(-1)?.src ??
+    value.formats.avif?.at(-1)?.src ??
+    value.fallback.src
+  );
+}
+
+function getImageDimensions(
+  value: GalleryImageAsset,
+  fallbackWidth?: number,
+  fallbackHeight?: number,
+) {
+  if (isResponsiveImageAsset(value)) {
+    return {
+      width: value.width,
+      height: value.height,
+    };
+  }
+
+  return {
+    width: fallbackWidth ?? 0,
+    height: fallbackHeight ?? 0,
+  };
+}
+
+const preparedItems = items.map((item, index) => ({
+  ...item,
+  index,
+  fullSource: getPreferredSource(item.full),
+  fullDimensions: getImageDimensions(item.full, item.fullWidth, item.fullHeight),
+  thumbDimensions: getImageDimensions(item.thumb, item.thumbWidth, item.thumbHeight),
+}));
 ---
 
 <div id={galleryId} class={galleryClass}>
   {
-    items.map((item, index) => (
+    preparedItems.map((item) => (
       <figure
         class:list={[
           variant === "archive"
@@ -35,13 +92,13 @@ const galleryClass =
         ]}
       >
         <a
-          href={item.full}
-          data-pswp-width={item.fullWidth}
-          data-pswp-height={item.fullHeight}
+          href={item.fullSource}
+          data-pswp-width={item.fullDimensions.width}
+          data-pswp-height={item.fullDimensions.height}
           data-pswp-caption={item.caption ?? item.alt}
           aria-label={item.caption
-            ? `Open image ${index + 1} of ${items.length}: ${item.caption}`
-            : `Open image ${index + 1} of ${items.length}: ${item.alt}`}
+            ? `Open image ${item.index + 1} of ${items.length}: ${item.caption}`
+            : `Open image ${item.index + 1} of ${items.length}: ${item.alt}`}
           class:list={[
             "block overflow-hidden",
             variant === "archive"
@@ -49,14 +106,25 @@ const galleryClass =
               : "",
           ]}
         >
-          <img
-            src={item.thumb}
-            width={item.thumbWidth}
-            height={item.thumbHeight}
-            alt={item.alt}
-            class="aspect-[4/3] w-full object-cover transition duration-300 hover:scale-[1.01]"
-            loading="lazy"
-          />
+          {isResponsiveImageAsset(item.thumb) ? (
+            <ResponsiveImage
+              image={item.thumb}
+              sizes={resolvedThumbSizes}
+              pictureClass="block"
+              imgClass="aspect-[4/3] w-full object-cover transition duration-300 hover:scale-[1.01]"
+              alt={item.alt}
+              loading="lazy"
+            />
+          ) : (
+            <img
+              src={item.thumb}
+              width={item.thumbDimensions.width}
+              height={item.thumbDimensions.height}
+              alt={item.alt}
+              class="aspect-[4/3] w-full object-cover transition duration-300 hover:scale-[1.01]"
+              loading="lazy"
+            />
+          )}
         </a>
         {showCaptions && item.caption && (
           <figcaption class="px-1 pb-1 pt-4 text-sm leading-6 text-[var(--color-muted)]">

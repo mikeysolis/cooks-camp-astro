@@ -3,20 +3,19 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   exportResponsiveAsset,
-  exportSingleJpegAsset,
   prepareOutputDir,
 } from "./image-export-utils.mjs";
 import { cottagePhotoManifest } from "./cottage-photo-manifest.mjs";
 
 const cardWidths = [320, 480, 720];
 const heroWidths = [640, 960, 1280, 1600];
-const galleryWidth = 1200;
+const galleryThumbWidths = [320, 480, 720];
+const galleryFullWidths = [960, 1280, 1600];
 const responsiveFormats = {
   avif: 50,
   webp: 72,
   jpg: 76,
 };
-const galleryJpegQuality = 76;
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, "..");
@@ -75,19 +74,29 @@ for (const cottage of cottagePhotoManifest) {
   const galleryPaths = [];
 
   for (const [index, inputPath] of sourceFiles.slice(1).entries()) {
-    const asset = await exportSingleJpegAsset({
+    const baseName = `gallery-${String(index + 1).padStart(2, "0")}`;
+    const thumb = await exportResponsiveAsset({
       inputPath,
       outputDir: cottageOutputDir,
       publicBasePath,
-      baseName: `gallery-${String(index + 1).padStart(2, "0")}`,
-      width: galleryWidth,
-      quality: galleryJpegQuality,
+      baseName: `${baseName}-thumb`,
+      widths: galleryThumbWidths,
+      formats: responsiveFormats,
+      alt: `Interior view of ${cottage.title} cottage`,
+    });
+    const full = await exportResponsiveAsset({
+      inputPath,
+      outputDir: cottageOutputDir,
+      publicBasePath,
+      baseName: `${baseName}-full`,
+      widths: galleryFullWidths,
+      formats: responsiveFormats,
+      alt: `Interior view of ${cottage.title} cottage`,
     });
 
     galleryPaths.push({
-      src: asset.src,
-      width: asset.width,
-      height: asset.height,
+      thumb,
+      full,
       alt: `Interior view of ${cottage.title} cottage`,
       caption: "",
     });
@@ -102,7 +111,7 @@ for (const cottage of cottagePhotoManifest) {
   };
 
   console.log(
-    `${cottage.slug}: exported ${sourceFiles.length} photos (${galleryPaths.length} gallery, responsive card + hero)`,
+    `${cottage.slug}: exported ${sourceFiles.length} photos (${galleryPaths.length} gallery, responsive card + hero + gallery assets)`,
   );
 }
 

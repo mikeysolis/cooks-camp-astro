@@ -121,12 +121,8 @@ const categoryLabel = {
           <PhotoSwipeGallery
             galleryId={`cottage-gallery-${entry.id}`}
             items={photoSet.photos.map((photo) => ({
-              full: photo.src,
-              fullWidth: photo.width,
-              fullHeight: photo.height,
-              thumb: photo.src,
-              thumbWidth: photo.width,
-              thumbHeight: photo.height,
+              full: photo.full,
+              thumb: photo.thumb,
               alt: photo.alt,
               caption: photo.caption,
             }))}
@@ -161,12 +157,11 @@ const categoryLabel = {
           {historicMedia.map && (
             <figure class="max-w-3xl overflow-hidden rounded-[1rem] border border-[rgba(112,95,70,0.2)] bg-[linear-gradient(180deg,rgba(249,245,238,0.96),rgba(236,228,214,0.94))] p-3 shadow-[0_16px_40px_rgba(34,52,67,0.08)]">
               <div class="overflow-hidden rounded-[0.6rem] border border-[rgba(112,95,70,0.14)] bg-white/85">
-                <img
-                  src={historicMedia.map.src}
-                  width={historicMedia.map.width}
-                  height={historicMedia.map.height}
-                  alt={historicMedia.map.alt}
-                  class="w-full object-cover"
+                <ResponsiveImage
+                  image={historicMedia.map}
+                  sizes="(min-width: 1280px) 960px, (min-width: 1024px) 75vw, 100vw"
+                  pictureClass="block"
+                  imgClass="w-full object-cover"
                   loading="lazy"
                 />
               </div>
