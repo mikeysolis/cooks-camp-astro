@@ -207,7 +207,7 @@ const cottages = [
               placeholder="Anything else that would help narrow the search."
               aria-invalid={fieldErrors.message ? "true" : "false"}
               aria-describedby={fieldErrors.message ? "message-error" : undefined}
-            />
+            ></textarea>
             {fieldErrors.message && <span class="contact-error" id="message-error">{fieldErrors.message[0]}</span>}
           </label>
 
